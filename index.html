@@ -13,23 +13,48 @@
 </head>
 
 <body>
-Header with logo
 
-Game play area:
+<header>
+     <h1 id="logo">21 The Card Game</h1>	
+</header>
 
-Game options - buttons x4 - Settings, Rules, Reset, Stats
+<div id="game-area" class="container">
 
-Dealer area with heading
-dealer score
-dealer cards
+    <div id="game-options-buttons" class="container">
+        <button id="settings-button" class="btn">Settings</button>
+        <button id="rules-button" class="btn">Rules</button>
+        <button id="reset-button" class="btn">Reset</button>
+        <button id="stats-button" class="btn">Stats</button>
+    </div>
 
-Player area with heading
-player score
-player cards
+    <div id="game-board-area" class="container">
 
-Game play buttons x3 - Start, Hit, Hold
+        <div id="dealer" class="container">
+            <div id="dealer-heading">
+                <h2>Dealer</h2>
+            </div>
+            <div id="dealer-card-total"></div>
+            <div id="dealer-hand"></div>
+        </div>
 
-Game message area ie. you win/ you lose
+        <div id="player" class="container">
+            <div id="player-heading">
+                <h2>Player</h2>
+            </div>
+            <div id="player-card-total"></div>
+            <div id="player-hand"></div>
+        </div>
+
+    </div>
+
+    <div id="game-play-buttons" class="container">
+        <button id ="start-game-button" class="btn">Start</button>
+        <button id="hit-button" class="btn">Hit</button>
+        <button id="hold-button" class="btn">Hold</button>
+    </div>
+
+    <div id="message-status"></div>
+</div>
 
 
 
