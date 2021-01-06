@@ -1,12 +1,12 @@
 // Create a Card object
-function card(value, name, suit) {
+function Card(value, name, suit) {
 	this.value = value;
 	this.name = name;
     this.suit = suit;
 };
 
 // Create a deck of cards
-function deck() {
+function Deck() {
 	this.names = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"];
     this.suits = ["♠", "♣", "♥", "♦"];
     
@@ -14,7 +14,7 @@ function deck() {
     
     for (var s = 0; s < this.suits.length; s++ ) {
         for (var n = 0; n < this.names.length; n++ ) {
-            cards.push(new card(n+1, this.names[n], this.suits[s]));
+            cards.push(new Card(n+1, this.names[n], this.suits[s]));
         }
     }
 
@@ -22,7 +22,7 @@ function deck() {
 };
 
 // Create a new deck of cards
-let myDeck = new deck();
+let myDeck = new Deck();
 
 console.log(myDeck);
 
