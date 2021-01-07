@@ -201,10 +201,6 @@ function hold() {
     holdButton.disabled = true;
 };
 
-// Dealer Hit
-
-// Dealer Hold??
-
 // Create gameOutcome function, win/lose/draw
 function gameOutcome() {
     if (dealerScore < 21 && dealerScore > 16 && dealerScore > playerScore) {
