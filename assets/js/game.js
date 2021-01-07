@@ -10,10 +10,10 @@ function Deck() {
 	this.names = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"];
     this.suits = ["♠", "♣", "♥", "♦"];
     
-	var cards = [];
+	let cards = [];
     
-    for (var s = 0; s < this.suits.length; s++ ) {
-        for (var n = 0; n < this.names.length; n++ ) {
+    for (let s = 0; s < this.suits.length; s++ ) {
+        for (let n = 0; n < this.names.length; n++ ) {
             cards.push(new Card(n+1, this.names[n], this.suits[s]));
         }
     }
@@ -44,7 +44,9 @@ function shuffle(array) {
 };
 
 console.log(shuffle(cardDeck));     //Check shuffle
+
 // Deal cards to dealer
+
 
 // Deal cards to player
 
