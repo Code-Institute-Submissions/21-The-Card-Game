@@ -158,7 +158,16 @@ function renderPlayerCards() {
     }
 };
 
-// Hit
+// Create hit function
+// Set event listener for hit button
+let hitButton = document.getElementById("hit-button");
+hitButton.addEventListener("click", hit)
+
+function hit() {
+    let hitCard = cardDeck.shift();
+    playerHand.push(hitCard);
+        console.log(hitCard);       //Check hitCard
+};
 
 // Hold
 
