@@ -1,5 +1,6 @@
 // Set global variables
 let dealerHand = [];
+let playerHand = [];
 
 // Create a Card object
 function Card(value, name, suit) {
@@ -60,7 +61,16 @@ dealerCards();
 console.log(dealerHand);        // Check dealerHand
 
 
-// Deal cards to player
+// Create player cards function
+function playerCards() {
+    for(let i=0; i<2; i++) {
+       let playerDealtCards = cardDeck.shift();
+        playerHand.push(playerDealtCards); 
+    }
+};
+
+playerCards();
+console.log(playerHand);        // Check playerHand
 
 // Assign & Add card values
 
