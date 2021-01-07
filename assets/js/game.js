@@ -57,7 +57,7 @@ function dealerCards() {
     }
 };
 
-dealerCards();
+//dealerCards();
 console.log(dealerHand);        // Check dealerHand
 
 
@@ -69,7 +69,7 @@ function playerCards() {
     }
 };
 
-playerCards();
+//playerCards();
 console.log(playerHand);        // Check playerHand
 
 // Assign & Add card values
@@ -90,8 +90,8 @@ function addCardValues(hand) {
     return cardTotal;
 };
 
-addCardValues(dealerHand);
-addCardValues(playerHand);
+//addCardValues(dealerHand);
+//addCardValues(playerHand);
 
 console.log(addCardValues(dealerHand));         //Check Card values for dealer Hand
 console.log(addCardValues(playerHand));         //Check Card values for player Hand
@@ -117,10 +117,26 @@ function checkScore() {
         messageStatus.innerHTML = "You Win! Dealer went bust";
     }
 };
-checkScore();
+//checkScore();
 
 
-// Start Game
+//Create start game function
+//Set event listener for start button
+let startGameButton = document.getElementById("start-game-button");
+
+startGameButton.addEventListener("click", startGame);
+
+function startGame() {
+    shuffle(cardDeck);
+    dealerCards();
+    playerCards();
+    addCardValues(dealerHand);
+    addCardValues(playerHand);
+    checkScore();
+
+   startGameButton.disabled = true;
+};
+
 
 // Hit
 
