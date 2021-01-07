@@ -73,6 +73,29 @@ playerCards();
 console.log(playerHand);        // Check playerHand
 
 // Assign & Add card values
+function addCardValues(hand) {
+    let cardArray = [];
+    let cardTotal = 0;
+    
+    cardArray = hand;
+    for (let i=0; i < hand.length; i += 1) {
+        if (hand[i].name === "J" || hand[i].name === "Q" || hand[i].name === "K") {
+            cardTotal += 10;
+        } else if (hand[i].name === "A") {
+            cardTotal += 11;
+        } else {
+            cardTotal += hand[i].name;
+        }
+    }
+    return cardTotal;
+};
+
+addCardValues(dealerHand);
+addCardValues(playerHand);
+
+console.log(addCardValues(dealerHand));         //Check Card values for dealer Hand
+console.log(addCardValues(playerHand));         //Check Card values for player Hand
+
 
 // Check Score
 
