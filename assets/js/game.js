@@ -1,3 +1,6 @@
+// Set global variables
+let dealerHand = [];
+
 // Create a Card object
 function Card(value, name, suit) {
 	this.value = value;
@@ -45,7 +48,16 @@ function shuffle(array) {
 
 console.log(shuffle(cardDeck));     //Check shuffle
 
-// Deal cards to dealer
+// Create dealer cards function
+function dealerCards() {
+    for(let i=0; i<2; i++) {
+       let dealerDealtCards = cardDeck.shift();
+        dealerHand.push(dealerDealtCards); 
+    }
+};
+
+dealerCards();
+console.log(dealerHand);        // Check dealerHand
 
 
 // Deal cards to player
