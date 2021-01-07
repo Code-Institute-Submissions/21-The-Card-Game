@@ -175,6 +175,26 @@ function hit() {
 };
 
 // Create hold function
+// Set event listener for hold button
+let holdButton = document.getElementById("hold-button");
+holdButton.addEventListener("click", hold)
+
+function hold() {
+    if (dealerScore <= 16) {
+        let dealerCard = cardDeck.shift();
+        dealerHand.push(dealerCard);
+       
+        console.log(dealerCard)                 //Check dealerCard 
+
+        renderCardDiv = document.createElement("div");
+        renderCardDiv.className = "card";
+        renderCardDiv.innerHTML = '' + dealerCard.name + '' + dealerCard.suit + '';
+        document.getElementById("dealer-hand").appendChild(renderCardDiv);
+    }
+    
+    hitButton.disabled = true;
+    holdButton.disabled = true;
+};
 
 // Dealer Hit
 
