@@ -172,6 +172,8 @@ function hit() {
     renderCardDiv.className = "card";
     renderCardDiv.innerHTML = '' + hitCard.name + '' + hitCard.suit + '';
     document.getElementById("player-hand").appendChild(renderCardDiv);
+
+    checkScore();
 };
 
 // Create hold function
@@ -191,6 +193,8 @@ function hold() {
         renderCardDiv.innerHTML = '' + dealerCard.name + '' + dealerCard.suit + '';
         document.getElementById("dealer-hand").appendChild(renderCardDiv);
     }
+
+    checkScore();
     
     hitButton.disabled = true;
     holdButton.disabled = true;
