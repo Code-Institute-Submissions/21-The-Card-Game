@@ -22,12 +22,28 @@ function Deck() {
 };
 
 // Create a new deck of cards
-let myDeck = new Deck();
+let cardDeck = new Deck();
 
-console.log(myDeck);
+//console.log(cardDeck);    // Check card deck
 
-// Shuffle Cards
+// Create a shuffle function to randomise the cards 
+// Fisher Yates Shuffle
+function shuffle(array) {
+    let currentIndex = array.length;
+    let tempValue;
+    let randIndex;
 
+    while (0 != currentIndex) {
+        randIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -=1;
+        tempValue = array[currentIndex];
+        array[currentIndex] = array[randIndex];
+        array[randIndex] = tempValue;
+    }
+    return array;
+};
+
+console.log(shuffle(cardDeck));     //Check shuffle
 // Deal cards to dealer
 
 // Deal cards to player
