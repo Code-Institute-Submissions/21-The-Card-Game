@@ -167,9 +167,14 @@ function hit() {
     let hitCard = cardDeck.shift();
     playerHand.push(hitCard);
         console.log(hitCard);       //Check hitCard
+
+    renderCardDiv = document.createElement("div");
+    renderCardDiv.className = "card";
+    renderCardDiv.innerHTML = '' + hitCard.name + '' + hitCard.suit + '';
+    document.getElementById("player-hand").appendChild(renderCardDiv);
 };
 
-// Hold
+// Create hold function
 
 // Dealer Hit
 
