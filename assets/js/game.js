@@ -97,7 +97,28 @@ console.log(addCardValues(dealerHand));         //Check Card values for dealer H
 console.log(addCardValues(playerHand));         //Check Card values for player Hand
 
 
-// Check Score
+// Create check Score
+let dealerScore;
+let playerScore;
+
+let messageStatus = document.getElementById("message-status");
+
+function checkScore() {
+    dealerScore = addCardValues(dealerHand);
+    playerScore = addCardValues(playerHand);
+
+    if (playerScore === 21) {
+        messageStatus.innerHTML = "You win! Congratulations <br>  You got 21!"; 
+    } else if (playerScore > 21) {
+        messageStatus.innerHTML = "Bust! Better luck next time";
+    } else if (dealerScore === 21) {
+        messageStatus.innerHTML = "Dealer got 21! Better luck next time";
+    } else if (dealerScore > 21) {
+        messageStatus.innerHTML = "You Win! Dealer went bust";
+    }
+};
+checkScore();
+
 
 // Start Game
 
