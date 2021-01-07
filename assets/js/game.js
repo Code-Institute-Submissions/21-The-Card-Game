@@ -174,7 +174,6 @@ function hit() {
     document.getElementById("player-hand").appendChild(renderCardDiv);
 
     checkScore();
-    
 };
 
 // Create hold function
@@ -196,6 +195,7 @@ function hold() {
     }
 
     checkScore();
+    gameOutcome();
 
     hitButton.disabled = true;
     holdButton.disabled = true;
