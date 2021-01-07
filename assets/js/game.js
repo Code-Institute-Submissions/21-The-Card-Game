@@ -130,6 +130,8 @@ function startGame() {
     shuffle(cardDeck);
     dealerCards();
     playerCards();
+    renderDealerCards();
+    renderPlayerCards();
     addCardValues(dealerHand);
     addCardValues(playerHand);
     checkScore();
@@ -137,6 +139,24 @@ function startGame() {
    startGameButton.disabled = true;
 };
 
+//Render cards to the html
+function renderDealerCards() {  
+    for(let i=0; i < dealerHand.length; i++) {
+        renderCardDiv = document.createElement("div");
+        renderCardDiv.className = "card";
+        renderCardDiv.innerHTML = '' + dealerHand[i].name + '' + dealerHand[i].suit + '';
+        document.getElementById("dealer-hand").appendChild(renderCardDiv);
+    }  
+};
+
+function renderPlayerCards() {
+    for(let i=0; i < playerHand.length; i++) {
+        renderCardDiv = document.createElement("div");
+        renderCardDiv.className = "card";
+        renderCardDiv.innerHTML = '' + playerHand[i].name + '' + playerHand[i].suit + '';
+        document.getElementById("player-hand").appendChild(renderCardDiv);
+    }
+};
 
 // Hit
 
