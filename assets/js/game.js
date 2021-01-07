@@ -174,6 +174,7 @@ function hit() {
     document.getElementById("player-hand").appendChild(renderCardDiv);
 
     checkScore();
+    
 };
 
 // Create hold function
@@ -195,7 +196,7 @@ function hold() {
     }
 
     checkScore();
-    
+
     hitButton.disabled = true;
     holdButton.disabled = true;
 };
@@ -204,6 +205,15 @@ function hold() {
 
 // Dealer Hold??
 
-// Game outcome? Win, Lose, Draw
+// Create gameOutcome function, win/lose/draw
+function gameOutcome() {
+    if (dealerScore < 21 && dealerScore > 16 && dealerScore > playerScore) {
+        messageStatus.innerHTML = "Dealer wins! Better luck next time";       
+    } else if (dealerScore < 21 && dealerScore > 16 && dealerScore < playerScore) {
+        messageStatus.innerHTML = "You win! Congratulations";
+    } else if (dealerScore < 21 && dealerScore > 16 && dealerScore === playerScore) {
+        messageStatus.innerHTML = "It's a draw!"; 
+    }
+};
 
 // Reset Game
