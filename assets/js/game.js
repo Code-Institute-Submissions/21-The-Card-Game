@@ -103,6 +103,9 @@ let playerScore;
 
 let messageStatus = document.getElementById("message-status");
 
+let dealerCardTotal = document.getElementById("dealer-card-total");
+let playerCardTotal = document.getElementById("player-card-total");
+
 function checkScore() {
     dealerScore = addCardValues(dealerHand);
     playerScore = addCardValues(playerHand);
@@ -116,6 +119,7 @@ function checkScore() {
     } else if (dealerScore > 21) {
         messageStatus.innerHTML = "You Win! Dealer went bust";
     }
+
 };
 //checkScore();
 
