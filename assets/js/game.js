@@ -221,4 +221,36 @@ function gameOutcome() {
     }
 };
 
-// Reset Game
+// Create reset function
+// Set event listener for hold button
+let resetButton = document.getElementById("reset-button");
+resetButton.addEventListener("click", gameReset)
+
+function gameReset() {
+    dealerHand = [];
+    playerHand = [];
+    dealerScore = 0;
+    playerScore = 0;
+
+    
+    dealerCardTotal.innerText = " ";
+    playerCardTotal.innerText = " ";
+
+    let removeDealerCards = document.getElementById("dealer-hand")
+    while (removeDealerCards.firstChild) { 
+        removeDealerCards.removeChild(removeDealerCards.firstChild); 
+    };  
+
+    let removePlayerCards = document.getElementById("player-hand")
+    while (removePlayerCards.firstChild) { 
+        removePlayerCards.removeChild(removePlayerCards.firstChild); 
+    };  
+
+    startGameButton.disabled = false;
+    hitButton.disabled = true;
+    holdButton.disabled = true;
+};
+
+
+
+
