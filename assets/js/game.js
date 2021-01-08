@@ -237,7 +237,8 @@ function gameReset() {
     
     dealerCardTotal.innerText = " ";
     playerCardTotal.innerText = " ";
-
+    messageStatus.innerText = " ";
+    
     let removeDealerCards = document.getElementById("dealer-hand")
     while (removeDealerCards.firstChild) { 
         removeDealerCards.removeChild(removeDealerCards.firstChild); 
