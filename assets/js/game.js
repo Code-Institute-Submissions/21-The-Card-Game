@@ -145,7 +145,9 @@ function startGame() {
     addCardValues(playerHand);
     checkScore();
 
-   startGameButton.disabled = true;
+    startGameButton.disabled = true;
+    hitButton.disabled = false;
+    holdButton.disabled = false;
 };
 
 //Render cards to the html
