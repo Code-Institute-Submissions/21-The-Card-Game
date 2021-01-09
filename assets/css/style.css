@@ -48,9 +48,22 @@ body {
     text-align: center;
 }
 
+#dealer,
 #player {
-    padding-top: 150px;
+    padding-top: 5rem;
+    position: fixed;
+    text-align: center;
 }
+
+#dealer {
+    top: 100px;
+}
+
+#player {
+    top: 275px;  
+}
+
+
 
 /*------------Buttons----*/
 
@@ -79,3 +92,16 @@ body {
     display: flex;
     justify-content: space-around;
 }
+
+/*------------Cards----*/
+.card {
+    float: left;
+	width: 6rem;
+	height: 9rem;
+    border: .1rem solid #3D0D0D;
+    background-color: #FEF3EC;
+	margin-right: .5rem;
+	margin-bottom: .5rem;
+	border-radius: .5rem;
+}
+
