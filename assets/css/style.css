@@ -24,7 +24,7 @@ body {
 /*------------Logo----*/
 #logo {
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 3.5rem;
+    font-size: 3.6rem;
     color: #2A2F3C;
     padding: 0;
     margin-left: 0.5rem;
@@ -32,6 +32,14 @@ body {
     position: absolute;
     top: 1rem;
 }
+
+
+/*------------Headings----*/
+h2 {
+    font-size: 3rem;
+}
+
+
 
 /*------------Game Area----*/
 #game-area {
@@ -63,7 +71,9 @@ body {
     top: 275px;  
 }
 
-
+.score {
+    font-size: 3rem;
+}
 
 /*------------Buttons----*/
 
@@ -105,3 +115,9 @@ body {
 	border-radius: .5rem;
 }
 
+/*------------Message Status----*/
+#message-status {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem auto;
+}
