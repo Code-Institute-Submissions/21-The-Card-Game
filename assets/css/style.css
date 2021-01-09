@@ -7,7 +7,7 @@
     margin: 0;
     font-family: "Lora", sans-serif;
     font-size: 10px;
-    color: #3D3D3D;
+    color: #3D0D0D;
 }
 
 body {
@@ -40,7 +40,7 @@ body {
 
 /*------------Game Board Area----*/
 #game-board-area {
-    border: 1px groove green;
+    border: 1px groove #3D0D0D;
     padding: 1rem;
     height: 400px;
     margin-top: 2rem;
