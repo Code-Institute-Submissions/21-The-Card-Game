@@ -52,3 +52,30 @@ body {
     padding-top: 150px;
 }
 
+/*------------Buttons----*/
+
+ .btn {
+    font-size: 1.5rem;
+    background-color: #C46D5E;
+    color:#220202;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    border: 1px solid #3D0D0D;
+    width: 7rem;
+}
+
+.btn .btn:hover {
+    opacity: 0.5;
+}
+
+.btn .btn-link:hover {
+    color: #747B83;
+    text-decoration: none;
+}
+
+#game-options-buttons,
+#game-play-buttons {
+    display: flex;
+    justify-content: space-around;
+}
