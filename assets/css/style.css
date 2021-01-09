@@ -13,3 +13,27 @@
 body {
     padding-top: 2rem;
 }
+
+/*------------Background----*/
+.bg-body {
+    background-image: linear-gradient(to bottom, #c9de96 , #398235);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/*------------Logo----*/
+#logo {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 3.5rem;
+    color: #2A2F3C;
+    padding: 0;
+    margin-left: 0.5rem;
+    text-align: left;
+    position: absolute;
+    top: 1rem;
+}
+
+/*------------Game Area----*/
+#game-area {
+    padding-top: 5rem;
+}
