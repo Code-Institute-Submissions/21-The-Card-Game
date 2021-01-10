@@ -196,7 +196,7 @@ function hold() {
     if (dealerScore <= 16) {
         let dealerCard = cardDeck.shift();
         dealerHand.push(dealerCard);
-       
+        
         console.log(dealerCard)                 //Check dealerCard 
 
         renderCardDiv = document.createElement("div");
@@ -207,10 +207,14 @@ function hold() {
 
     checkScore();
     gameOutcome();
+    setTimeout(hold, 1000);
 
     hitButton.disabled = true;
     holdButton.disabled = true;
 };
+
+
+
 
 // Create gameOutcome function, win/lose/draw
 function gameOutcome() {
