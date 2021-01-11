@@ -155,7 +155,7 @@ function renderDealerCards() {
     for(let i=0; i < dealerHand.length; i++) {
         renderCardDiv = document.createElement("div");
         renderCardDiv.className = "card";
-        renderCardDiv.innerHTML = '' + dealerHand[i].name + '' + dealerHand[i].suit + '' + '</div>'+ '<div class="suit-card">' + dealerHand[i].suit + '</div>';
+        renderCardDiv.innerHTML = '<div class="card-id">' + '' + dealerHand[i].name + '' + dealerHand[i].suit + '' + '</div>'+ '<div class="suit-card">' + dealerHand[i].suit + '</div>' + '<div class="card-id2">' + '' + dealerHand[i].name + '' + dealerHand[i].suit;
         document.getElementById("dealer-hand").appendChild(renderCardDiv);
     }  
 };
@@ -164,7 +164,7 @@ function renderPlayerCards() {
     for(let i=0; i < playerHand.length; i++) {
         renderCardDiv = document.createElement("div");
         renderCardDiv.className = "card";
-        renderCardDiv.innerHTML = '' + playerHand[i].name + '' + playerHand[i].suit + '' + '</div>'+ '<div class="suit-card">' + playerHand[i].suit + '</div>';
+        renderCardDiv.innerHTML = '<div class="card-id">' + '' + playerHand[i].name + '' + playerHand[i].suit + '' + '</div>'+ '<div class="suit-card">' + playerHand[i].suit + '</div>' + '<div class="card-id2">' + '' + playerHand[i].name + '' + playerHand[i].suit + '';
         document.getElementById("player-hand").appendChild(renderCardDiv);
     }
 };
@@ -181,7 +181,7 @@ function hit() {
 
     renderCardDiv = document.createElement("div");
     renderCardDiv.className = "card";
-    renderCardDiv.innerHTML = '' + hitCard.name + '' + hitCard.suit + '' + '</div>'+ '<div class="suit-card">' + hitCard.suit + '</div>';;
+    renderCardDiv.innerHTML = '<div class="card-id">' + '' + hitCard.name + '' + hitCard.suit + '' + '</div>'+ '<div class="suit-card">' + hitCard.suit + '</div>' + '<div class="card-id2">' + '' + hitCard.name + '' + hitCard.suit + '';
     document.getElementById("player-hand").appendChild(renderCardDiv);
 
     checkScore();
@@ -201,7 +201,7 @@ function hold() {
 
         renderCardDiv = document.createElement("div");
         renderCardDiv.className = "card";
-        renderCardDiv.innerHTML = '' + dealerCard.name + '' + dealerCard.suit + '' + '</div>'+ '<div class="suit-card">' + dealerCard.suit + '</div>';
+        renderCardDiv.innerHTML = '<div class="card-id">' + '' + dealerCard.name + '' + dealerCard.suit + '' + '</div>'+ '<div class="suit-card">' + dealerCard.suit + '</div>' + '<div class="card-id2">' + '' + dealerCard.name + '' + dealerCard.suit + '';
         document.getElementById("dealer-hand").appendChild(renderCardDiv);
         setTimeout(hold, 1000);
     }
