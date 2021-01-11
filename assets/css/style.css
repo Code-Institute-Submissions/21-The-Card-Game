@@ -126,6 +126,12 @@ h2 {
 	border-radius: .5rem;
 }
 
+.suit-card {
+    font-size: 3rem;
+    position: relative;
+    top: .8rem;
+}
+
 /*------------Message Status----*/
 #message-status {
     font-size: 2rem;

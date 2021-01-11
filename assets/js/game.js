@@ -155,7 +155,7 @@ function renderDealerCards() {
     for(let i=0; i < dealerHand.length; i++) {
         renderCardDiv = document.createElement("div");
         renderCardDiv.className = "card";
-        renderCardDiv.innerHTML = '' + dealerHand[i].name + '' + dealerHand[i].suit + '';
+        renderCardDiv.innerHTML = '' + dealerHand[i].name + '' + dealerHand[i].suit + '' + '</div>'+ '<div class="suit-card">' + dealerHand[i].suit + '</div>';
         document.getElementById("dealer-hand").appendChild(renderCardDiv);
     }  
 };
@@ -164,7 +164,7 @@ function renderPlayerCards() {
     for(let i=0; i < playerHand.length; i++) {
         renderCardDiv = document.createElement("div");
         renderCardDiv.className = "card";
-        renderCardDiv.innerHTML = '' + playerHand[i].name + '' + playerHand[i].suit + '';
+        renderCardDiv.innerHTML = '' + playerHand[i].name + '' + playerHand[i].suit + '' + '</div>'+ '<div class="suit-card">' + playerHand[i].suit + '</div>';
         document.getElementById("player-hand").appendChild(renderCardDiv);
     }
 };
@@ -181,7 +181,7 @@ function hit() {
 
     renderCardDiv = document.createElement("div");
     renderCardDiv.className = "card";
-    renderCardDiv.innerHTML = '' + hitCard.name + '' + hitCard.suit + '';
+    renderCardDiv.innerHTML = '' + hitCard.name + '' + hitCard.suit + '' + '</div>'+ '<div class="suit-card">' + hitCard.suit + '</div>';;
     document.getElementById("player-hand").appendChild(renderCardDiv);
 
     checkScore();
@@ -201,7 +201,7 @@ function hold() {
 
         renderCardDiv = document.createElement("div");
         renderCardDiv.className = "card";
-        renderCardDiv.innerHTML = '' + dealerCard.name + '' + dealerCard.suit + '';
+        renderCardDiv.innerHTML = '' + dealerCard.name + '' + dealerCard.suit + '' + '</div>'+ '<div class="suit-card">' + dealerCard.suit + '</div>';
         document.getElementById("dealer-hand").appendChild(renderCardDiv);
         setTimeout(hold, 1000);
     }
