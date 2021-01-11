@@ -203,17 +203,15 @@ function hold() {
         renderCardDiv.className = "card";
         renderCardDiv.innerHTML = '' + dealerCard.name + '' + dealerCard.suit + '';
         document.getElementById("dealer-hand").appendChild(renderCardDiv);
+        setTimeout(hold, 1000);
     }
 
     checkScore();
     gameOutcome();
-    setTimeout(hold, 1000);
 
     hitButton.disabled = true;
     holdButton.disabled = true;
 };
-
-
 
 
 // Create gameOutcome function, win/lose/draw
@@ -256,6 +254,7 @@ function gameReset() {
     startGameButton.disabled = false;
     hitButton.disabled = true;
     holdButton.disabled = true;
+    
 };
 
 
