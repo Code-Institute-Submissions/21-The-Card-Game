@@ -10,10 +10,33 @@
 }
 
 /*------------Background----*/
-.bg-body {
+.bg-color-classic {
     background-image: linear-gradient(to bottom, #c9de96 , #398235);
     background-repeat: no-repeat;
     height: 100vh;
+}
+
+.bg-color-beach {
+    background-image: url("../images/beach.png");
+    background-repeat: no-repeat;
+    background-color: #ffddcd;
+    width: 100%;
+    height: 100vh;
+}
+
+#background {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+}
+
+#content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 /*------------Logo----*/
