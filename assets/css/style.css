@@ -7,7 +7,6 @@
     margin: 0;
     font-family: "Lora", sans-serif;
     font-size: 10px;
-    color: #3D0D0D;
 }
 
 /*------------Background----*/
@@ -145,6 +144,14 @@ h2 {
     font-size: 3rem;
     position: relative;
     top: .8rem;
+}
+
+.red {
+    color: #9D0208;
+}
+
+.black {
+    color: #393B3B;
 }
 
 /*------------Message Status----*/
