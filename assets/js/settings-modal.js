@@ -29,7 +29,7 @@ function beach() {
     document.getElementById("background").className = "bg-color-beach";
 };
 
-let nightTheme = document.getElementById("classic");
+let nightTheme = document.getElementById("night");
 nightTheme.addEventListener("click", night);
 function night() {
     document.getElementById("background").className = "bg-color-night";
