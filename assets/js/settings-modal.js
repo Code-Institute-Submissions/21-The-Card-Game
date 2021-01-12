@@ -28,3 +28,9 @@ beachTheme.addEventListener("click", beach);
 function beach() {
     document.getElementById("background").className = "bg-color-beach";
 };
+
+let nightTheme = document.getElementById("classic");
+nightTheme.addEventListener("click", night);
+function night() {
+    document.getElementById("background").className = "bg-color-night";
+};
