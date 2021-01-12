@@ -11,143 +11,149 @@
 <title>21 The Card Game</title>
 </head>
 
-<body class="bg-body">
-
-<header>
-     <h1 id="logo">21 The Card Game</h1>	
-</header>
-
-<div id="game-area" class="container">
-
-    <div id="game-options-buttons" class="container">
-
-        <button id="settings-button" class="btn">Settings</button>
-        <div id="settings-modal" class="modal">
-            <div id="modal-themes" class="modal-content">
-                <h3 class="text-bold">Settings</h3>
-                <br>
-                <h4 class="text-bold">Custom Themes:</h4>
-                <h5>Please select one:</h5>
-                <br>
-                <div class="theme-select">
-                    <input type="radio" id="classic" name="theme" value="classic">
-                    <label class="custom-theme" for="classic">Classic Theme</label>
-                    <br>
-                    <input type="radio" id="beach" name="theme" value="beach">
-                    <label class="custom-theme" for="beach">Beach Theme</label>
-                    <br>
-                    <input type="radio" id="night" name="theme" value="night">
-                    <label class="custom-theme" for="night">Night Theme</label>
-                    <br>
-                </div>
-                <span class="close text-bold">&times;</span>
-            </div>
-        </div>
-
-        <button id="rules-button" class="btn">Rules</button>
-        <div id="rules-modal" class="modal">
-            <div id="modal-how-to-play" class="modal-content">
-                <h3 class="text-bold">How To Play</h3>
-                <br>
-                <p>
-                    The goal of 21 is to total your card values to 21 or as near to 21
-                    as possible without exceeding it. If the total goes over 21 the
-                    hand is bust and loses. You also have to beat whatever hand the
-                    dealer has. The ideal option is to get your card total to 21 for
-                    an instant win!
-                </p>
-                <br>
-                <p>
-                    <span class="text-bold">Start:</span> The cards are dealt to the dealer (computer) and the player
-                    (user). Once the initial hand does not exceed 21 the player can
-                    then choose to either hit or hold.
-                </p>
-                <br>
-                <p>
-                    <span class="text-bold">Hit:</span> Requests other card.
-                </p>
-                <br>
-                <p>
-                    <span class="text-bold">Hold:</span> Indicates the player is happy with their hand and does not
-                    wish to draw another card.
-                </p>
-                <br>
-                <p>
-                    The player can hit as many times as they like once the hand total
-                    does not go over 21. When the player holds the dealer then gets a
-                    chance to either hit or hold. Once the dealer holds the game
-                    outcome is decided.
-                </p>
-                <br>
-                <p>
-                    <span class="text-bold">Card values:</span> Cards 2-10 have their numeric value. Face cards Jack,
-                    Queen & King have a value of ten. Ace cards have a value of 11.
-                </p>
-                <br>
-                <span class="close text-bold">&times;</span>
-            </div>
-        </div>
-
-        <button id="reset-button" class="btn">Reset</button>
-
-        <button id="stats-button" class="btn">Stats</button>
+<body>
+    <div id="background" class="bg-color-classic">
     </div>
-    
-    <div id="game-board-area" class="container">
-    
-        <div id="dealer" class="container">
-            <div id="dealer-row" class="row">
-                <div id="dealer-heading" class="col-6">
-                    <h2>Dealer</h2>
-                </div>
-                <div id="dealer-card-total" class="col-6">
-                </div>
-            </div>
-    
-            <div class="row">
-                <div id="dealer-hand" class="col">
-                </div>
-            </div>
-    
-        </div>
-    
-        <div id="player" class="container">
-            <div id="player-row" class="row">
-                <div id="player-heading" class="col-6">
-                    <h2>Player</h2>
-                </div>
-                <div id="player-card-total" class="col-6">
-                </div>
-            </div>
-    
-            <div class="row">
-                <div id="player-hand" class="col">
-                </div>
-            </div>
-    
-        </div>
-    
-    </div>
+    <div id="content">
+        <header>
+            <h1 id="logo">21 The Card Game</h1>
+        </header>
 
-    <div id="game-play-buttons" class="container">
-        <button id="start-game-button" class="btn">Start</button>
-        <button id="hit-button" class="btn">Hit</button>
-        <button id="hold-button" class="btn">Hold</button>
-    </div>
-    
-    <div class="container">
-        <div class="row">
-            <div id="message-status" class="col">
+        <div id="game-area" class="container">
+
+            <div id="game-options-buttons" class="container">
+
+                <button id="settings-button" class="btn">Settings</button>
+                <div id="settings-modal" class="modal">
+                    <div id="modal-themes" class="modal-content">
+                        <h3 class="text-bold">Settings</h3>
+                        <br>
+                        <h4 class="text-bold">Custom Themes:</h4>
+                        <h5>Please select one:</h5>
+                        <br>
+                        <div class="theme-select">
+                            <input type="radio" id="classic" name="theme" value="classic">
+                            <label class="custom-theme" for="classic">Classic Theme</label>
+                            <br>
+                            <input type="radio" id="beach" name="theme" value="beach">
+                            <label class="custom-theme" for="beach">Beach Theme</label>
+                            <br>
+                            <input type="radio" id="night" name="theme" value="night">
+                            <label class="custom-theme" for="night">Night Theme</label>
+                            <br>
+                        </div>
+                        <span class="close text-bold">&times;</span>
+                    </div>
+                </div>
+
+                <button id="rules-button" class="btn">Rules</button>
+                <div id="rules-modal" class="modal">
+                    <div id="modal-how-to-play" class="modal-content">
+                        <h3 class="text-bold">How To Play</h3>
+                        <br>
+                        <p>
+                            The goal of 21 is to total your card values to 21 or as near to 21
+                            as possible without exceeding it. If the total goes over 21 the
+                            hand is bust and loses. You also have to beat whatever hand the
+                            dealer has. The ideal option is to get your card total to 21 for
+                            an instant win!
+                        </p>
+                        <br>
+                        <p>
+                            <span class="text-bold">Start:</span> The cards are dealt to the dealer (computer) and the
+                            player
+                            (user). Once the initial hand does not exceed 21 the player can
+                            then choose to either hit or hold.
+                        </p>
+                        <br>
+                        <p>
+                            <span class="text-bold">Hit:</span> Requests other card.
+                        </p>
+                        <br>
+                        <p>
+                            <span class="text-bold">Hold:</span> Indicates the player is happy with their hand and does
+                            not
+                            wish to draw another card.
+                        </p>
+                        <br>
+                        <p>
+                            The player can hit as many times as they like once the hand total
+                            does not go over 21. When the player holds the dealer then gets a
+                            chance to either hit or hold. Once the dealer holds the game
+                            outcome is decided.
+                        </p>
+                        <br>
+                        <p>
+                            <span class="text-bold">Card values:</span> Cards 2-10 have their numeric value. Face cards
+                            Jack,
+                            Queen & King have a value of ten. Ace cards have a value of 11.
+                        </p>
+                        <br>
+                        <span class="close text-bold">&times;</span>
+                    </div>
+                </div>
+
+                <button id="reset-button" class="btn">Reset</button>
+
+                <button id="stats-button" class="btn">Stats</button>
             </div>
+
+            <div id="game-board-area" class="container">
+
+                <div id="dealer" class="container">
+                    <div id="dealer-row" class="row">
+                        <div id="dealer-heading" class="col-6">
+                            <h2>Dealer</h2>
+                        </div>
+                        <div id="dealer-card-total" class="col-6">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="dealer-hand" class="col">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="player" class="container">
+                    <div id="player-row" class="row">
+                        <div id="player-heading" class="col-6">
+                            <h2>Player</h2>
+                        </div>
+                        <div id="player-card-total" class="col-6">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="player-hand" class="col">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="game-play-buttons" class="container">
+                <button id="start-game-button" class="btn">Start</button>
+                <button id="hit-button" class="btn">Hit</button>
+                <button id="hold-button" class="btn">Hold</button>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div id="message-status" class="col">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-
-</div>
-
-<script src="assets/js/game.js"></script>
-<script src="assets/js/rules-modal.js"></script>
-<script src="assets/js/settings-modal.js"></script>
+    <script src="assets/js/game.js"></script>
+    <script src="assets/js/rules-modal.js"></script>
+    <script src="assets/js/settings-modal.js"></script>
 </body>
+
 </html>
 
 
