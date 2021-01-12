@@ -1,7 +1,7 @@
 // Settings Modal
 let settingsModal = document.getElementById("settings-modal");
 let settingsBtn = document.getElementById("settings-button");
-let settingsSpan = document.getElementsByClassName("settings-close")[0];
+let settingsSpan = document.getElementsByClassName("close")[0];
 
 settingsBtn.onclick = function() {
   settingsModal.style.display = "block";
@@ -15,4 +15,16 @@ window.onclick = function(event) {
   if (event.target == settingsModal) {
    settingsModal.style.display = "none";
   }
+};
+
+let classicTheme = document.getElementById("classic");
+classicTheme.addEventListener("click", classic);
+function classic() {
+    document.getElementById("background").className = "bg-color-classic";
+};
+
+let beachTheme = document.getElementById("beach");
+beachTheme.addEventListener("click", beach);
+function beach() {
+    document.getElementById("background").className = "bg-color-beach";
 };
