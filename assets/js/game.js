@@ -7,6 +7,12 @@ function Card(value, name, suit) {
 	this.value = value;
 	this.name = name;
     this.suit = suit;
+
+        if (this.suit === "♥" || this.suit === "♦") {
+            this.color = "red";
+        } else if(this.suit === "♠" || this.suit === "♣") {
+            this.color = "black";
+        }
 };
 
 // Create a deck of cards
@@ -154,20 +160,20 @@ function startGame() {
 function renderDealerCards() {  
     for(let i=0; i < dealerHand.length; i++) {
         renderCardDiv = document.createElement("div");
-        renderCardDiv.className = "card";
+        renderCardDiv.classList.add("card", dealerHand[i].color);
         renderCardDiv.innerHTML = '<div class="card-id">' + '' + dealerHand[i].name + '' + dealerHand[i].suit + '' + '</div>'+ '<div class="suit-card">' + dealerHand[i].suit + '</div>' + '<div class="card-id2">' + '' + dealerHand[i].name + '' + dealerHand[i].suit;
         document.getElementById("dealer-hand").appendChild(renderCardDiv);
     }  
-};
+}
 
 function renderPlayerCards() {
     for(let i=0; i < playerHand.length; i++) {
         renderCardDiv = document.createElement("div");
-        renderCardDiv.className = "card";
+        renderCardDiv.classList.add("card", playerHand[i].color);
         renderCardDiv.innerHTML = '<div class="card-id">' + '' + playerHand[i].name + '' + playerHand[i].suit + '' + '</div>'+ '<div class="suit-card">' + playerHand[i].suit + '</div>' + '<div class="card-id2">' + '' + playerHand[i].name + '' + playerHand[i].suit + '';
         document.getElementById("player-hand").appendChild(renderCardDiv);
     }
-};
+}
 
 // Create hit function
 // Set event listener for hit button
@@ -180,27 +186,27 @@ function hit() {
         console.log(hitCard);       //Check hitCard
 
     renderCardDiv = document.createElement("div");
-    renderCardDiv.className = "card";
+    renderCardDiv.classList.add("card", hitCard.color);
     renderCardDiv.innerHTML = '<div class="card-id">' + '' + hitCard.name + '' + hitCard.suit + '' + '</div>'+ '<div class="suit-card">' + hitCard.suit + '</div>' + '<div class="card-id2">' + '' + hitCard.name + '' + hitCard.suit + '';
     document.getElementById("player-hand").appendChild(renderCardDiv);
 
     checkScore();
-};
+}
 
 // Create hold function
 // Set event listener for hold button
 let holdButton = document.getElementById("hold-button");
-holdButton.addEventListener("click", hold)
+holdButton.addEventListener("click", hold);
 
 function hold() {
     if (dealerScore <= 16) {
         let dealerCard = cardDeck.shift();
         dealerHand.push(dealerCard);
         
-        console.log(dealerCard)                 //Check dealerCard 
+        console.log(dealerCard);                //Check dealerCard 
 
         renderCardDiv = document.createElement("div");
-        renderCardDiv.className = "card";
+        renderCardDiv.classList.add("card", dealerCard.color);
         renderCardDiv.innerHTML = '<div class="card-id">' + '' + dealerCard.name + '' + dealerCard.suit + '' + '</div>'+ '<div class="suit-card">' + dealerCard.suit + '</div>' + '<div class="card-id2">' + '' + dealerCard.name + '' + dealerCard.suit + '';
         document.getElementById("dealer-hand").appendChild(renderCardDiv);
         setTimeout(hold, 1000);
@@ -211,7 +217,7 @@ function hold() {
 
     hitButton.disabled = true;
     holdButton.disabled = true;
-};
+}
 
 
 // Create gameOutcome function, win/lose/draw
@@ -223,12 +229,12 @@ function gameOutcome() {
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore === playerScore) {
         messageStatus.innerHTML = "It's a draw!"; 
     }
-};
+}
 
 // Create reset function
 // Set event listener for hold button
 let resetButton = document.getElementById("reset-button");
-resetButton.addEventListener("click", gameReset)
+resetButton.addEventListener("click", gameReset);
 
 function gameReset() {
     dealerHand = [];
