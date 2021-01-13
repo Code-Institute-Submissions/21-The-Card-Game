@@ -144,6 +144,46 @@ h2 {
     font-size: 3rem;
 }
 
+/*------------Collapse Hand----*/
+.collapse-hand > div {
+    position: absolute;
+}
+
+.collapse-hand > div:nth-child(2) {
+    position: absolute;
+    left: 4rem;
+}
+
+.collapse-hand > div:nth-child(3) {
+    position: absolute;
+    left: 7rem;
+}
+
+.collapse-hand > div:nth-child(4) {
+    position: absolute;
+    left: 10rem;
+}
+
+.collapse-hand > div:nth-child(5) {
+    position: absolute;
+    left: 13rem;
+}
+
+.collapse-hand > div:nth-child(6) {
+    position: absolute;
+    left: 16rem;
+}
+
+.collapse-hand > div:nth-child(7) {
+    position: absolute;
+    left: 19rem;
+}
+
+.collapse-hand > div:nth-child(8) {
+    position: absolute;
+    left: 22rem;
+}
+
 /*------------Buttons----*/
 
  .btn {
