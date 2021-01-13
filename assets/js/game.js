@@ -126,10 +126,10 @@ function checkScore() {
         messageStatus.innerHTML = "You Win! Dealer went bust";
     }
 
-    dealerCardTotal.className = "score";
+    dealerCardTotal.className += " score";
     dealerCardTotal.innerText = dealerScore;
 
-    playerCardTotal.className = "score";
+    playerCardTotal.className += " score";
     playerCardTotal.innerText = playerScore;
 };
 //checkScore();
