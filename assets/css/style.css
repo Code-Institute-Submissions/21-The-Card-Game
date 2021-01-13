@@ -52,7 +52,7 @@
 /*------------Logo----*/
 #logo {
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 3.6rem;
+    font-size: 3.5rem;
     padding: 0;
     margin-left: 0.5rem;
     text-align: left;
@@ -62,11 +62,12 @@
 
 /*------------Headings/Paragraphs----*/
 
-.logo-classic {
+
+.classic-theme {
     color: #2A2F3C;
 }
 
-.logo-night-theme {
+.night-theme {
     color: #c0c0c0;
 }
 
@@ -114,20 +115,37 @@ h2 {
     margin-bottom: 2rem;
     text-align: center;
 }
-
+/*
 #dealer,
 #player {
     padding-top: 5rem;
     position: fixed;
     text-align: center;
 }
-
+/*
 #dealer {
     top: 100px;
 }
+*/
 
-#player {
-    top: 275px;  
+.dealer-container {
+    position: absolute;  
+}
+
+#dealer-card-total,
+#player-card-total {
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+#dealer-hand {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.player-container {
+    position: fixed;
+    top: 305px;  
 }
 
 .score {
