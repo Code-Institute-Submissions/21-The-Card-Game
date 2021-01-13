@@ -53,7 +53,6 @@
 #logo {
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 3.6rem;
-    color: #2A2F3C;
     padding: 0;
     margin-left: 0.5rem;
     text-align: left;
@@ -62,6 +61,15 @@
 }
 
 /*------------Headings/Paragraphs----*/
+
+.logo-classic {
+    color: #2A2F3C;
+}
+
+.logo-night-theme {
+    color: #c0c0c0;
+}
+
 h2 {
     font-size: 3rem;
 }
