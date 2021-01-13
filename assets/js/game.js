@@ -189,7 +189,8 @@ function hit() {
     renderCardDiv.classList.add("card", hitCard.color);
     renderCardDiv.innerHTML = '<div class="card-id">' + '' + hitCard.name + '' + hitCard.suit + '' + '</div>'+ '<div class="suit-card">' + hitCard.suit + '</div>' + '<div class="card-id2">' + '' + hitCard.name + '' + hitCard.suit + '';
     document.getElementById("player-hand").appendChild(renderCardDiv);
-
+    
+    collapsePlayerHand();
     checkScore();
 }
 
@@ -209,6 +210,7 @@ function hold() {
         renderCardDiv.classList.add("card", dealerCard.color);
         renderCardDiv.innerHTML = '<div class="card-id">' + '' + dealerCard.name + '' + dealerCard.suit + '' + '</div>'+ '<div class="suit-card">' + dealerCard.suit + '</div>' + '<div class="card-id2">' + '' + dealerCard.name + '' + dealerCard.suit + '';
         document.getElementById("dealer-hand").appendChild(renderCardDiv);
+        collapseDealerHand();
         setTimeout(hold, 1000);
     }
 
@@ -263,6 +265,18 @@ function gameReset() {
     
 };
 
+// Create collapse hand function
+function collapseDealerHand() {
+    if (dealerHand.length > 2) {
+        document.getElementById("dealer-hand").classList.add("collapse-hand");
+    }
+};
+
+function collapsePlayerHand() {
+    if (playerHand.length > 2) {
+        document.getElementById("player-hand").classList.add("collapse-hand");
+    }
+};
 
 
 
