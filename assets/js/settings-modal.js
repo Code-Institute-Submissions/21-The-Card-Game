@@ -21,16 +21,19 @@ let classicTheme = document.getElementById("classic");
 classicTheme.addEventListener("click", classic);
 function classic() {
     document.getElementById("background").className = "bg-color-classic";
+    document.getElementById("logo").className = "logo-classic";
 };
 
 let beachTheme = document.getElementById("beach");
 beachTheme.addEventListener("click", beach);
 function beach() {
     document.getElementById("background").className = "bg-color-beach";
+    document.getElementById("logo").className = "logo-classic";
 };
 
 let nightTheme = document.getElementById("night");
 nightTheme.addEventListener("click", night);
 function night() {
     document.getElementById("background").className = "bg-color-night";
+    document.getElementById("logo").className = "logo-night-theme"
 };
