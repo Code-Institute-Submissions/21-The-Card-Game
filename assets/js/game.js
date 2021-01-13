@@ -234,7 +234,7 @@ function gameOutcome() {
 }
 
 // Create reset function
-// Set event listener for hold button
+// Set event listener for reset button
 let resetButton = document.getElementById("reset-button");
 resetButton.addEventListener("click", gameReset);
 
