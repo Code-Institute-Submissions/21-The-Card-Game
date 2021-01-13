@@ -16,7 +16,13 @@
     </div>
     <div id="content">
         <header>
-            <h1 id="logo" class="logo-classic">21 The Card Game</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 id="logo" class="classic-theme">21 The Card Game</h1>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <div id="game-area" class="container">
@@ -100,37 +106,47 @@
 
             <div id="game-board-area" class="container">
 
-                <div id="dealer" class="container">
-                    <div id="dealer-row" class="row">
-                        <div id="dealer-heading" class="col-6">
-                            <h2>Dealer</h2>
-                        </div>
-                        <div id="dealer-card-total" class="col-6">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div id="dealer-hand" class="col">
-                        </div>
-                    </div>
-
-                </div>
-
-                <div id="player" class="container">
-                    <div id="player-row" class="row">
-                        <div id="player-heading" class="col-6">
-                            <h2>Player</h2>
-                        </div>
-                        <div id="player-card-total" class="col-6">
+                    <div class="container dealer-container">
+                        <div id="dealer-row" class="row">
+                            <div class="col">
+                                <div id="dealer-heading" class="classic-theme">
+                                    <h2>Dealer</h2>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="dealer-card-total" class="classic-theme">
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div id="player-hand" class="col">
+                        
+                        <div class="row">
+                            <div class="col">
+                                <div id="dealer-hand">
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <div class="container player-container">
+                        <div id="player-row" class="row">
+                            <div class="col">
+                                <div id="player-heading" class="classic-theme">
+                                    <h2>Player</h2>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="player-card-total" class="classic-theme">
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col">
+                                <div id="player-hand">
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                </div>
 
             </div>
 
