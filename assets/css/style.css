@@ -115,18 +115,6 @@ h2 {
     margin-bottom: 2rem;
     text-align: center;
 }
-/*
-#dealer,
-#player {
-    padding-top: 5rem;
-    position: fixed;
-    text-align: center;
-}
-/*
-#dealer {
-    top: 100px;
-}
-*/
 
 .dealer-container {
     position: absolute;  
