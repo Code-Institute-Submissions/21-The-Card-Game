@@ -140,6 +140,10 @@ h2 {
 
 #dealer-hand {
     margin-top: 20px;
+    padding-top: 30px;
+}
+
+#player-hand {
     padding-top: 20px;
 }
 
