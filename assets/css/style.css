@@ -110,7 +110,7 @@ h2 {
 #game-board-area {
     border: 1px groove #3D0D0D;
     padding: 1rem;
-    height: 400px;
+    height: 40rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -139,17 +139,17 @@ h2 {
 }
 
 #dealer-hand {
-    margin-top: 20px;
-    padding-top: 30px;
+    margin-top: 2rem;
+    padding-top: 3rem;
 }
 
 #player-hand {
-    padding-top: 20px;
+    padding-top: 2rem;
 }
 
 .player-container {
     position: fixed;
-    top: 305px;  
+    top: 30.5rem;  
 }
 
 .score {
@@ -165,7 +165,7 @@ h2 {
     border-radius: 1rem;
     margin-top: 1rem;
     padding: .5rem;
-    border: 1px solid #3D0D0D;
+    border: .1rem solid #3D0D0D;
     width: 7rem;
 }
 
