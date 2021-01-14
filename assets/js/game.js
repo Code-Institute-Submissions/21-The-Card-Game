@@ -269,13 +269,13 @@ function gameReset() {
 
 // Create collapse hand function
 function collapseDealerHand() {
-    if (dealerHand.length > 2) {
+    if (dealerHand.length > 3) {
         document.getElementById("dealer-hand").classList.add("collapse-hand");
     }
 };
 
 function collapsePlayerHand() {
-    if (playerHand.length > 2) {
+    if (playerHand.length > 3) {
         document.getElementById("player-hand").classList.add("collapse-hand");
     }
 };
