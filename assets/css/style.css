@@ -296,3 +296,34 @@ h2 {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* Game Outcome Modals */
+/*
+#win-modal {
+    
+
+}
+*/
+.game-outcome-modal {
+    background-color: rgba(254, 243, 236, .8);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.win-status {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #C46D5E;
+}
+
+.play-again {
+    font-size: 1.5rem;
+    line-height: 2;
+    background-color: #c0c0c0;
+    color: #220202;
+    border-radius: 1rem;
+    width: 10rem;
+    margin: 0 auto;
+}
