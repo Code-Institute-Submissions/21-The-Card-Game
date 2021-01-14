@@ -124,6 +124,7 @@ function checkScore() {
         messageStatus.innerHTML = "Dealer got 21! Better luck next time";
     } else if (dealerScore > 21) {
         messageStatus.innerHTML = "You Win! Dealer went bust";
+        win();
     }
 
     dealerCardTotal.className += " score";
@@ -228,6 +229,7 @@ function gameOutcome() {
         messageStatus.innerHTML = "Dealer wins! Better luck next time";       
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore < playerScore) {
         messageStatus.innerHTML = "You win! Congratulations";
+        win();
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore === playerScore) {
         messageStatus.innerHTML = "It's a draw!"; 
     }
