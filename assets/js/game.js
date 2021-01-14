@@ -279,4 +279,24 @@ function collapsePlayerHand() {
 };
 
 
+//Game Outcome Modals
+let playAgainButton = document.getElementsByClassName("play-again")[0];
 
+// Create Win Modal
+let winModal = document.getElementById("win-modal");
+
+function win() {
+    winModal.style.display = "block";
+};
+
+playAgainButton.onclick = function() {
+    winModal.style.display = "none";
+    gameReset();
+};
+
+window.onclick = function(event) {
+  if (event.target == winModal) {
+   winModal.style.display = "none";
+   gameReset();
+  }
+};
