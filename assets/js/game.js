@@ -259,7 +259,10 @@ function gameReset() {
     let removePlayerCards = document.getElementById("player-hand")
     while (removePlayerCards.firstChild) { 
         removePlayerCards.removeChild(removePlayerCards.firstChild); 
-    };  
+    }; 
+    
+    document.getElementById("dealer-hand").classList.remove("collapse-hand");
+    document.getElementById("player-hand").classList.remove("collapse-hand");
 
     startGameButton.disabled = false;
     hitButton.disabled = true;
