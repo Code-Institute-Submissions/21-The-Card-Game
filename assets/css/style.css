@@ -264,7 +264,7 @@ h2 {
 .modal {
   display: none; 
   position: fixed; 
-  z-index: 1; 
+  z-index: 11; 
   padding-top: 1rem; 
   left: 0;
   top: 0;
