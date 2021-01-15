@@ -120,6 +120,7 @@ function checkScore() {
         messageStatus.innerHTML = "You win! Congratulations <br>  You got 21!"; 
     } else if (playerScore > 21) {
         messageStatus.innerHTML = "Bust! Better luck next time";
+        bust();
     } else if (dealerScore === 21) {
         messageStatus.innerHTML = "Dealer got 21! Better luck next time";
     } else if (dealerScore > 21) {
@@ -298,10 +299,31 @@ function closeWin(){
     winModal.style.display = "none";
     gameReset();
 };
-   
+/*   
 window.onclick = function(event) {
   if (event.target == winModal) {
    winModal.style.display = "none";
    gameReset();
   }
 };
+*/
+
+//Create Bust Modal
+let bustModal = document.getElementById("bust-modal");
+
+function bust() {
+    bustModal.style.display = "block";
+};
+
+function closeBust(){
+    bustModal.style.display = "none";
+    gameReset();
+};
+/*
+window.onclick = function(event) {
+  if (event.target == bustModal) {
+   bustModal.style.display = "none";
+   gameReset();
+  }
+}
+*/
