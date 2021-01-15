@@ -180,9 +180,18 @@
       <!--Win Modal-->
     <div id="win-modal" class="modal">
         <div id="you-win" class="modal-content game-outcome-modal">
-            <div class="win-status text-bold">Congratulations</div>
-            <div class="win-status text-bold">You Win!</div>
+            <div class="status text-bold">Congratulations</div>
+            <div class="status text-bold">You Win!</div>
             <button class="play-again" onclick="closeWin()">Play Again</button>
+        </div>
+    </div>
+
+     <!--Bust Modal-->
+    <div id="bust-modal" class="modal">
+        <div id="bust" class="modal-content game-outcome-modal">
+            <div class="status text-bold">Bust!</div>
+            <div class="status text-bold">Better Luck Next Time!</div>
+            <button class="play-again" onclick="closeBust()">Play Again</button>
         </div>
     </div>
 
