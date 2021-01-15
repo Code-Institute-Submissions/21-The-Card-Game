@@ -1,22 +1,26 @@
 // Settings Modal
 let settingsModal = document.getElementById("settings-modal");
 let settingsBtn = document.getElementById("settings-button");
-let settingsSpan = document.getElementsByClassName("close")[0];
+//let settingsSpan = document.getElementsByClassName("close")[0];
 
+// Open Settings modal 
 settingsBtn.onclick = function() {
   settingsModal.style.display = "block";
 };
 
-rulesSpan.onclick = function() {
+// Settings modal close
+function closeSettings(){
   settingsModal.style.display = "none";
 };
 
+/*
+// Close when click outside modal//////
 window.onclick = function(event) {
   if (event.target == settingsModal) {
    settingsModal.style.display = "none";
   }
 };
-
+*/
 let classicTheme = document.getElementById("classic");
 classicTheme.addEventListener("click", classic);
 function classic() {
