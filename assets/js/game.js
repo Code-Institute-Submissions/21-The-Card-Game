@@ -294,11 +294,11 @@ function win() {
     winModal.style.display = "block";
 };
 
-playAgainButton.onclick = function() {
+function closeWin(){
     winModal.style.display = "none";
     gameReset();
 };
-
+   
 window.onclick = function(event) {
   if (event.target == winModal) {
    winModal.style.display = "none";
