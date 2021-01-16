@@ -60,8 +60,6 @@
 }
 
 /*------------Headings/Paragraphs----*/
-
-
 .classic-theme {
     color: #2A2F3C;
 }
@@ -285,7 +283,7 @@ p {
     background-color: rgba(0,0,0,0.4); 
 }
 
-/* Modal Content */
+/*------------Modal Content----*/
 .modal-content {
     background-color: rgba(22, 31, 22, 0.761);
     border-radius: 1rem;
@@ -297,7 +295,7 @@ p {
     color: #fafad2;
     }
 
-/* Close X */
+/*------------Close X----*/
 .close {
     color: #fafad2;
     font-size: 2.8rem;
@@ -311,7 +309,7 @@ p {
     cursor: pointer;
 }
 
-/* Game Outcome Modals */
+/*------------Game Outcome Modals----*/
 
 .game-outcome-modal {
     margin: 50% auto;
