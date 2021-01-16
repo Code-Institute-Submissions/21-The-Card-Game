@@ -54,10 +54,9 @@
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 3.5rem;
     padding: 0;
-    margin-left: 0.5rem;
     text-align: left;
     position: absolute;
-    top: 1rem;
+    top: .5rem;
 }
 
 /*------------Headings/Paragraphs----*/
