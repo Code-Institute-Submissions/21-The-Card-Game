@@ -13,7 +13,7 @@ function Card(value, name, suit) {
         } else if(this.suit === "♠" || this.suit === "♣") {
             this.color = "black";
         }
-};
+}
 
 // Create a deck of cards
 function Deck() {
@@ -29,7 +29,7 @@ function Deck() {
     }
 
     return cards;
-};
+}
 
 // Create a new deck of cards
 let cardDeck = new Deck();
@@ -51,7 +51,7 @@ function shuffle(array) {
         array[randIndex] = tempValue;
     }
     return array;
-};
+}
 
 console.log(shuffle(cardDeck));     //Check shuffle
 
@@ -61,7 +61,7 @@ function dealerCards() {
        let dealerDealtCards = cardDeck.shift();
         dealerHand.push(dealerDealtCards); 
     }
-};
+}
 
 //dealerCards();
 console.log(dealerHand);        // Check dealerHand
@@ -73,7 +73,7 @@ function playerCards() {
        let playerDealtCards = cardDeck.shift();
         playerHand.push(playerDealtCards); 
     }
-};
+}
 
 //playerCards();
 console.log(playerHand);        // Check playerHand
@@ -94,7 +94,7 @@ function addCardValues(hand) {
         }
     }
     return cardTotal;
-};
+}
 
 //addCardValues(dealerHand);
 //addCardValues(playerHand);
@@ -135,7 +135,7 @@ function checkScore() {
 
     playerCardTotal.className += " score";
     playerCardTotal.innerText = playerScore;
-};
+}
 //checkScore();
 
 
@@ -158,7 +158,7 @@ function startGame() {
     startGameButton.disabled = true;
     hitButton.disabled = false;
     holdButton.disabled = false;
-};
+}
 
 //Render cards to the html
 function renderDealerCards() {  
@@ -182,7 +182,7 @@ function renderPlayerCards() {
 // Create hit function
 // Set event listener for hit button
 let hitButton = document.getElementById("hit-button");
-hitButton.addEventListener("click", hit)
+hitButton.addEventListener("click", hit);
 
 function hit() {
     let hitCard = cardDeck.shift();
@@ -256,15 +256,15 @@ function gameReset() {
     playerCardTotal.innerText = " ";
     messageStatus.innerText = " ";
     
-    let removeDealerCards = document.getElementById("dealer-hand")
+    let removeDealerCards = document.getElementById("dealer-hand");
     while (removeDealerCards.firstChild) { 
         removeDealerCards.removeChild(removeDealerCards.firstChild); 
-    };  
+    } 
 
-    let removePlayerCards = document.getElementById("player-hand")
+    let removePlayerCards = document.getElementById("player-hand");
     while (removePlayerCards.firstChild) { 
         removePlayerCards.removeChild(removePlayerCards.firstChild); 
-    }; 
+    }
     
     document.getElementById("dealer-hand").classList.remove("collapse-hand");
     document.getElementById("player-hand").classList.remove("collapse-hand");
@@ -273,20 +273,20 @@ function gameReset() {
     hitButton.disabled = true;
     holdButton.disabled = true;
     
-};
+}
 
 // Create collapse hand function
 function collapseDealerHand() {
     if (dealerHand.length > 3) {
         document.getElementById("dealer-hand").classList.add("collapse-hand");
     }
-};
+}
 
 function collapsePlayerHand() {
     if (playerHand.length > 3) {
         document.getElementById("player-hand").classList.add("collapse-hand");
     }
-};
+}
 
 
 //Game Outcome Modals
@@ -297,12 +297,12 @@ let winModal = document.getElementById("win-modal");
 
 function win() {
     winModal.style.display = "block";
-};
+}
 
 function closeWin(){
     winModal.style.display = "none";
     gameReset();
-};
+}
 /*   
 window.onclick = function(event) {
   if (event.target == winModal) {
@@ -317,7 +317,7 @@ let dealerWinModal = document.getElementById("dealer-win-modal");
 
 function dealerWin() {
     dealerWinModal.style.display = "block";
-};
+}
 
 function closeDealerWin() {
   dealerWinModal.style.display = "none";
@@ -337,7 +337,7 @@ let winTwentyOneModal = document.getElementById("win-twenty-one-modal");
    
 function winTwentyOne() {
     winTwentyOneModal.style.display = "block";
-};
+}
 
 function closeWinTwentyOne() {
   winTwentyOneModal.style.display = "none";
@@ -358,7 +358,7 @@ let dealerTwentyOneModal = document.getElementById("dealer-twenty-one-modal");
 
 function dealerTwentyOne() {
     dealerTwentyOneModal.style.display = "block";
-};
+}
 
 function closeDealerTwentyOne() {
   dealerTwentyOneModal.style.display = "none";
@@ -379,12 +379,12 @@ let bustModal = document.getElementById("bust-modal");
 
 function bust() {
     bustModal.style.display = "block";
-};
+}
 
 function closeBust(){
     bustModal.style.display = "none";
     gameReset();
-};
+}
 /*
 window.onclick = function(event) {
   if (event.target == bustModal) {
@@ -398,7 +398,7 @@ let dealerBustModal = document.getElementById("dealer-bust-modal");
 
 function dealerBust() {
     dealerBustModal.style.display = "block";
-};
+}
 
 function closeDealerBust() {
   dealerBustModal.style.display = "none";
@@ -417,7 +417,7 @@ let drawModal = document.getElementById("draw-modal");
 
 function draw() {
    drawModal.style.display = "block";
-};
+}
 
 function closeDraw() {
   drawModal.style.display = "none";
