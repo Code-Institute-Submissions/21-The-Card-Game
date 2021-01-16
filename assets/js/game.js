@@ -376,10 +376,10 @@ function closeDraw() {
   gameReset();
 }
 
-// Add event listener for closing game outcome modals 
+// Add event listener for closing all modals
 window.addEventListener('click', closeModals);
 
-// Create close Modals function when click outside the modal
+// Create close modals function when click outside the modal
 function closeModals() {
   if (event.target == winModal) {
    winModal.style.display = "none";
@@ -408,5 +408,14 @@ function closeModals() {
   if (event.target == drawModal) {
    drawModal.style.display = "none";
    gameReset();
+  }
+  if (event.target == settingsModal) {
+   settingsModal.style.display = "none";
+  }
+  if (event.target == rulesModal) {
+   rulesModal.style.display = "none";
+  }
+  if (event.target == statsModal) {
+   statsModal.style.display = "none";
   }
 }
