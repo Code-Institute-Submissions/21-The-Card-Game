@@ -290,7 +290,7 @@ function collapsePlayerHand() {
 
 
 //Game Outcome Modals
-let playAgainButton = document.getElementsByClassName("play-again")[0];
+//let playAgainButton = document.getElementsByClassName("play-again")[0];
 
 // Create Win Modal
 let winModal = document.getElementById("win-modal");
@@ -303,14 +303,6 @@ function closeWin(){
     winModal.style.display = "none";
     gameReset();
 }
-/*   
-window.onclick = function(event) {
-  if (event.target == winModal) {
-   winModal.style.display = "none";
-   gameReset();
-  }
-};
-*/
 
 //Create Dealer Win Modal
 let dealerWinModal = document.getElementById("dealer-win-modal");
@@ -323,14 +315,6 @@ function closeDealerWin() {
   dealerWinModal.style.display = "none";
   gameReset();
 }
-/*
-window.onclick = function(event) {
-  if (event.target == dealerWinModal) {
-   dealerWinOneModal.style.display = "none";
-   gameReset();
-  }
-}
-*/
 
 //Create Win 21 Modal
 let winTwentyOneModal = document.getElementById("win-twenty-one-modal");
@@ -343,18 +327,9 @@ function closeWinTwentyOne() {
   winTwentyOneModal.style.display = "none";
   gameReset();
 }
-/*
-window.onclick = function(event) {
-  if (event.target == winTwentyOneModal) {
-   winTwentyOneModal.style.display = "none";
-   gameReset();
-  }
-}
-*/
 
 //Create Dealer 21 Modal
 let dealerTwentyOneModal = document.getElementById("dealer-twenty-one-modal");
-
 
 function dealerTwentyOne() {
     dealerTwentyOneModal.style.display = "block";
@@ -364,15 +339,6 @@ function closeDealerTwentyOne() {
   dealerTwentyOneModal.style.display = "none";
   gameReset();
 }
-/*
-window.onclick = function(event) {
-  if (event.target == dealerTwentyOneModal) {
-   dealerTwentyOneModal.style.display = "none";
-   gameReset();
-  }
-}
-*/
-
 
 //Create Bust Modal
 let bustModal = document.getElementById("bust-modal");
@@ -385,14 +351,7 @@ function closeBust(){
     bustModal.style.display = "none";
     gameReset();
 }
-/*
-window.onclick = function(event) {
-  if (event.target == bustModal) {
-   bustModal.style.display = "none";
-   gameReset();
-  }
-}
-*/
+
 //Create Dealer Bust Modal
 let dealerBustModal = document.getElementById("dealer-bust-modal");
 
@@ -404,14 +363,7 @@ function closeDealerBust() {
   dealerBustModal.style.display = "none";
   gameReset();
 }
-/*
-window.onclick = function(event) {
-  if (event.target == dealerBustModal) {
-   dealerBustModal.style.display = "none";
-   gameReset();
-  }
-}
-*/
+
 //Create Draw Modal
 let drawModal = document.getElementById("draw-modal");
 
@@ -423,11 +375,38 @@ function closeDraw() {
   drawModal.style.display = "none";
   gameReset();
 }
-/*
-window.onclick = function(event) {
+
+// Add event listener for closing game outcome modals 
+window.addEventListener('click', closeModals);
+
+// Create close Modals function when click outside the modal
+function closeModals() {
+  if (event.target == winModal) {
+   winModal.style.display = "none";
+   gameReset();
+  }
+  if (event.target == dealerWinModal) {
+   dealerWinModal.style.display = "none";
+   gameReset();
+  }
+  if (event.target == winTwentyOneModal) {
+   winTwentyOneModal.style.display = "none";
+   gameReset();
+  }
+  if (event.target == dealerTwentyOneModal) {
+   dealerTwentyOneModal.style.display = "none";
+   gameReset();
+  }
+   if (event.target == bustModal) {
+   bustModal.style.display = "none";
+   gameReset();
+  }
+  if (event.target == dealerBustModal) {
+   dealerBustModal.style.display = "none";
+   gameReset();
+  }
   if (event.target == drawModal) {
    drawModal.style.display = "none";
    gameReset();
   }
 }
-*/
