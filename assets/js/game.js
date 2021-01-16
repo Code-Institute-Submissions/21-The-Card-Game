@@ -392,3 +392,41 @@ window.onclick = function(event) {
   }
 }
 */
+//Create Dealer Bust Modal
+let dealerBustModal = document.getElementById("dealer-bust-modal");
+
+function dealerBust() {
+    dealerBustModal.style.display = "block";
+};
+
+function closeDealerBust() {
+  dealerBustModal.style.display = "none";
+  gameReset();
+}
+/*
+window.onclick = function(event) {
+  if (event.target == dealerBustModal) {
+   dealerBustModal.style.display = "none";
+   gameReset();
+  }
+}
+*/
+//Create Draw Modal
+let drawModal = document.getElementById("draw-modal");
+
+function draw() {
+   drawModal.style.display = "block";
+};
+
+function closeDraw() {
+  drawModal.style.display = "none";
+  gameReset();
+}
+/*
+window.onclick = function(event) {
+  if (event.target == drawModal) {
+   drawModal.style.display = "none";
+   gameReset();
+  }
+}
+*/
