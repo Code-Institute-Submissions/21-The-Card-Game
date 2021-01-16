@@ -118,11 +118,13 @@ function checkScore() {
 
     if (playerScore === 21) {
         messageStatus.innerHTML = "You win! Congratulations <br>  You got 21!"; 
+        winTwentyOne();
     } else if (playerScore > 21) {
         messageStatus.innerHTML = "Bust! Better luck next time";
         bust();
     } else if (dealerScore === 21) {
         messageStatus.innerHTML = "Dealer got 21! Better luck next time";
+        dealerTwentyOne();
     } else if (dealerScore > 21) {
         messageStatus.innerHTML = "You Win! Dealer went bust";
         win();
@@ -227,7 +229,8 @@ function hold() {
 // Create gameOutcome function, win/lose/draw
 function gameOutcome() {
     if (dealerScore < 21 && dealerScore > 16 && dealerScore > playerScore) {
-        messageStatus.innerHTML = "Dealer wins! Better luck next time";       
+        messageStatus.innerHTML = "Dealer wins! Better luck next time";
+        dealerWin();       
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore < playerScore) {
         messageStatus.innerHTML = "You win! Congratulations";
         win();
