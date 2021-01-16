@@ -308,6 +308,68 @@ window.onclick = function(event) {
 };
 */
 
+//Create Dealer Win Modal
+let dealerWinModal = document.getElementById("dealer-win-modal");
+
+function dealerWin() {
+    dealerWinModal.style.display = "block";
+};
+
+function closeDealerWin() {
+  dealerWinModal.style.display = "none";
+  gameReset();
+}
+/*
+window.onclick = function(event) {
+  if (event.target == dealerWinModal) {
+   dealerWinOneModal.style.display = "none";
+   gameReset();
+  }
+}
+*/
+
+//Create Win 21 Modal
+let winTwentyOneModal = document.getElementById("win-twenty-one-modal");
+   
+function winTwentyOne() {
+    winTwentyOneModal.style.display = "block";
+};
+
+function closeWinTwentyOne() {
+  winTwentyOneModal.style.display = "none";
+  gameReset();
+}
+/*
+window.onclick = function(event) {
+  if (event.target == winTwentyOneModal) {
+   winTwentyOneModal.style.display = "none";
+   gameReset();
+  }
+}
+*/
+
+//Create Dealer 21 Modal
+let dealerTwentyOneModal = document.getElementById("dealer-twenty-one-modal");
+
+
+function dealerTwentyOne() {
+    dealerTwentyOneModal.style.display = "block";
+};
+
+function closeDealerTwentyOne() {
+  dealerTwentyOneModal.style.display = "none";
+  gameReset();
+}
+/*
+window.onclick = function(event) {
+  if (event.target == dealerTwentyOneModal) {
+   dealerTwentyOneModal.style.display = "none";
+   gameReset();
+  }
+}
+*/
+
+
 //Create Bust Modal
 let bustModal = document.getElementById("bust-modal");
 
