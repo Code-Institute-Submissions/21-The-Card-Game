@@ -187,17 +187,29 @@
     </div>
     <!--Win 21 Modal-->
     <div id="winTwentyOne-modal" class="modal">
-        <div id="you-winTwentyOne" class="modal-content">
+        <div id="you-winTwentyOne" class="modal-content game-outcome-modal">
             <div class="status text-bold">You Got 21</div>
             <div class="status-sub text-bold">Congratulations</div>
             <div class="status-sub text-bold">You Win!</div>
-            <button class="play-again" onclick="closeWin21()">Play Again</button>
+            <button class="play-again" onclick="closeWinTwentyOne()">Play Again</button>
         </div>
     </div>
     <!--Dealer Win Modal-->
-   
+    <div id="dealerWin-modal" class="modal">
+        <div id="dealerWin" class="modal-content game-outcome-modal">
+            <div class="status text-bold">Dealer Wins</div>
+            <div class="status-sub text-bold">Better Luck Next Time!</div>
+            <button class="play-again" onclick="closeDealerWin()">Play Again</button>
+        </div>
+    </div>
     <!--Dealer Win 21 Modal-->
-
+    <div id="dealerTwentyOne-modal" class="modal">
+        <div id="dealerTwentyOne" class="modal-content game-outcome-modal">
+            <div class="status text-bold">Dealer Got 21</div>
+            <div class="status-sub text-bold">Better Luck Next Time!</div>
+            <button class="play-again" onclick="dealerTwentyOne()">Play Again</button>
+        </div>
+    </div>
     <!--Bust Modal-->
     <div id="bust-modal" class="modal">
         <div id="bust" class="modal-content game-outcome-modal">
