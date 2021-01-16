@@ -8,9 +8,9 @@ statsBtn.addEventListener("click", displayStats);
 // Open stats modal 
 function displayStats() {
   statsModal.style.display = "block";
-};
+}
 
 // Stats modal close
 function closeStats(){
   statsModal.style.display = "none";
-};
+}
