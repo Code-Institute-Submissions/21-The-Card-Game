@@ -32,20 +32,20 @@
                 <button id="settings-button" class="btn">Settings</button>
                 <div id="settings-modal" class="modal">
                     <div id="modal-themes" class="modal-content">
-                        <h3 class="text-bold">Settings</h3>
+                        <h3 class="text-bold modal-heading">Settings</h3>
                         <br>
                         <h4 class="text-bold">Custom Themes:</h4>
                         <h5>Please select one:</h5>
                         <br>
                         <div class="theme-select">
                             <input type="radio" id="classic" name="theme" value="classic">
-                            <label class="custom-theme" for="classic">Classic Theme</label>
+                            <label class="custom-theme-label" for="classic">Classic Theme</label>
                             <br>
                             <input type="radio" id="beach" name="theme" value="beach">
-                            <label class="custom-theme" for="beach">Beach Theme</label>
+                            <label class="custom-theme-label" for="beach">Beach Theme</label>
                             <br>
                             <input type="radio" id="night" name="theme" value="night">
-                            <label class="custom-theme" for="night">Night Theme</label>
+                            <label class="custom-theme-label" for="night">Night Theme</label>
                             <br>
                         </div>
                         <span class="close text-bold" onclick="closeSettings()">&times;</span>
@@ -55,7 +55,7 @@
                 <button id="rules-button" class="btn">Rules</button>
                 <div id="rules-modal" class="modal">
                     <div id="modal-how-to-play" class="modal-content">
-                        <h3 class="text-bold">How To Play</h3>
+                        <h3 class="text-bold modal-heading">How To Play</h3>
                         <br>
                         <p>
                             The goal of 21 is to total your card values to 21 or as near to 21
@@ -104,11 +104,11 @@
                 <button id="stats-button" class="btn">Stats</button>
                 <div id="stats-modal" class="modal">
                     <div id="stats" class="modal-content">
-                        <h3 class="text-bold">Game Statistics</h3>
-                        <p class="text-bold">Games won with 21:</p>
-                        <p class="text-bold">Games won:</p>
-                        <p class="text-bold">Games lost:</p>
-                        <p class="text-bold">Games drawn:</p>
+                        <h3 class="text-bold modal-heading">Game Statistics</h3>
+                        <p class="text-bold stats">Games won with 21:</p>
+                        <p class="text-bold stats">Games won:</p>
+                        <p class="text-bold stats">Games lost:</p>
+                        <p class="text-bold stats">Games drawn:</p>
                         <span class="close text-bold" onclick="closeStats()">&times;</span>
                     </div>
                 </div>
@@ -181,7 +181,7 @@
     <div id="win-modal" class="modal">
         <div id="you-win" class="modal-content game-outcome-modal">
             <div class="status text-bold">Congratulations</div>
-            <div class="status text-bold">You Win!</div>
+            <div class="status-sub text-bold">You Win!</div>
             <button class="play-again" onclick="closeWin()">Play Again</button>
         </div>
     </div>
@@ -190,7 +190,7 @@
     <div id="bust-modal" class="modal">
         <div id="bust" class="modal-content game-outcome-modal">
             <div class="status text-bold">Bust!</div>
-            <div class="status text-bold">Better Luck Next Time!</div>
+            <div class="status-sub text-bold">Better Luck Next Time!</div>
             <button class="play-again" onclick="closeBust()">Play Again</button>
         </div>
     </div>
