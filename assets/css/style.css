@@ -288,14 +288,14 @@ h2 {
 
 /* Close X */
 .close {
-    color: #220202;
+    color: #fafad2;
     font-size: 2.8rem;
     text-align: center;
 }
 
 .close:hover,
 .close:focus {
-    color: #fff;
+    color: #220202;
     text-decoration: none;
     cursor: pointer;
 }
@@ -315,7 +315,7 @@ h2 {
 .play-again {
     font-size: 1.5rem;
     line-height: 2;
-    background-color: #ADA2DE;
+    background-color: #fafad2;
     color: #220202;
     border-radius: 1rem;
     width: 10rem;
