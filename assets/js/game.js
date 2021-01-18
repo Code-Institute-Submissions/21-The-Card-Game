@@ -145,6 +145,11 @@ function checkScore() {
 
     playerCardTotal.className += " score";
     playerCardTotal.innerText = playerScore;
+
+    document.getElementById("wins-twenty-one").innerHTML = winGamesTwentyOne;
+    document.getElementById("wins").innerHTML = winGames;
+    document.getElementById("losses").innerHTML = lostGames;
+    document.getElementById("draws").innerHTML = drawGames;
 }
 //checkScore();
 
@@ -251,6 +256,11 @@ function gameOutcome() {
         draw();
         drawGames++;
     }
+
+    document.getElementById("wins-twenty-one").innerHTML = winGamesTwentyOne;
+    document.getElementById("wins").innerHTML = winGames;
+    document.getElementById("losses").innerHTML = lostGames;
+    document.getElementById("draws").innerHTML = drawGames;
 }
 
 // Create reset function
