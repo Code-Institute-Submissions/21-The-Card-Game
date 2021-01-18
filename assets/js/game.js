@@ -261,6 +261,13 @@ function gameOutcome() {
     document.getElementById("wins").innerHTML = winGames;
     document.getElementById("losses").innerHTML = lostGames;
     document.getElementById("draws").innerHTML = drawGames;
+
+    console.log(winGamesTwentyOne);     //Check wingamesTwentyOne
+    console.log(winGames);              //Check wingames
+    console.log(lostGames);             //Check lostgames
+    console.log(drawGames);             //Check drawgames
+    
+    
 }
 
 // Create reset function
