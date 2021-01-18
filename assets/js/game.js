@@ -4,8 +4,8 @@ let playerHand = [];
 
 // win lose draw variables 
 let winGamesTwentyOne = 0;
-let winGames = 0;
-let lostGames = 0;
+let winGames = 0;           //increments by 2 sometimes
+let lostGames = 0;          //increments by 2 sometimes
 let drawGames = 0;
 
 // Create a Card object
@@ -126,18 +126,22 @@ function checkScore() {
         messageStatus.innerHTML = "You win! Congratulations <br>  You got 21!"; 
         winTwentyOne();
         winGamesTwentyOne++;
+        debugger
     } else if (playerScore > 21) {
         messageStatus.innerHTML = "Bust! Better luck next time";
         bust();
         lostGames++;
+        debugger
     } else if (dealerScore === 21) {
         messageStatus.innerHTML = "Dealer got 21! Better luck next time";
         dealerTwentyOne();
         lostGames++;
+        debugger
     } else if (dealerScore > 21) {
         messageStatus.innerHTML = "You Win! Dealer went bust";
         dealerBust();
-        winGames++;
+        winGames++;     //increments by 2 after hold???
+        debugger
     }
 
     dealerCardTotal.className += " score";
@@ -231,10 +235,11 @@ function hold() {
         renderCardDiv.innerHTML = '<div class="card-id">' + '' + dealerCard.name + '' + dealerCard.suit + '' + '</div>'+ '<div class="suit-card">' + dealerCard.suit + '</div>' + '<div class="card-id2">' + '' + dealerCard.name + '' + dealerCard.suit + '';
         document.getElementById("dealer-hand").appendChild(renderCardDiv);
         collapseDealerHand();
+        checkScore();
         setTimeout(hold, 1000);
     }
 
-    checkScore();
+    
     gameOutcome();
 
     hitButton.disabled = true;
@@ -247,15 +252,18 @@ function gameOutcome() {
     if (dealerScore < 21 && dealerScore > 16 && dealerScore > playerScore) {
         messageStatus.innerHTML = "Dealer wins! Better luck next time";
         dealerWin();   
-        lostGames++;     
+        lostGames++;    //increments by 2
+        debugger    
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore < playerScore) {
         messageStatus.innerHTML = "You win! Congratulations";
         win();
-         winGames++;
+         winGames++;    //increments by 2
+         debugger
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore === playerScore) {
         messageStatus.innerHTML = "It's a draw!"; 
-        draw();
+        draw();         //increments by 2
         drawGames++;
+        debugger
     }
 
     document.getElementById("wins-twenty-one").innerHTML = winGamesTwentyOne;
@@ -263,10 +271,10 @@ function gameOutcome() {
     document.getElementById("losses").innerHTML = lostGames;
     document.getElementById("draws").innerHTML = drawGames;
 
-    console.log(winGamesTwentyOne);     //Check wingamesTwentyOne
-    console.log(winGames);              //Check wingames
-    console.log(lostGames);             //Check lostgames
-    console.log(drawGames);             //Check drawgames
+    //console.log(winGamesTwentyOne);     //Check wingamesTwentyOne
+    //console.log(winGames);              //Check wingames
+    //console.log(lostGames);             //Check lostgames
+    //console.log(drawGames);             //Check drawgames
     
     
 }
