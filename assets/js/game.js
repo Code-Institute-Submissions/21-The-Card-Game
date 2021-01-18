@@ -161,6 +161,7 @@ let startGameButton = document.getElementById("start-game-button");
 startGameButton.addEventListener("click", startGame);
 
 function startGame() {
+    cardDeck = new Deck();
     shuffle(cardDeck);
     dealerCards();
     playerCards();
