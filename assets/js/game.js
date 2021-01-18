@@ -4,8 +4,8 @@ let playerHand = [];
 
 // win lose draw variables 
 let winGamesTwentyOne = 0;
-let winGames = 0;           //increments by 2 sometimes
-let lostGames = 0;          //increments by 2 sometimes
+let winGames = 0;           
+let lostGames = 0;          
 let drawGames = 0;
 
 // Create a Card object
@@ -126,22 +126,22 @@ function checkScore() {
         messageStatus.innerHTML = "You win! Congratulations <br>  You got 21!"; 
         winTwentyOne();
         winGamesTwentyOne++;
-        debugger
+        //debugger
     } else if (playerScore > 21) {
         messageStatus.innerHTML = "Bust! Better luck next time";
         bust();
         lostGames++;
-        debugger
+        //debugger
     } else if (dealerScore === 21) {
         messageStatus.innerHTML = "Dealer got 21! Better luck next time";
         dealerTwentyOne();
         lostGames++;
-        debugger
+        //debugger
     } else if (dealerScore > 21) {
         messageStatus.innerHTML = "You Win! Dealer went bust";
         dealerBust();
-        winGames++;     //increments by 2 after hold???
-        debugger
+        winGames++;    
+        //debugger
     }
 
     dealerCardTotal.className += " score";
@@ -234,13 +234,19 @@ function hold() {
         renderCardDiv.classList.add("card", dealerCard.color);
         renderCardDiv.innerHTML = '<div class="card-id">' + '' + dealerCard.name + '' + dealerCard.suit + '' + '</div>'+ '<div class="suit-card">' + dealerCard.suit + '</div>' + '<div class="card-id2">' + '' + dealerCard.name + '' + dealerCard.suit + '';
         document.getElementById("dealer-hand").appendChild(renderCardDiv);
+        
         collapseDealerHand();
         checkScore();
-        setTimeout(hold, 1000);
-    }
 
-    
-    gameOutcome();
+        if (dealerScore <= 16) {
+                setTimeout(hold, 1000);
+            } else {
+                gameOutcome();
+            }
+
+    } else {
+            gameOutcome();
+    }
 
     hitButton.disabled = true;
     holdButton.disabled = true;
@@ -252,18 +258,18 @@ function gameOutcome() {
     if (dealerScore < 21 && dealerScore > 16 && dealerScore > playerScore) {
         messageStatus.innerHTML = "Dealer wins! Better luck next time";
         dealerWin();   
-        lostGames++;    //increments by 2
-        debugger    
+        lostGames++;   
+        //debugger    
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore < playerScore) {
         messageStatus.innerHTML = "You win! Congratulations";
         win();
-         winGames++;    //increments by 2
-         debugger
+         winGames++;    
+         //debugger
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore === playerScore) {
         messageStatus.innerHTML = "It's a draw!"; 
-        draw();         //increments by 2
+        draw();         
         drawGames++;
-        debugger
+        //debugger
     }
 
     document.getElementById("wins-twenty-one").innerHTML = winGamesTwentyOne;
