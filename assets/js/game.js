@@ -2,6 +2,12 @@
 let dealerHand = [];
 let playerHand = [];
 
+// win lose draw variables 
+let winGamesTwentyOne = 0;
+let winGames = 0;
+let lostGames = 0;
+let drawGames = 0;
+
 // Create a Card object
 function Card(value, name, suit) {
 	this.value = value;
