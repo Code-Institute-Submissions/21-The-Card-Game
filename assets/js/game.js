@@ -125,15 +125,19 @@ function checkScore() {
     if (playerScore === 21) {
         messageStatus.innerHTML = "You win! Congratulations <br>  You got 21!"; 
         winTwentyOne();
+        winGamesTwentyOne++;
     } else if (playerScore > 21) {
         messageStatus.innerHTML = "Bust! Better luck next time";
         bust();
+        lostGames++;
     } else if (dealerScore === 21) {
         messageStatus.innerHTML = "Dealer got 21! Better luck next time";
         dealerTwentyOne();
+        lostGames++;
     } else if (dealerScore > 21) {
         messageStatus.innerHTML = "You Win! Dealer went bust";
         dealerBust();
+        winGames++;
     }
 
     dealerCardTotal.className += " score";
@@ -236,13 +240,16 @@ function hold() {
 function gameOutcome() {
     if (dealerScore < 21 && dealerScore > 16 && dealerScore > playerScore) {
         messageStatus.innerHTML = "Dealer wins! Better luck next time";
-        dealerWin();       
+        dealerWin();   
+        lostGames++;     
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore < playerScore) {
         messageStatus.innerHTML = "You win! Congratulations";
         win();
+         winGames++;
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore === playerScore) {
         messageStatus.innerHTML = "It's a draw!"; 
         draw();
+        drawGames++;
     }
 }
 
