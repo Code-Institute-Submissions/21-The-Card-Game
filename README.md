@@ -90,38 +90,79 @@ Providing background music and sound effects for the game was not deemed to be o
 
 ### Interaction Design: 
 
-
-
+User interactions will be intuitive and allow for easy game play. 
+The game play centres around 3 clearly labelled buttons at the bottom of the screen for easy access when playing. One button to start the game, one button to request another card i.e. hit and one button when the player is happy with their hand and wants to hold.
 
 ### Information Design: 
 
+Will allow for the prioritisation of the information to be displayed in a clear and concise manner to make it as easy as possible for the user to read and to quickly find the information that is most relevant to their needs.
 
+The 4 game options buttons are displayed above the game play area. These allow the user to change the theme, read the rules, check their game stats using modals The fourth button allows users to reset a game.
+
+Modal pop ups used to deliver information about the game outcome and inform the player if they win, lose or draw.
 
 # Skeleton
 
+Wireframes for Mobile, Tablet & Desktop
 
-
+ADD LINKS...........
 
 ## Difference between final design and original wireframes:
 
+### Logo:
+In the original wireframes the logo/heading was 21 Card Game this was changed to be 21 The Card Game for better readability.
+
+### Player Heading:
+The player heading has moved to above the player hand as it gives better structure to the game play area and maintains the same hierarchy as the dealer heading/hand layout.
+
+###Win/Lose/Draw Modals:
+The win, lose and draw modals have been expanded to now include more options to give the player more feedback as to how they won or lost the game. Rather than the 3 modals outlined in the wireframes we now have a modal for each of the following game outcomes:
+*	Player wins by getting 21
+*	Dealer gets 21, player loses
+*	Player wins
+*	Dealer wins, player loses
+*	Player went bust, dealer wins
+*	Dealer went bust, player wins
+*	A draw
+
+### Deal Button:
+The deal button in the original wireframes has been renamed to start this gives the user a clearer understanding of the intent of the button.
 
 
 # Surface
 
 #### Typography:
 
+Montserrat Subrayada font is used for the main logo as it’s unique underlined style lends well to being used as a heading/logo which provides immediate impact.
+
+Lora is an well-balanced contemporary serif with roots in calligraphy which offers a great contrast to the graphic heading of Montserrat Subrayada and allows for easy reading of the text content of the Website.
+
 
 #### Colour scheme: 
 
+##### Classic Theme:
+The classic green colour scheme is a nod to the green felt used in casino tables where the game would often be played. The colours #c9de9 & #398235 are used to create a gradient from top to bottom to soften the scheme and provide visual interest rather than using one solid colour.
 
-#### Images: 
+The accent colour ……… is used for the buttons…………….
+
+Modals…………..
+
+The font colour used is ……………….which was checked for contrast against the background colours using the Webaim contrast checker.
+
+##### Beach Theme:
+The beach theme uses a beach image as the background. The beach image is given a slight blur effect to ensure the game contents, cards, score etc are still the main focus while providing a tranquil background. All other colours are the same as for the classic theme.
 
 
-#### Media:
+##### Night Theme:
 
+The night theme uses an image of the night sky as its background. This may be a more suitable background for those that prefer a dark background or like to play at night.
+
+The font colour was changed to achieve good contrast.
 
 
 # Features 
+
+* Responsive on all devices.
 
 
 
@@ -129,9 +170,10 @@ Providing background music and sound effects for the game was not deemed to be o
 
 ## Future Features
 
-*	
-*   
-*	
+* Difficulty level added where the second dealer card is not revealed until after the player decides to hold.
+* Implement a betting system.
+* Background music and sound effects.
+
 
 
 
