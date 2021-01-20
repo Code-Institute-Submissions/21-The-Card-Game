@@ -20,54 +20,71 @@ Information gathered from Wikipedia. Read More here
 
 # Strategy
 
-## Business Objectives
+## Developer Objectives
 
-Create an ......
+To grow my skills as a developer and create a  simple easy to use and enjoyable interactive game. Develop the project from its initial concept to the final finished product. To utilise and expand my skills in Javascript, HTML & CSS.
 
 ### Target Audience:
 
-* 
-* 
-* 
+* General public.
+* People looking for a fun distraction while taking a break from their day.
+* Commuters who like to play games to pass the time on their journey
 
 
 ## User Stories
 
-1.	
-2.	
-3.	
-4.	
-	
-	
+1.	As a user I want to be able to easily understand the rules of the game so I can get started quickly.
+2.	As a user I want the game play to be intuitive so I don’t have to spend much time learning how to play.
+3.	As a user I want a fun and interesting game so that I can enjoy playing it when I have some free time.
+4.	As a user I want to know if I win, lose or draw a game so that I can keep playing and improve.
+5.	As a user I want to know how many games I win/lose/draw so that I can track how well I’m doing.
+6.	As a user I want to be able to reset a game so that I can start again.
+7.	As a user I want to have a visually appealing interface so that I will enjoy playing the game for longer.
+8.	As a user I want a game I can play on all my devices so that I can play while on the go.
 
+## Site Owner Stories
 
-## Business Owner Stories
-
-1.	
-2.	
-3.  
+1.	As a site owner I want to present my work in a professional, creative and visually appealing way.
+2.	As a site owner I want to provide a good user experience for my users, so that they want to come back.
+3.	As a site owner I want to present a game users can start playing quickly and intuitively so that they don’t have to make a big time commitment in learning how to play.
+4.	As a site owner I want to provide feedback to my users on how they are doing.
+5.	As a site owner I want to give users options so they can style the game to their liking.
+ 
 	
 
 # Scope
+This will be a Minimal Viable Product containing the most important core content required.
 
-
-
- 
 #### Functional Specifications: 
 
-* 
-* 
-* 
-* 
+*	Rules 
+*	Game statistics
+*	Reset
+*	Start game
+*	Settings
+
+*	Win/Lose/Draw game outcomes
+*	Background music and sound effects
+
 
 #### Content Requirements:
 
-* 
-* 
-* 
-* 
+*	Logo.
+*	Brief description of how to play.
+*	Option to change theme.
+*	Reset button.
+*	Game stats for tracking win/lose/draw.
+*	Dealer heading
+*	Display dealer hand.
+*	Display card total for dealer.
+*	Player heading.
+*	Display player hand.
+*	Display card total for player.
+*	Display game outcomes – win/lose/draw.
+*	Game play buttons.
 
- 
+#### Strategy/Scope Trade Off
+Providing background music and sound effects for the game was not deemed to be of high importance at this time. There is a thin line between irritating the user and enhancing the user experience using music and so will not be included in the initial release of the website.
 
 # Structure
 
