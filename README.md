@@ -3,14 +3,18 @@
 
 # Project Summary
 
-This website aims to create ....... 
-using a mobile first design method  
-ensuring the site is fully responsive across all devices. 
-The project will further the developers knowledge of Javascript and it's implementation.
+This website aims to demonstrate my skills of Javascript, HTML & CSS as learned from the Code Institute Full Stack Software Development course. In order to do so I will create my version of the card game Twenty-One. The project will be created using a mobile first design strategy and will ensure the site is fully responsive across all devices. The project will further the developers knowledge of Javascript and it's implementation.
 
 # Contents
 
 
+# The origin of the card game Twenty-One
+
+Twenty-One, formerly known as Vingt-Un in Britain, France and America, is the name given to a family of popular card games, the progenitor of which is recorded in Spain in the early 17th century. The game is first mentioned by name as early as 1611 in a Spanish dictionary where, under the entry for "card" (carta), it mentions the game of Ventiuno ("twenty-one")
+
+Twenty-One rose to prominence in France in the 18th century and spread from there to Germany and Britain from whence it crossed to America. Known initially as Vingt-Un in all those countries, it developed into Pontoon in Britain after the First World War and Blackjack in Canada and the United States in the late 19th century, where the legalisation of gambling increased its popularity.
+
+Information gathered from Wikipedia. Read More here
 
 # User Experience (UX) 
 
