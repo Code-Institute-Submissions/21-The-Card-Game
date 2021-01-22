@@ -8,6 +8,7 @@ let background = document.getElementById("background");
 let logo = document.getElementById("logo");
 let dealerHeading = document.getElementById("dealer-heading");
 let playerHeading = document.getElementById("player-heading");
+let gameBoardArea = document.getElementById("game-board-area");
 
 // Set event listeners
 settingsBtn.addEventListener("click", displaySettings);
@@ -36,6 +37,8 @@ function classic() {
     dealerCardTotal.classList.remove("night-theme");
     playerCardTotal.className += " classic-theme";
     playerCardTotal.classList.remove("night-theme");
+    gameBoardArea.className += " classic-border";
+    gameBoardArea.classList.remove("night-border");
 }
 
 // Create function for beach theme
@@ -49,6 +52,8 @@ function beach() {
     dealerCardTotal.classList.remove("night-theme");
     playerCardTotal.className += " classic-theme";
     playerCardTotal.classList.remove("night-theme");
+    gameBoardArea.className += " classic-border";
+    gameBoardArea.classList.remove("night-border");
 }
 
 // Create function for night theme
@@ -62,5 +67,7 @@ function night() {
     dealerCardTotal.classList.remove("classic-theme");
     playerCardTotal.className += " night-theme";
     playerCardTotal.classList.remove("classic-theme");
+    gameBoardArea.className += " night-border";
+    gameBoardArea.classList.remove("classic-border");
 }
 
