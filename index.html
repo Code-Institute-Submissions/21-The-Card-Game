@@ -112,7 +112,16 @@
                 </div>
                 
                 <button id="reset-button" class="btn game-options">Reset</button>
-                
+                <div id="reset-modal" class="modal">
+                    <div id="reset" class="modal-content">
+                        <div id="reset-alert">Are you sure you want to quit the current game and start a new one?</div>
+                        <div class="container reset-container">
+                        <button id="no-button" class="btn" onclick="closeAlert()">No</button>
+                        <button id="yes-button" class="btn" onclick="closeAlert()">Yes</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div id="game-board-area" class="container classic-border">
