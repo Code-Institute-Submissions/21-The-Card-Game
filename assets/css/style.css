@@ -106,7 +106,7 @@ p {
 
 /*------------Game Area----*/
 #game-area {
-    padding-top: 5rem;
+    padding-top: 3.5rem;
 }
 
 .classic-border {
@@ -122,7 +122,7 @@ p {
     padding: 1rem;
     height: 40rem;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: .8rem;
 }
 
 .dealer-container {
@@ -311,7 +311,7 @@ p {
     border-radius: 1rem;
     margin: 20% auto;
     padding: 2rem;
-    width: 80%;
+    width: 95%;
     box-shadow: 0rem 1rem 2rem 0rem #060906;
     border: none;
     color: #fafad2;
@@ -357,4 +357,95 @@ p {
     border-radius: 1rem;
     width: 10rem;
     margin: 0 auto;
+}
+
+/*--------------------Media Queries---------------------*/
+/* Optimised for widths from 320px
+/*-- Small Screen--*/
+@media only screen and (min-width: 375px) {
+
+    #logo {
+        font-size: 3.5rem;
+    }
+    
+    #game-area {
+        padding-top: 7rem;
+    }
+
+    #game-board-area {
+        margin-bottom: 3rem;
+        margin-top: 5rem;
+    }
+
+    .player-container {
+        top: 35rem;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+}
+
+/*-- Medium Screen--*/
+
+@media only screen and (min-width: 768px)  {
+    #logo {
+        font-size: 5rem;
+    }
+
+    #game-area {
+        max-width: 70%;
+        padding-top: 12rem;
+    }
+
+    #game-board-area {
+        height: 50rem;  
+    }
+
+    .player-container {
+        top: 43rem;
+    }
+
+    #game-play-buttons {
+        margin-top: 5rem;
+    }
+
+    .modal-content {
+        width: 60%;
+    }
+
+    .card {
+        width: 7rem;
+        height: 10rem;
+    }
+
+    .card-id2 {
+        top: 2rem;
+    }
+
+    .game-outcome-modal {
+        margin: 20% auto;
+    }
+
+}
+
+/*-- Large Screen--*/
+@media only screen and (min-width: 992px)  {
+    #game-area {
+        padding-top: 15rem;
+    }
+
+    #game-board-area {
+        height: 40rem;  
+        margin-top: 5rem;
+    }
+
+    .card {
+        width: 7rem;
+        height: 10rem;
+    }
+
+    .card-id2 {
+        top: 2rem;
+    }
 }
