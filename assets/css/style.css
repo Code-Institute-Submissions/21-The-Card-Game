@@ -212,6 +212,8 @@ p {
     box-shadow: 0rem 1rem 1.5rem 0rem #060906;
 }
 
+#no-button:hover,
+#yes-button:hover,
 .game-options:hover,
 .game-button:hover {
     color: #fafad2;
@@ -225,6 +227,19 @@ p {
 #game-play-buttons {
     display: flex;
     justify-content: space-around;
+}
+
+/*------------Reset Alert----*/
+#reset-alert {
+    font-size: 1.6rem;
+}
+
+.reset-container {
+    text-align: center;
+}
+
+#no-button {
+    margin-right: 1.5rem;
 }
 
 /*------------Cards----*/
