@@ -269,7 +269,7 @@ p {
     margin: 1rem auto;
 }
 
-/*------------Modals----*/
+/*------------Modal----*/
 .modal {
     display: none; 
     position: fixed; 
@@ -290,12 +290,11 @@ p {
     margin: 20% auto;
     padding: 2rem;
     width: 80%;
-    box-shadow: 0px 8px 20px 0px #220202;
+    box-shadow: 0rem 1rem 2rem 0rem #060906;
     border: none;
     color: #fafad2;
     }
 
-/*------------Close X----*/
 .close {
     color: #fafad2;
     font-size: 2.8rem;
