@@ -113,7 +113,7 @@ console.log(addCardValues(playerHand));         //Check Card values for player H
 let dealerScore;
 let playerScore;
 
-let messageStatus = document.getElementById("message-status");
+//let messageStatus = document.getElementById("message-status");
 
 let dealerCardTotal = document.getElementById("dealer-card-total");
 let playerCardTotal = document.getElementById("player-card-total");
@@ -123,22 +123,22 @@ function checkScore() {
     playerScore = addCardValues(playerHand);
 
     if (playerScore === 21) {
-        messageStatus.innerHTML = "You win! Congratulations <br>  You got 21!"; 
+        //messageStatus.innerHTML = "You win! Congratulations <br>  You got 21!"; 
         winTwentyOne();
         winGamesTwentyOne++;
         //debugger
     } else if (playerScore > 21) {
-        messageStatus.innerHTML = "Bust! Better luck next time";
+        //messageStatus.innerHTML = "Bust! Better luck next time";
         bust();
         lostGames++;
         //debugger
     } else if (dealerScore === 21) {
-        messageStatus.innerHTML = "Dealer got 21! Better luck next time";
+        //messageStatus.innerHTML = "Dealer got 21! Better luck next time";
         dealerTwentyOne();
         lostGames++;
         //debugger
     } else if (dealerScore > 21) {
-        messageStatus.innerHTML = "You Win! Dealer went bust";
+        //messageStatus.innerHTML = "You Win! Dealer went bust";
         dealerBust();
         winGames++;    
         //debugger
@@ -256,17 +256,17 @@ function hold() {
 // Create gameOutcome function, win/lose/draw
 function gameOutcome() {
     if (dealerScore < 21 && dealerScore > 16 && dealerScore > playerScore) {
-        messageStatus.innerHTML = "Dealer wins! Better luck next time";
+        //messageStatus.innerHTML = "Dealer wins! Better luck next time";
         dealerWin();   
         lostGames++;   
         //debugger    
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore < playerScore) {
-        messageStatus.innerHTML = "You win! Congratulations";
+        //messageStatus.innerHTML = "You win! Congratulations";
         win();
          winGames++;    
          //debugger
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore === playerScore) {
-        messageStatus.innerHTML = "It's a draw!"; 
+        //messageStatus.innerHTML = "It's a draw!"; 
         draw();         
         drawGames++;
         //debugger
@@ -318,7 +318,7 @@ function gameReset() {
     
     dealerCardTotal.innerText = " ";
     playerCardTotal.innerText = " ";
-    messageStatus.innerText = " ";
+    //messageStatus.innerText = " ";
     
     let removeDealerCards = document.getElementById("dealer-hand");
     while (removeDealerCards.firstChild) { 
