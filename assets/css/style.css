@@ -364,11 +364,6 @@ p {
 /* Optimised for widths from 320px
 /*-- Small Screen--*/
 @media only screen and (min-width: 375px) {
-
-    #logo {
-        font-size: 3.5rem;
-    }
-    
     #game-area {
         padding-top: 7rem;
     }
