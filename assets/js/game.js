@@ -285,11 +285,30 @@ function gameOutcome() {
     
 }
 
-// Create reset function
-// Set event listener for reset button
-let resetButton = document.getElementById("reset-button");
-resetButton.addEventListener("click", gameReset);
 
+// Set up Reset Alert
+let resetButton = document.getElementById("reset-button");
+let resetModal = document.getElementById("reset-modal");
+//resetButton.addEventListener("click", gameReset);
+
+// Set event listener for yes button
+let yesButton = document.getElementById("yes-button");
+yesButton.addEventListener("click", gameReset);
+
+// Add event listener for reset button
+resetButton.addEventListener("click", displayAlert);
+
+// Open  reset alert 
+function displayAlert() {
+  resetModal.style.display = "block";
+}
+
+// Close reset alert
+function closeAlert(){
+  resetModal.style.display = "none";
+}
+
+// Create reset function
 function gameReset() {
     dealerHand = [];
     playerHand = [];
