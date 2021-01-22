@@ -116,7 +116,6 @@ p {
     height: 40rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    text-align: center;
 }
 
 .dealer-container {
@@ -230,7 +229,8 @@ p {
     background-color: #FEF3EC;
 	margin-right: .5rem;
 	margin-bottom: .5rem;
-	border-radius: .5rem;
+    border-radius: .5rem;
+    text-align: center;
 }
 
 .card-id {
