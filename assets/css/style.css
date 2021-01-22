@@ -69,7 +69,7 @@ h2 {
 
 .modal-heading {
     font-size: 2.8rem;
-    color: #C46D5E;
+    color: #E27D60;
     text-align: center;
     padding-bottom: 1.5rem;
 }
@@ -192,8 +192,8 @@ p {
 
  .btn {
     font-size: 1.5rem;
-    background-color: #C46D5E;
-    color:#220202;
+    background-color: #E27D60;
+    color:#120202;
     border-radius: 1rem;
     margin-top: 1rem;
     padding: .5rem;
@@ -201,13 +201,18 @@ p {
     width: 7rem;
 }
 
-.btn .btn:hover {
-    opacity: 0.5;
+.game-button,
+.game-button:hover {
+    box-shadow: 0rem 1rem 1.5rem 0rem #060906;
 }
 
-.btn .btn-link:hover {
-    color: #747B83;
-    text-decoration: none;
+.game-options:hover,
+.game-button:hover {
+    color: #fafad2;
+}
+
+.game-button:disabled {
+    pointer-events: none;
 }
 
 #game-options-buttons,
