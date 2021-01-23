@@ -13,21 +13,15 @@
 .bg-color-classic {
     background-image: linear-gradient(to bottom, #c9de96 , #398235);
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
 }
 
 .bg-color-beach {
     background: #ffddcd url("../images/beach.png") no-repeat center/cover;
-    width: 100%;
-    height: 100%;
     filter: blur(.1rem);
 }
 
 .bg-color-night {
-    background: rgb(40, 40, 117) url("../images/night.png") no-repeat center/cover;
-    width: 100%;
-    height: 100%;
+    background: rgb(40, 40, 117) url("../images/night.png") no-repeat center/cover;   
 }
 
 #background {
@@ -36,6 +30,8 @@
     right: 0;
     z-index: 1;
     display: block;
+    width: 100%;
+    min-height: 100%;
 }
 
 #content {
@@ -108,7 +104,6 @@ p {
 /*------------Game Area----*/
 #game-area {
     padding-top: 3.5rem;
-    max-height: 100vh;
 }
 
 .classic-border {
@@ -366,17 +361,8 @@ p {
 /* Optimised for widths from 320px
 /*-- Small Screen--*/
 @media only screen and (min-width: 375px) {
-    #game-area {
-        padding-top: 7rem;
-    }
-
-    #game-board-area {
-        margin-bottom: 3rem;
-        margin-top: 5rem;
-    }
-
     .player-container {
-        top: 35rem;
+        top: 30rem;
     }
 
     .modal-content {
