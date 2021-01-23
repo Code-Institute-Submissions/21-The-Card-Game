@@ -16,12 +16,14 @@
 }
 
 .bg-color-beach {
-    background: #ffddcd url("../images/beach.png") no-repeat center/cover;
+    background: #ffddcd url("../images/beach.png") no-repeat center center;
+    background-size: cover;
     filter: blur(.1rem);
 }
 
 .bg-color-night {
-    background: rgb(40, 40, 117) url("../images/night.png") no-repeat center/cover;   
+    background: #120202 url("../images/night.png") no-repeat center center;   
+    
 }
 
 #background {
