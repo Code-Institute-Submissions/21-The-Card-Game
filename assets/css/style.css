@@ -55,7 +55,7 @@
 
 /*------------Headings/Paragraphs----*/
 .classic-theme {
-    color: #2A2F3C;
+    color: #120202;
 }
 
 .night-theme {
@@ -110,7 +110,7 @@ p {
 }
 
 .classic-border {
-    border: .1rem solid #2A2F3C;
+    border: .1rem solid #120202;
 }
 
 .night-border {
