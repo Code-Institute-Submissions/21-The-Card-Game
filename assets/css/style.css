@@ -106,6 +106,7 @@ p {
 /*------------Game Area----*/
 #game-area {
     padding-top: 3.5rem;
+    min-height: 80%;
 }
 
 .classic-border {
