@@ -14,7 +14,7 @@ Twenty-One, formerly known as Vingt-Un in Britain, France and America, is the na
 
 Twenty-One rose to prominence in France in the 18th century and spread from there to Germany and Britain from whence it crossed to America. Known initially as Vingt-Un in all those countries, it developed into Pontoon in Britain after the First World War and Blackjack in Canada and the United States in the late 19th century, where the legalisation of gambling increased its popularity.
 
-Information gathered from Wikipedia. Read More here
+Information gathered from Wikipedia. [Read More here](https://en.wikipedia.org/wiki/Twenty-One_(card_game))
 
 # User Experience (UX) 
 
@@ -287,7 +287,7 @@ Card border: #3D0D0D
 ## Lighthouse from Chrome Dev Tools Testing:
 
 
-## Links & Buttons Testing:
+## Buttons Testing:
 
 
 
@@ -314,7 +314,10 @@ Card border: #3D0D0D
 
 
 
-## Implementation Issues/Solutions:
+## Implementation 
+
+
+## Issues/Solutions
 		
 
 
@@ -374,6 +377,8 @@ Anna Greaves How to Approach Writing Your README File webinar.
 ## Content
 
 All text content of the website is written by myself.
+
+The origin of the card game Twenty-One section of README.md is extracted from [Wikipedia](https://en.wikipedia.org/wiki/Twenty-One_(card_game))
 
 ## Media
 Beach Image credit: Photo by [Fezbot2000](https://unsplash.com/@fezbot2000?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
