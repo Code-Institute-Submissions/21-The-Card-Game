@@ -358,16 +358,37 @@ Open terminal:
 
 ## Resources
 
+[Code Institute](https://codeinstitute.net/) course material and mini projects form the main resource for this project.
+
+[Bootstrap Documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - General resource.
+
+[W3Schools](https://www.w3schools.com/) - General resource.
+
+[MDN web docs](https://developer.mozilla.org/en-US/) - General resource.
+
+[CSS Tricks](https://css-tricks.com/) - General resource.
+
+Anna Greaves How to Approach Writing Your README File webinar.
+
 
 ## Content
 
-
+All text content of the website is written by myself.
 
 ## Media
+Beach Image credit: Photo by [Fezbot2000](https://unsplash.com/@fezbot2000?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+Night Sky Image credit: Photo by [Wil Stewart](https://unsplash.com/@wilstewart3?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 
 
 ## Acknowledgements
+
+My mentor @spence_mentor for great support and positivity throughout.
+
+All at Code Institute and Tutor support.
+
+The Slack Community for their ever present knowledge.
 
 
 ##  Disclaimer
