@@ -103,17 +103,23 @@ Modal pop ups used to deliver information about the game outcome and inform the 
 
 # Skeleton
 
-Wireframes for Mobile, Tablet & Desktop
+Wireframes:
 
-ADD LINKS...........
+[Mobile](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/wireframes/21-card-game-wf-mobile.pdf)
+ 
+[Tablet](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/wireframes/21-card-game-wf-tablet.pdf) 
+ 
+[Desktop](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/wireframes/21-card-game-wf-desktop.pdf)
+
+
 
 ## Difference between final design and original wireframes:
 
 ### Logo:
 In the original wireframes the logo/heading was 21 Card Game this was changed to be 21 The Card Game for better readability.
 
-### Player Heading:
-The player heading has moved to above the player hand as it gives better structure to the game play area and maintains the same hierarchy as the dealer heading/hand layout.
+### Player Heading & Score:
+The player heading and score has moved to above the player hand as it gives better structure to the game play area and maintains the same hierarchy as the dealer heading/hand layout.
 
 ### Win/Lose/Draw Modals:
 The win, lose and draw modals have been expanded to now include more options to give the player more feedback as to how they won or lost the game. Rather than the 3 modals outlined in the wireframes we now have a modal for each of the following game outcomes:
@@ -128,6 +134,11 @@ The win, lose and draw modals have been expanded to now include more options to 
 ### Deal Button:
 The deal button in the original wireframes has been renamed to start, this gives the user a clearer understanding of the intent of the button.
 
+### Game Board Area Border:
+A border was added to the game board area to define the space where the game play takes place.
+
+### Game Stats:
+No of wins by getting 21 was added to the game stats window as a way of tracking how many times a user gets the coveted 21 score from their hand.
 
 # Surface
 
