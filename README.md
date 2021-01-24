@@ -115,7 +115,7 @@ In the original wireframes the logo/heading was 21 Card Game this was changed to
 ### Player Heading:
 The player heading has moved to above the player hand as it gives better structure to the game play area and maintains the same hierarchy as the dealer heading/hand layout.
 
-###Win/Lose/Draw Modals:
+### Win/Lose/Draw Modals:
 The win, lose and draw modals have been expanded to now include more options to give the player more feedback as to how they won or lost the game. Rather than the 3 modals outlined in the wireframes we now have a modal for each of the following game outcomes:
 *	Player wins by getting 21
 *	Dealer gets 21, player loses
