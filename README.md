@@ -234,8 +234,48 @@ Card border: #3D0D0D
 * Add background music and sound effects.
 
 
-
 # Technologies Used
+[Html](https://www.w3schools.com/html/html_intro.asp) - Hyper Text Markup Language, used for creating the website.
+
+[Css](https://www.w3schools.com/css/) - Cascading Style Sheet, used for styling the website.
+
+[Javascript](https://www.javascript.com) – Used for providing functionality to the game play and it’s interactive features
+
+[Bootstrap](https://getbootstrap.com) - Bootstrap grid system.
+
+[Google Fonts](https://fonts.google.com) - The 2 fonts used throughout the website are from Google fonts.
+
+[Balsamiq](https://balsamiq.com) – Used for creating the wireframes.
+
+[Git](https://git-scm.com/) - Used for version control.
+
+[GitHub](https://github.com) - Used to store the project repository.
+
+[Gitpod IDE](https://www.gitpod.io/) - Development environment where the site was built.
+
+[GitHub Pages](https://pages.github.com/) - Where the live site is deployed/hosted.
+
+[Gimp 2.1](https://www.gimp.org/) - Used for editing, scaling images and creating a favicon.
+
+[Tiny png](https://tinypng.com) - Used for compressing images.
+
+[Webaim contrast checker](https://webaim.org/resources/contrastchecker/) - Used to check the contrast between the text font and background colours.
+
+[Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools) - Used throughout the development of the website to quickly see changes, find problems and debug. Also used to view website in different device views.
+
+[Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome Dev Tools.
+
+[AutoPrefixer](https://autoprefixer.github.io/) - Used to add vendor prefixes onto the CSS code to ensure compatibility with various browsers.
+
+[W3C HTML validator](https://validator.w3.org/) - Used to validate code.
+
+[W3C CSS validator](https://jigsaw.w3.org/css-validator/) - Used to validate code.
+
+[JSHint](https://jshint.com/) – Used to validate Javascript code
+
+[Coolors](https://coolors.co/) - Used for selecting complimentary colour palettes.
+
+[Unsplash](https://unsplash.com/) – Used for finding background images.
 
 
 # Testing
