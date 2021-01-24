@@ -188,18 +188,50 @@ Card border: #3D0D0D
 
 # Features 
 
-* Responsive on all devices.
+*	Responsive.
 
+*	Game Statistics button for user to check how many games they’ve won/lost.
 
+*	Reset button so the user can reset a game at any stage, this opens an alert pop up to ask the user if they are sure they want to quit the current game and start again.
 
+*	Rules button to display the rules of the game.
+
+*	Settings button for the user to be able to choose between 3 different backgrounds for the game – Classic, Beach, Night.
+
+*	Game board area where the game play happens.
+
+*	Dealer heading for the dealer area.
+
+*	Dealer card value total display.
+
+*	Dealer area where the dealers cards are displayed.
+
+*	Player heading for the player area.
+
+*	Player card total to display the total of the players cards.
+
+*	Player area where the players cards are displayed.
+
+*	Start button to start the game.
+
+*	Hit button for the user to draw another card.
+
+*	Hold button for the user when they are satisfied with their current hand.
+
+*	Game outcome modals. Modal windows are opened for each of the different game outcomes to tell the user how they did in the game.
+
+*	Collapse cards down when 4 cards or more in a hand.
+
+*	Game play buttons at the bottom of the screen have been given a shadow effect to make them stand out as they are the buttons most used while playing the game.
+
+*	Highlight buttons on hover.
 
 
 ## Future Features
 
 * Difficulty level added where the second dealer card is not revealed until after the player decides to hold.
 * Implement a betting system.
-* Background music and sound effects.
-
+* Add background music and sound effects.
 
 
 
@@ -216,10 +248,6 @@ Card border: #3D0D0D
 
 
 ## Links & Buttons Testing:
-
-
-
-## Form Testing: ?????
 
 
 
