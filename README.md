@@ -126,7 +126,7 @@ The win, lose and draw modals have been expanded to now include more options to 
 *	A draw
 
 ### Deal Button:
-The deal button in the original wireframes has been renamed to start this gives the user a clearer understanding of the intent of the button.
+The deal button in the original wireframes has been renamed to start, this gives the user a clearer understanding of the intent of the button.
 
 
 # Surface
@@ -141,23 +141,42 @@ Lora is an well-balanced contemporary serif with roots in calligraphy which offe
 #### Colour scheme: 
 
 ##### Classic Theme:
-The classic green colour scheme is a nod to the green felt used in casino tables where the game would often be played. The colours #c9de9 & #398235 are used to create a gradient from top to bottom to soften the scheme and provide visual interest rather than using one solid colour.
+![]()
+The classic green colour scheme is a nod to the green felt used in casino tables where the game would often be played. The colours #c9de9 & #398235 are used to create a light to dark gradient from top to bottom to soften the scheme and provide visual interest rather than using one solid colour.
 
-The accent colour ……… is used for the buttons…………….
-
-Modals…………..
-
-The font colour used is ……………….which was checked for contrast against the background colours using the Webaim contrast checker.
+![]()
+The font colour used is #120202 which was checked for contrast against the background colours using the Webaim contrast checker. This same colour is also used for the border around the game board area.
 
 ##### Beach Theme:
-The beach theme uses a beach image as the background. The beach image is given a slight blur effect to ensure the game contents, cards, score etc are still the main focus while providing a tranquil background. All other colours are the same as for the classic theme.
+![]()
+The beach theme uses a beach image as the background. The change of colours from the sea to the sand in the image also echoes the gradient effect of the classic theme. The beach image is given a slight blur effect to ensure the game contents, cards, score etc are still the main focus while providing a tranquil background. All other colours are the same as for the classic theme.
 
 
 ##### Night Theme:
+![]()
+The night theme uses an image of the night sky as its background. This particular image was chosen as it also echoes the gradient effect first created in the classic theme, with the changing colour of the night sky from top to bottom. This may be a more suitable background for those that prefer a dark background or like to play at night.
 
-The night theme uses an image of the night sky as its background. This may be a more suitable background for those that prefer a dark background or like to play at night.
+![]()
+The font colour was changed to #D6D6D6 and was chosen to give sufficient contrast with the backdrop without being too bright. The border colour of the game board area is also set to this colour.
 
-The font colour was changed to achieve good contrast.
+##### Accent Colours & Modal Windows
+![]()
+The accent colour #E27D60 is used for all the buttons and the headings in the modal pop ups.  This colour was chosen as it works well in contrast to the backgrounds of the three different themes.
+
+Modals were created with a dark background of rgba(06, 09, 06, 0.761) which includes a slight transparency to still feel connected to the game/background behind. 
+
+The font colour used in the modals with text content is #FAFAD2, this is also the colour of the play again button in the game outcome modals.
+
+##### Cards
+![]()
+Card background: #FEF3EC
+The white of the cards was chosen as the best contrast to the backgrounds used while also not being too contrasting.
+
+Red cards: #CE070E
+
+Black cards: #120202
+
+Card border: #3D0D0D
 
 
 # Features 
