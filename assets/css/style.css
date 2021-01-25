@@ -457,3 +457,48 @@ p {
         margin-top: 3rem;
     }
 }
+
+/*-- Extra Large Screen--*/
+@media only screen and (min-width: 1400px)  {
+    #logo {
+    font-size: 6rem;
+    }
+    
+    #game-area {
+        padding-top: 9rem;
+        max-width: 60%;
+    }
+
+    #game-board-area {
+        height: 42rem;
+        margin-bottom: 2rem;  
+    }
+
+    .dealer-container {
+        width: 45%;
+    }
+
+    .player-container {
+        width: 45%;
+        top: 40rem;
+    }
+
+    .game-options,
+    .game-button {
+        flex-grow: .05;
+        height: 4rem;
+    }
+
+    .card {
+        width: 7rem;
+        height: 10rem;
+    }
+
+    .card-id2 {
+        top: 2rem;
+    }
+
+    .game-outcome-modal {
+        margin: 15% auto;
+    }
+}
