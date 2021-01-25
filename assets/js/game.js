@@ -216,7 +216,7 @@ function hit() {
     renderCardDiv.innerHTML = '<div class="card-id">' + '' + hitCard.name + '' + hitCard.suit + '' + '</div>'+ '<div class="suit-card">' + hitCard.suit + '</div>' + '<div class="card-id2">' + '' + hitCard.name + '' + hitCard.suit + '';
     document.getElementById("player-hand").appendChild(renderCardDiv);
     
-    collapsePlayerHand();
+    collapseHand(playerHand);
     checkScore();
 }
 
@@ -237,7 +237,7 @@ function hold() {
         renderCardDiv.innerHTML = '<div class="card-id">' + '' + dealerCard.name + '' + dealerCard.suit + '' + '</div>'+ '<div class="suit-card">' + dealerCard.suit + '</div>' + '<div class="card-id2">' + '' + dealerCard.name + '' + dealerCard.suit + '';
         document.getElementById("dealer-hand").appendChild(renderCardDiv);
         
-        collapseDealerHand();
+        collapseHand(dealerHand);
         checkScore();
 
         if (dealerScore <= 16) {
@@ -332,8 +332,8 @@ function gameReset() {
         removePlayerCards.removeChild(removePlayerCards.firstChild); 
     }
     
-    document.getElementById("dealer-hand").classList.remove("collapse-hand");
-    document.getElementById("player-hand").classList.remove("collapse-hand");
+    dealerHandCards.classList.remove("collapse-hand");
+    playerHandCards.classList.remove("collapse-hand");
 
     startGameButton.disabled = false;
     hitButton.disabled = true;
@@ -341,16 +341,16 @@ function gameReset() {
     
 }
 
-// Create collapse hand function
-function collapseDealerHand() {
-    if (dealerHand.length > 3) {
-        document.getElementById("dealer-hand").classList.add("collapse-hand");
-    }
-}
+let dealerHandCards = document.getElementById("dealer-hand");
+let playerHandCards = document.getElementById("player-hand");
 
-function collapsePlayerHand() {
-    if (playerHand.length > 3) {
-        document.getElementById("player-hand").classList.add("collapse-hand");
+function collapseHand(cardHand) {
+    if (cardHand.length > 3) {
+        if (cardHand == dealerHand) {
+            dealerHandCards.classList.add("collapse-hand");
+        } else if (cardHand == playerHand) {
+            playerHandCards.classList.add("collapse-hand");
+        }
     }
 }
 
