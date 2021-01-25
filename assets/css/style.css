@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*------------Google Fonts----*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swapfamily=Lora:wght@500&display=swap');
 
@@ -11,6 +18,8 @@
 
 /*------------Background----*/
 .bg-color-classic {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#c9de96) , to(#398235));
+    background-image: -o-linear-gradient(top, #c9de96 , #398235);
     background-image: linear-gradient(to bottom, #c9de96 , #398235);
     background-repeat: no-repeat;
 }
@@ -18,7 +27,8 @@
 .bg-color-beach {
     background: #ffddcd url("../images/beach.png") no-repeat center center;
     background-size: cover;
-    filter: blur(.1rem);
+    -webkit-filter: blur(.1rem);
+            filter: blur(.1rem);
 }
 
 .bg-color-night {
@@ -215,7 +225,8 @@ p {
 
 .game-button,
 .game-button:hover {
-    box-shadow: 0rem 1rem 1.5rem 0rem #060906;
+    -webkit-box-shadow: 0rem 1rem 1.5rem 0rem #060906;
+            box-shadow: 0rem 1rem 1.5rem 0rem #060906;
 }
 
 #no-button:hover,
@@ -231,8 +242,11 @@ p {
 
 #game-options-buttons,
 #game-play-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 /*------------Reset Alert----*/
@@ -270,7 +284,9 @@ p {
 
 .card-id2 {
     position: relative;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
     text-align: left;
     right: .4rem;
     top: 1.2rem;  
@@ -319,7 +335,8 @@ p {
     margin: 20% auto;
     padding: 2rem;
     width: 95%;
-    box-shadow: 0rem 1rem 2rem 0rem #060906;
+    -webkit-box-shadow: 0rem 1rem 2rem 0rem #060906;
+            box-shadow: 0rem 1rem 2rem 0rem #060906;
     border: none;
     color: #fafad2;
     }
@@ -487,7 +504,9 @@ p {
 
     .game-options,
     .game-button {
-        flex-grow: .05;
+        -webkit-box-flex: .05;
+            -ms-flex-positive: .05;
+                flex-grow: .05;
         height: 4rem;
     }
 
