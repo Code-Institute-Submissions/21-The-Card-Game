@@ -332,7 +332,7 @@ p {
 
 .close:hover,
 .close:focus {
-    color: #220202;
+    color: #F7725C;
     text-decoration: none;
     cursor: pointer;
 }
