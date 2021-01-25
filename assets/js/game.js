@@ -86,15 +86,17 @@ console.log(playerHand);        // Check playerHand
 
 // Assign & Add card values
 function addCardValues(hand) {
-    let cardArray = [];
     let cardTotal = 0;
-    
-    cardArray = hand;
-    for (let i=0; i < hand.length; i += 1) {
+
+    for (let i = 0; i < hand.length; i += 1) {
         if (hand[i].name === "J" || hand[i].name === "Q" || hand[i].name === "K") {
             cardTotal += 10;
         } else if (hand[i].name === "A") {
-            cardTotal += 11;
+            if (cardTotal > 11) {
+                cardTotal += 1;
+            } else {
+                cardTotal += 11;
+            }
         } else {
             cardTotal += hand[i].name;
         }
