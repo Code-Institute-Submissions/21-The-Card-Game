@@ -2,11 +2,32 @@
 let dealerHand = [];
 let playerHand = [];
 
-// win lose draw variables 
+let dealerScore;
+let playerScore;
+    // win lose draw counter variables 
 let winGamesTwentyOne = 0;
 let winGames = 0;           
 let lostGames = 0;          
 let drawGames = 0;
+
+// Create global DOM selector variables
+let dealerCardTotal = document.getElementById("dealer-card-total");
+let playerCardTotal = document.getElementById("player-card-total");
+let startGameButton = document.getElementById("start-game-button");
+let hitButton = document.getElementById("hit-button");
+let holdButton = document.getElementById("hold-button");
+let resetButton = document.getElementById("reset-button");
+let resetModal = document.getElementById("reset-modal");
+let yesButton = document.getElementById("yes-button");
+let dealerHandCards = document.getElementById("dealer-hand");
+let playerHandCards = document.getElementById("player-hand");
+
+// Create Event Listeners
+startGameButton.addEventListener("click", startGame);
+hitButton.addEventListener("click", hit);
+holdButton.addEventListener("click", hold);
+yesButton.addEventListener("click", gameReset);
+resetButton.addEventListener("click", displayAlert);
 
 // Create a Card object
 function Card(name, suit) {
@@ -111,14 +132,6 @@ console.log(addCardValues(playerHand));         //Check Card values for player H
 
 
 // Create check Score
-let dealerScore;
-let playerScore;
-
-//let messageStatus = document.getElementById("message-status");
-
-let dealerCardTotal = document.getElementById("dealer-card-total");
-let playerCardTotal = document.getElementById("player-card-total");
-
 function checkScore() {
     dealerScore = addCardValues(dealerHand);
     playerScore = addCardValues(playerHand);
@@ -160,11 +173,6 @@ function checkScore() {
 
 
 //Create start game function
-//Set event listener for start button
-let startGameButton = document.getElementById("start-game-button");
-
-startGameButton.addEventListener("click", startGame);
-
 function startGame() {
     cardDeck = new Deck();
     shuffle(cardDeck);
@@ -188,7 +196,7 @@ function renderDealerCards() {
         let renderCardDiv = document.createElement("div");
         renderCardDiv.classList.add("card", dealerHand[i].color);
         renderCardDiv.innerHTML = '<div class="card-id">' + '' + dealerHand[i].name + '' + dealerHand[i].suit + '' + '</div>'+ '<div class="suit-card">' + dealerHand[i].suit + '</div>' + '<div class="card-id2">' + '' + dealerHand[i].name + '' + dealerHand[i].suit;
-        document.getElementById("dealer-hand").appendChild(renderCardDiv);
+        dealerHandCards.appendChild(renderCardDiv);
     }  
 }
 
@@ -197,15 +205,11 @@ function renderPlayerCards() {
         let renderCardDiv = document.createElement("div");
         renderCardDiv.classList.add("card", playerHand[i].color);
         renderCardDiv.innerHTML = '<div class="card-id">' + '' + playerHand[i].name + '' + playerHand[i].suit + '' + '</div>'+ '<div class="suit-card">' + playerHand[i].suit + '</div>' + '<div class="card-id2">' + '' + playerHand[i].name + '' + playerHand[i].suit + '';
-        document.getElementById("player-hand").appendChild(renderCardDiv);
+        playerHandCards.appendChild(renderCardDiv);
     }
 }
 
 // Create hit function
-// Set event listener for hit button
-let hitButton = document.getElementById("hit-button");
-hitButton.addEventListener("click", hit);
-
 function hit() {
     let hitCard = cardDeck.shift();
     playerHand.push(hitCard);
@@ -214,17 +218,13 @@ function hit() {
     let renderCardDiv = document.createElement("div");
     renderCardDiv.classList.add("card", hitCard.color);
     renderCardDiv.innerHTML = '<div class="card-id">' + '' + hitCard.name + '' + hitCard.suit + '' + '</div>'+ '<div class="suit-card">' + hitCard.suit + '</div>' + '<div class="card-id2">' + '' + hitCard.name + '' + hitCard.suit + '';
-    document.getElementById("player-hand").appendChild(renderCardDiv);
+    playerHandCards.appendChild(renderCardDiv);
     
     collapseHand(playerHand);
     checkScore();
 }
 
 // Create hold function
-// Set event listener for hold button
-let holdButton = document.getElementById("hold-button");
-holdButton.addEventListener("click", hold);
-
 function hold() {
     if (dealerScore <= 16) {
         let dealerCard = cardDeck.shift();
@@ -235,7 +235,7 @@ function hold() {
         let renderCardDiv = document.createElement("div");
         renderCardDiv.classList.add("card", dealerCard.color);
         renderCardDiv.innerHTML = '<div class="card-id">' + '' + dealerCard.name + '' + dealerCard.suit + '' + '</div>'+ '<div class="suit-card">' + dealerCard.suit + '</div>' + '<div class="card-id2">' + '' + dealerCard.name + '' + dealerCard.suit + '';
-        document.getElementById("dealer-hand").appendChild(renderCardDiv);
+        dealerHandCards.appendChild(renderCardDiv);
         
         collapseHand(dealerHand);
         checkScore();
@@ -253,7 +253,6 @@ function hold() {
     hitButton.disabled = true;
     holdButton.disabled = true;
 }
-
 
 // Create gameOutcome function, win/lose/draw
 function gameOutcome() {
@@ -282,24 +281,10 @@ function gameOutcome() {
     //console.log(winGamesTwentyOne);     //Check wingamesTwentyOne
     //console.log(winGames);              //Check wingames
     //console.log(lostGames);             //Check lostgames
-    //console.log(drawGames);             //Check drawgames
-    
-    
+    //console.log(drawGames);             //Check drawgames 
 }
 
-
-// Set up Reset Alert
-let resetButton = document.getElementById("reset-button");
-let resetModal = document.getElementById("reset-modal");
-//resetButton.addEventListener("click", gameReset);
-
-// Set event listener for yes button
-let yesButton = document.getElementById("yes-button");
-yesButton.addEventListener("click", gameReset);
-
-// Add event listener for reset button
-resetButton.addEventListener("click", displayAlert);
-
+// Create reset alert
 // Open  reset alert 
 function displayAlert() {
   resetModal.style.display = "block";
@@ -317,7 +302,6 @@ function gameReset() {
     dealerScore = 0;
     playerScore = 0;
 
-    
     dealerCardTotal.innerText = " ";
     playerCardTotal.innerText = " ";
     //messageStatus.innerText = " ";
@@ -338,9 +322,6 @@ function gameReset() {
     holdButton.disabled = true;  
 }
 
-let dealerHandCards = document.getElementById("dealer-hand");
-let playerHandCards = document.getElementById("player-hand");
-
 function collapseHand(cardHand) {
     if (cardHand.length > 3) {
         if (cardHand == dealerHand) {
@@ -352,12 +333,20 @@ function collapseHand(cardHand) {
 }
 
 
-//Game Outcome Modals
-//let playAgainButton = document.getElementsByClassName("play-again")[0];
+// Game Outcome Modals
+// Create global DOM selector variables for game outcome modals
+let winModal = document.getElementById("win-modal");
+let dealerWinModal = document.getElementById("dealer-win-modal");
+let winTwentyOneModal = document.getElementById("win-twenty-one-modal");
+let dealerTwentyOneModal = document.getElementById("dealer-twenty-one-modal");
+let bustModal = document.getElementById("bust-modal");
+let dealerBustModal = document.getElementById("dealer-bust-modal");
+let drawModal = document.getElementById("draw-modal");
+
+// Add event listener for closing all modals
+window.addEventListener('click', closeModals);
 
 // Create Win Modal
-let winModal = document.getElementById("win-modal");
-
 function win() {
     winModal.style.display = "block";
 }
@@ -368,8 +357,6 @@ function closeWin(){
 }
 
 //Create Dealer Win Modal
-let dealerWinModal = document.getElementById("dealer-win-modal");
-
 function dealerWin() {
     dealerWinModal.style.display = "block";
 }
@@ -380,8 +367,6 @@ function closeDealerWin() {
 }
 
 //Create Win 21 Modal
-let winTwentyOneModal = document.getElementById("win-twenty-one-modal");
-   
 function winTwentyOne() {
     winTwentyOneModal.style.display = "block";
 }
@@ -392,8 +377,6 @@ function closeWinTwentyOne() {
 }
 
 //Create Dealer 21 Modal
-let dealerTwentyOneModal = document.getElementById("dealer-twenty-one-modal");
-
 function dealerTwentyOne() {
     dealerTwentyOneModal.style.display = "block";
 }
@@ -404,8 +387,6 @@ function closeDealerTwentyOne() {
 }
 
 //Create Bust Modal
-let bustModal = document.getElementById("bust-modal");
-
 function bust() {
     bustModal.style.display = "block";
 }
@@ -416,8 +397,6 @@ function closeBust(){
 }
 
 //Create Dealer Bust Modal
-let dealerBustModal = document.getElementById("dealer-bust-modal");
-
 function dealerBust() {
     dealerBustModal.style.display = "block";
 }
@@ -428,8 +407,6 @@ function closeDealerBust() {
 }
 
 //Create Draw Modal
-let drawModal = document.getElementById("draw-modal");
-
 function draw() {
    drawModal.style.display = "block";
 }
@@ -438,9 +415,6 @@ function closeDraw() {
   drawModal.style.display = "none";
   gameReset();
 }
-
-// Add event listener for closing all modals
-window.addEventListener('click', closeModals);
 
 // Create close modals function when click outside the modal
 function closeModals() {
