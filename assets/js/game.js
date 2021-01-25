@@ -322,14 +322,12 @@ function gameReset() {
     playerCardTotal.innerText = " ";
     //messageStatus.innerText = " ";
     
-    let removeDealerCards = document.getElementById("dealer-hand");
-    while (removeDealerCards.firstChild) { 
-        removeDealerCards.removeChild(removeDealerCards.firstChild); 
+    while (dealerHandCards.firstChild) { 
+        dealerHandCards.removeChild(dealerHandCards.firstChild); 
     } 
 
-    let removePlayerCards = document.getElementById("player-hand");
-    while (removePlayerCards.firstChild) { 
-        removePlayerCards.removeChild(removePlayerCards.firstChild); 
+    while (playerHandCards.firstChild) { 
+        playerHandCards.removeChild(playerHandCards.firstChild); 
     }
     
     dealerHandCards.classList.remove("collapse-hand");
