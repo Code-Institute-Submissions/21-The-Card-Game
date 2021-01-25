@@ -505,9 +505,9 @@ p {
     }
 }
 
-/* Landscape Options:
-Game is best played in portrait but here are landscape options for some specific device sizes
-*/
+/* -- Landscape Options:
+Game is best played in portrait but here are landscape options for some specific device sizes --*/
+/*-- Landscape 568px wide --*/
 @media only screen and (min-device-width: 568px) 
   and (max-device-width: 568px)
   and (orientation: landscape) {
@@ -553,8 +553,51 @@ Game is best played in portrait but here are landscape options for some specific
         top: .2rem;
         text-align: center;
     }
+
     .card-id2 {
         top: .4rem;
+    }
+  }
+
+  /*-- Landscape 667px wide --*/
+ @media only screen  and (min-device-width: 667px) 
+  and (max-device-width: 667px)
+  and (orientation: landscape) {
+    #game-area {
+        max-width: 100%;
+    }
+
+    #game-board-area {
+        height: 17rem;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    .dealer-container {
+        width: 45%;
+    }
+
+    #dealer-card-total {
+        bottom: .02rem;
+    }
+
+    .player-container {
+        top: 10rem;
+        left: 35rem;
+        width: 45%;
+    }
+
+    #player-card-total {
+        left: 14rem;
+    }
+
+    #player-hand {
+        padding-top: 1rem;
+    }   
+
+    .modal-content {
+        width: 60%;
+        margin: 5% auto;
     }
   }
   
