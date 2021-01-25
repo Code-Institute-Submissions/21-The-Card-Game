@@ -182,10 +182,11 @@ function startGame() {
     holdButton.disabled = false;
 }
 
+
 //Render cards to the html
 function renderDealerCards() {  
     for(let i=0; i < dealerHand.length; i++) {
-        renderCardDiv = document.createElement("div");
+        let renderCardDiv = document.createElement("div");
         renderCardDiv.classList.add("card", dealerHand[i].color);
         renderCardDiv.innerHTML = '<div class="card-id">' + '' + dealerHand[i].name + '' + dealerHand[i].suit + '' + '</div>'+ '<div class="suit-card">' + dealerHand[i].suit + '</div>' + '<div class="card-id2">' + '' + dealerHand[i].name + '' + dealerHand[i].suit;
         document.getElementById("dealer-hand").appendChild(renderCardDiv);
@@ -194,7 +195,7 @@ function renderDealerCards() {
 
 function renderPlayerCards() {
     for(let i=0; i < playerHand.length; i++) {
-        renderCardDiv = document.createElement("div");
+        let renderCardDiv = document.createElement("div");
         renderCardDiv.classList.add("card", playerHand[i].color);
         renderCardDiv.innerHTML = '<div class="card-id">' + '' + playerHand[i].name + '' + playerHand[i].suit + '' + '</div>'+ '<div class="suit-card">' + playerHand[i].suit + '</div>' + '<div class="card-id2">' + '' + playerHand[i].name + '' + playerHand[i].suit + '';
         document.getElementById("player-hand").appendChild(renderCardDiv);
@@ -211,7 +212,7 @@ function hit() {
     playerHand.push(hitCard);
         console.log(hitCard);       //Check hitCard
 
-    renderCardDiv = document.createElement("div");
+    let renderCardDiv = document.createElement("div");
     renderCardDiv.classList.add("card", hitCard.color);
     renderCardDiv.innerHTML = '<div class="card-id">' + '' + hitCard.name + '' + hitCard.suit + '' + '</div>'+ '<div class="suit-card">' + hitCard.suit + '</div>' + '<div class="card-id2">' + '' + hitCard.name + '' + hitCard.suit + '';
     document.getElementById("player-hand").appendChild(renderCardDiv);
@@ -232,7 +233,7 @@ function hold() {
         
         console.log(dealerCard);                //Check dealerCard 
 
-        renderCardDiv = document.createElement("div");
+        let renderCardDiv = document.createElement("div");
         renderCardDiv.classList.add("card", dealerCard.color);
         renderCardDiv.innerHTML = '<div class="card-id">' + '' + dealerCard.name + '' + dealerCard.suit + '' + '</div>'+ '<div class="suit-card">' + dealerCard.suit + '</div>' + '<div class="card-id2">' + '' + dealerCard.name + '' + dealerCard.suit + '';
         document.getElementById("dealer-hand").appendChild(renderCardDiv);
@@ -335,8 +336,7 @@ function gameReset() {
 
     startGameButton.disabled = false;
     hitButton.disabled = true;
-    holdButton.disabled = true;
-    
+    holdButton.disabled = true;  
 }
 
 let dealerHandCards = document.getElementById("dealer-hand");
