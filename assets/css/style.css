@@ -385,7 +385,6 @@ p {
 }
 
 /*-- Medium Screen--*/
-
 @media only screen and (min-width: 768px)  {
     #logo {
         font-size: 5rem;
@@ -393,11 +392,11 @@ p {
 
     #game-area {
         max-width: 70%;
-        padding-top: 12rem;
+        padding-top: 8rem;
     }
 
     #game-board-area {
-        height: 45rem; 
+        height: 40rem; 
         margin-top: 5rem; 
     }
 
@@ -406,7 +405,7 @@ p {
     }
 
     .player-container {
-        top: 43rem;
+        top: 38rem;
         width: 60%;
     }
 
@@ -439,8 +438,7 @@ p {
         padding-top: 11rem;
     }
 
-    #game-board-area {
-        height: 40rem;  
+    #game-board-area { 
         margin-top: 5rem;
     }
 
@@ -465,7 +463,7 @@ p {
 /*-- Extra Large Screen--*/
 @media only screen and (min-width: 1400px)  {
     #logo {
-    font-size: 6rem;
+        font-size: 6rem;
     }
     
     #game-area {
