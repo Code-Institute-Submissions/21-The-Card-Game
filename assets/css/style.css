@@ -126,7 +126,8 @@ p {
 }
 
 .dealer-container {
-    position: absolute;  
+    position: absolute; 
+    width: 80%; 
 }
 
 #dealer-card-total,
@@ -146,8 +147,9 @@ p {
 }
 
 .player-container {
-    position: fixed;
-    top: 30.5rem;  
+    position: absolute;
+    top: 30.5rem; 
+    width: 80%; 
 }
 
 .score {
