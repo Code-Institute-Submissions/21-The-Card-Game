@@ -456,3 +456,9 @@ function closeModals() {
    statsModal.style.display = "none";
   }
 }
+
+// Add onload function to disable hit and hold buttons when page loads
+window.onload = function() {
+    hitButton.disabled = true;
+    holdButton.disabled = true;
+}
