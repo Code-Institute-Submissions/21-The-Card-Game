@@ -32,8 +32,8 @@
 }
 
 .bg-color-night {
-    background: #120202 url("../images/night.png") no-repeat center center;   
-    
+    background: #120202 url("../images/night.png") no-repeat center center;  
+    background-size: cover; 
 }
 
 #background {
