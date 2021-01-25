@@ -9,8 +9,7 @@ let lostGames = 0;
 let drawGames = 0;
 
 // Create a Card object
-function Card(value, name, suit) {
-	this.value = value;
+function Card(name, suit) {
 	this.name = name;
     this.suit = suit;
 
@@ -30,7 +29,7 @@ function Deck() {
     
     for (let s = 0; s < this.suits.length; s++ ) {
         for (let n = 0; n < this.names.length; n++ ) {
-            cards.push(new Card(n+1, this.names[n], this.suits[s]));
+            cards.push(new Card(this.names[n], this.suits[s]));
         }
     }
 
