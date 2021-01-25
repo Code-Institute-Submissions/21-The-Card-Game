@@ -370,6 +370,11 @@ p {
         top: 30rem;
     }
 
+    #game-board-area {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
     .modal-content {
         width: 80%;
     }
@@ -388,11 +393,17 @@ p {
     }
 
     #game-board-area {
-        height: 50rem;  
+        height: 45rem; 
+        margin-top: 5rem; 
+    }
+
+    .dealer-container {
+        width: 60%;
     }
 
     .player-container {
         top: 43rem;
+        width: 60%;
     }
 
     #game-play-buttons {
@@ -421,7 +432,7 @@ p {
 /*-- Large Screen--*/
 @media only screen and (min-width: 992px)  {
     #game-area {
-        padding-top: 15rem;
+        padding-top: 11rem;
     }
 
     #game-board-area {
@@ -436,5 +447,13 @@ p {
 
     .card-id2 {
         top: 2rem;
+    }
+
+    .player-container {
+        top: 40rem;
+    }
+
+     #game-play-buttons {
+        margin-top: 3rem;
     }
 }
