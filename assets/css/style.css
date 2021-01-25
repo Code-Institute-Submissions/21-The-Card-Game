@@ -559,8 +559,8 @@ Game is best played in portrait but here are landscape options for some specific
     }
   }
 
-  /*-- Landscape 667px wide --*/
- @media only screen  and (min-device-width: 667px) 
+/*-- Landscape 667px wide --*/
+@media only screen  and (min-device-width: 667px) 
   and (max-device-width: 667px)
   and (orientation: landscape) {
     #game-area {
@@ -583,6 +583,50 @@ Game is best played in portrait but here are landscape options for some specific
 
     .player-container {
         top: 10rem;
+        left: 35rem;
+        width: 45%;
+    }
+
+    #player-card-total {
+        left: 14rem;
+    }
+
+    #player-hand {
+        padding-top: 1rem;
+    }   
+
+    .modal-content {
+        width: 60%;
+        margin: 5% auto;
+    }
+  }
+
+/*-- Landscape 736px wide --*/
+@media only screen and (min-device-width: 736px) 
+  and (max-device-width: 736px)
+  and (orientation: landscape) {
+    #game-area {
+        max-width: 100%;
+        padding-top: 5rem;
+    }
+
+    #game-board-area {
+        height: 20rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    .dealer-container {
+        width: 40%;
+    }
+
+    #dealer-card-total {
+        position: absolute;
+        bottom: .02rem;
+    }
+
+    .player-container {
+        top: 12.5rem;
         left: 35rem;
         width: 45%;
     }
