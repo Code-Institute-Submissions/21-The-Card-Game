@@ -28,7 +28,7 @@ To grow my skills as a developer and create a  simple easy to use and enjoyable 
 
 * General public.
 * People looking for a fun distraction while taking a break from their day.
-* Commuters who like to play games to pass the time on their journey
+* Commuters who like to play games to pass the time on their journey.
 
 
 ## User Stories
@@ -440,7 +440,7 @@ Each time a game ends a game outcome is communicated to the user via a modal win
 
     * For anyone who already knows the rules the game play is designed to be intuitive. 
 
-    *The game play buttons provided are clearly labelled and should be easily recognisable for anyone who is already familiar with the game.
+    * The game play buttons provided are clearly labelled and should be easily recognisable for anyone who is already familiar with the game.
 
     * Start button is provided and clearly labelled, so the user can get started quickly.
 
