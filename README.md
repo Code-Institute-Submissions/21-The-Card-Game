@@ -524,7 +524,61 @@ Each time a game ends a game outcome is communicated to the user via a modal win
     * Game play buttons are ideally located near the bottom of the screen for
     mobile users.
 
-## Testing Business Owner Stories
+## Testing Site Owner Stories
+
+1.	As a site owner I want to present my work in a professional, creative and visually appealing way.
+
+    * Professional look and a friendly feel to the website.
+
+    * Visually appealing throughout.
+
+    * Intuitive and easy to navigate around the site and game play.
+
+2.	As a site owner I want to provide a good user experience for my users, so that they want to come back.
+
+    * Provide simple but fun interactive game play.
+
+    * Future releases to add more features to keep users interested and offer something new to returning users.
+
+3.	As a site owner I want to present a game users can start playing quickly and intuitively so that they don’t have to make a big time commitment in learning how to play.
+
+    * Simple and easy to use layout that is easy to learn on first visit to the site.
+
+    * Rules are easily accessed by the rules button near the top of the screen.
+    The rules are written in a concise manor to convey the basic game play to the user without being verbose.
+
+    * The game play is intuitive. 
+
+    * Three clearly labelled game play buttons are provided.
+
+    * When the page loads the start button is the only one of the game play buttons that is enabled giving the user a clear indication as to how to start playing.
+
+    * Once the start button is clicked it is disabled while the hit and hold buttons are then enabled, this helps guide the user to understand how the game should be played.
+
+4.	As a site owner I want to provide feedback to my users on how they are doing.
+
+    * The total of the dealers & players card hand is clearly displayed so that the user can make an informed decision about their next move.
+
+    * Game outcomes are clearly communicated to the user through a pop up that appears at the end of each game telling the user how they did.
+
+    * Each time a game ends the result is logged in the game statistics. These stats can be checked by the user by clicking the Stats button above the gaming area, this will open the stats window.
+
+    * The stats window shows the user the number of games they have:
+        - Won by getting 21
+        - Won
+        - Lost
+        - Drawn
+
+5.	As a site owner I want to give users options so they can style the game to their liking.
+
+    * The user can choose between 3 different backgrounds via the settings button. Each of which provide a different aesthetic to cater to different user needs.
+
+    * The default classic theme provides a clean green background with a gradient fading between a lighter and darker green, providing a more visually appealing background than if it was a single solid colour.
+
+    * The Beach theme provides a relaxing atmosphere with an image of the sea and sand which may appeal more to some users.
+
+    * The night theme also provides an interesting and relaxing image of the sky at night, which may suit those who prefer to play in the evenings.
+
 
 
 
