@@ -360,7 +360,10 @@ Each button was tested and passed under the criteria set out below.
     - Highlights on hover.
     - Clears the game board and resets the game.
     - Closes the alert window.
+
 ### Game Play Buttons:
+
+* Hit & Hold buttons are disabled on page load
 
 ![Game Play Buttons](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/game-play-buttons.png "Game Play Buttons")
 
