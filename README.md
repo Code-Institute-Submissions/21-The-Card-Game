@@ -6,7 +6,76 @@
 This website aims to demonstrate my skills of Javascript, HTML & CSS as learned from the Code Institute Full Stack Software Development course. In order to do so I will create my version of the card game Twenty-One. The project will be created using a mobile first design strategy and will ensure the site is fully responsive across all devices. The project will further the developers knowledge of Javascript and it's implementation.
 
 # Contents
-
+- [21 The Card Game](#21-the-card-game)
+- [Project Summary](#project-summary)
+- [Contents](#contents)
+- [The origin of the card game Twenty-One](#the-origin-of-the-card-game-twenty-one)
+- [User Experience (UX)](#user-experience--ux-)
+- [Strategy](#strategy)
+  * [Developer Objectives](#developer-objectives)
+    + [Target Audience:](#target-audience-)
+  * [User Stories](#user-stories)
+  * [Site Owner Stories](#site-owner-stories)
+- [Scope](#scope)
+      - [Functional Specifications:](#functional-specifications-)
+      - [Content Requirements:](#content-requirements-)
+      - [Strategy/Scope Trade Off](#strategy-scope-trade-off)
+- [Structure](#structure)
+    + [Interaction Design:](#interaction-design-)
+    + [Information Design:](#information-design-)
+- [Skeleton](#skeleton)
+  * [Difference between final design and original wireframes:](#difference-between-final-design-and-original-wireframes-)
+    + [Logo:](#logo-)
+    + [Player Heading & Score:](#player-heading---score-)
+    + [Win/Lose/Draw Modals:](#win-lose-draw-modals-)
+    + [Deal Button:](#deal-button-)
+    + [Game Board Area Border:](#game-board-area-border-)
+    + [Game Stats:](#game-stats-)
+- [Surface](#surface)
+      - [Typography:](#typography-)
+      - [Colour scheme:](#colour-scheme-)
+        * [Classic Theme:](#classic-theme-)
+        * [Beach Theme:](#beach-theme-)
+        * [Night Theme:](#night-theme-)
+        * [Accent Colours & Modal Windows](#accent-colours---modal-windows)
+        * [Cards](#cards)
+- [Features](#features)
+  * [Future Features](#future-features)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+  * [Code Validators & Auto Prefixer:](#code-validators---auto-prefixer-)
+  * [Lighthouse from Chrome Dev Tools Testing:](#lighthouse-from-chrome-dev-tools-testing-)
+  * [Buttons Testing:](#buttons-testing-)
+    + [Game Options Buttons:](#game-options-buttons-)
+      - [Settings button](#settings-button)
+      - [Rules button](#rules-button)
+      - [Stats button](#stats-button)
+      - [Reset button](#reset-button)
+      - [Reset Alert](#reset-alert)
+    + [Game Play Buttons:](#game-play-buttons-)
+      - [Start button](#start-button)
+      - [Hit button](#hit-button)
+      - [Hold button](#hold-button)
+    + [Play Again Button (found in the game outcome modal window)](#play-again-button--found-in-the-game-outcome-modal-window-)
+  * [Game Outcome Testing:](#game-outcome-testing-)
+  * [Device testing:](#device-testing-)
+  * [Browser Testing:](#browser-testing-)
+  * [Friends & Family User Testing:](#friends---family-user-testing-)
+  * [Testing User Stories](#testing-user-stories)
+  * [Testing Site Owner Stories](#testing-site-owner-stories)
+  * [Implementation](#implementation)
+  * [Issues/Solutions](#issues-solutions)
+  * [Known Bugs](#known-bugs)
+- [Deployment](#deployment)
+  * [Git Hub Pages:](#git-hub-pages-)
+  * [Creating A Local Clone:](#creating-a-local-clone-)
+- [Credits](#credits)
+  * [Code](#code)
+  * [Resources](#resources)
+  * [Content](#content)
+  * [Media](#media)
+  * [Acknowledgements](#acknowledgements)
+  * [Disclaimer](#disclaimer)
 
 # The origin of the card game Twenty-One
 
@@ -287,6 +356,8 @@ Card border: #3D0D0D
 [Coolors](https://coolors.co/) - Used for selecting complimentary colour palettes.
 
 [Unsplash](https://unsplash.com/) – Used for finding background images.
+
+[GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/) - Used for creating a table of contents in README.md
 
 
 # Testing
