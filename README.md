@@ -434,9 +434,95 @@ Each time a game ends a game outcome is communicated to the user via a modal win
 
 ## Testing User Stories
 
+1.	As a user I want to be able to easily understand the rules of the game so I can get started quickly.
 
+    * Rules are easily found by clicking on the rules button near the top of the screen.
 
+    * For anyone who already knows the rules the game play is designed to be intuitive. 
 
+    *The game play buttons provided are clearly labelled and should be easily recognisable for anyone who is already familiar with the game.
+
+    * Start button is provided and clearly labelled, so the user can get started quickly.
+
+    * Hit & Hold buttons are disabled on page load so that the user cannot start playing without first clicking on the start button.
+
+2.	As a user I want the game play to be intuitive so I don’t have to spend much time learning how to play.
+
+    * The game layout is designed to be easy to read and understand without being cluttered.
+
+    * Three clearly labelled game play buttons are provided.
+
+    * When page loads the start button is the only one of the game play buttons that is enabled giving the user a clear indication as to how to start playing.
+
+    * Once the start button is clicked it is disabled while the hit and hold buttons are then enabled, this helps guide the user to understand how the game should be played.
+
+3.	As a user I want a fun and interesting game so that I can enjoy playing it when I have some free time.
+
+    * The game gives the user a fun and simple way to pass the time.
+
+    * The game lets the user start the game play and is interactive to keep the user interested.
+
+    * The user gets to decide what moves to make in the game eg. Whether to draw another card or hold with the hand they have in order to beat the dealer.
+
+    * The game keeps the user guessing as it’s hard to predict the outcome and so makes for a more entertaining gaming experience.
+
+4.	As a user I want to know if I win, lose or draw a game so that I can keep playing and improve.
+
+    * The total of each of the players card hands is clearly displayed so that the user can make an informed decision about their next move.
+
+    * A variety of different game outcomes are possible. 
+
+    * Game outcomes are clearly communicated to the user through a pop up that appears at the end of each game telling the user how they did.
+        The pop ups inform the user :
+            - If they won by getting a score of 21.
+            - If they won by beating the dealer score.
+            - If they went bust ie scored over 21 therefore losing the game.
+            - If the dealer went bust and therefore they win.
+            - If the dealer gets 21 and therefore they lose.
+            - If the dealer wins by beating their score.
+            - If the game is a draw.
+
+    * Each pop up also gives the user the option to play again so that they can continue playing.
+
+5.	As a user I want to know how many games I win/lose/draw so that I can see how well I’m doing.
+
+    * Each time a game ends the result is logged in the game statistics. These stats can be checked by the user by clicking the Stats button above the gaming area, this will open the stats window.
+
+    * The stats window shows the user the number of games they have:
+            - Won by getting 21
+            - Won
+            - Lost
+            - Drawn
+
+6.	As a user I want to be able to reset a game so that I can start again.
+
+    * A reset button is provided above the game play area.
+
+    * The reset button opens an alert to ensure that the user wants to quit the current game and start again:
+        - By clicking yes in the alert window the user starts a new game.
+        - By clicking no in the alert window the user returns to the current game.
+
+7.	As a user I want to have a visually appealing interface so that I will enjoy playing the game for longer.
+
+    * The design of the site is kept simple to avoid unnecessary
+    clutter from confusing the user.
+
+    * It consists of a title, a row of 4 game options buttons, the game board area and a row of 3 game play buttons, clearly laid out with space around each of the elements.
+
+    * The user can choose between 3 different backgrounds via the settings button. Each of which provide a different aesthetic to cater to different user needs.
+
+    * The default classic theme provides a clean green background with a gradient fading between a lighter and darker green, providing a more visually appealing background than if it was a single solid colour.
+
+    * The Beach theme provides a relaxing atmosphere with an image of the sea and sand which may appeal more to some users.
+
+    * The night theme also provides an interesting and relaxing image of the sky at night, which may suit those who prefer to play in the evenings.
+
+8.	As a user I want a game I can use on my mobile so that I can play while on the go.
+
+    * A mobile first design approach was used in order to ensure an excellent user experience for mobile users.
+
+    * Game play buttons are ideally located near the bottom of the screen for
+    mobile users.
 
 ## Testing Business Owner Stories
 
