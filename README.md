@@ -299,7 +299,111 @@ Card border: #3D0D0D
 
 
 ## Buttons Testing:
+Each button was tested and passed under the criteria set out below.
 
+### Game Options Buttons:
+
+![Game options buttons](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/game-options-buttons.png "Game Options Buttons")
+
+#### Settings button 
+* Highlights on hover.
+* Opens settings modal window when clicked.
+* Shows theme selection menu when opened.
+
+![Settings](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/settings.png "Settings")
+
+* Theme selection – backdrop changes when click each radio button. 
+    Checked all changes:  
+    - from classic to night
+    - from classic to beach 
+    - from beach to classic 
+    - from beach to night 
+    - from night to classic
+    - from night to beach
+* X to close modal closes the modal window when clicked.
+* Clicking outside the modal window closes the modal window.
+
+#### Rules button
+* Highlights on hover.
+* Opens rules modal window when clicked.
+* Window opens with vertical scroll bar if the content is taller than the screen size available.
+* Shows how to play when opened.
+
+![Rules](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/rules.png "Rules")
+
+* X to close modal closes the modal window when clicked.
+* Clicking outside the modal window closes the modal window.
+
+#### Stats button
+* Highlights on hover.
+* Opens stats modal window when clicked.
+* Shows game stats when opened.
+
+![Game Stats](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/game-stats.png "Game Stats")
+
+* X to close modal closes the modal window when clicked.
+* Clicking outside the modal window closes the modal window.
+
+#### Reset button
+* Highlights on hover.
+* Opens reset alert pop up when clicked.
+
+#### Reset Alert
+* Opens when reset button clicked.
+
+![Reset Alert](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/reset-alert.png "Reset Alert")
+
+* No button :
+    - Highlights on hover.
+    - Closes the alert window and returns to the game.
+* Yes button:
+    - Highlights on hover.
+    - Clears the game board and resets the game.
+    - Closes the alert window.
+### Game Play Buttons:
+
+![Game Play Buttons](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/game-play-buttons.png "Game Play Buttons")
+
+#### Start button
+* Highlights on hover.
+* Deals 2 cards to each player.
+* Enables hit and hold buttons.
+* Disables itself when clicked.
+* Adds card hand total for each player.
+* Checks if either hand is over 21 and if so ends the game and declares a winner.
+* Checks if either hand is 21 and ends game.
+
+![Start button](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/start.png "Start button")
+
+#### Hit button
+* Disabled on page load.
+* Highlights on hover.
+* Adds another card to the player hand.
+* Updates card hand total for the player hand.
+* If card hand is 21 ends game declaring the player as the winner.
+* If card hand over 21 ends game declaring the dealer as the winner.
+
+![Hit button](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/hit-button.png "Hit button")
+
+#### Hold button
+* Highlights on hover.
+* Disables hit button so player cannot draw another card once they have decided to hold.
+* If dealer score is 16 or less it adds another card to the dealer hand.
+* Checks Score and updates card hand total for the dealer hand.
+* If card hand over 21 ends game declaring the player as the winner.
+* If card hand is 21 ends game declaring the dealer as the winner.
+* If dealer score still 16 or less it will continue to add another card until the dealer hand is over 16 and will declare a winner:
+    - If dealer card total is over 21, the game ends and the player is declared the winner.
+    - If dealer card total is 21, the game ends and the dealer is declared the winner.
+    - If dealer card total is over 16 and less than 21 and greater than the player card total the game ends and the dealer is declared the winner.
+    - If dealer card total is over 16 and less than 21 and less than the player card total the game ends and the player is declared the winner.
+
+![Hold button](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/hold-button.png "Hold button")
+
+### Play Again Button (found in the game outcome modal window)
+* Resets the game.
+* Closes the game outcome window.
+* Clicking outside the modal window closes the modal window and resets the game.
 
 
 ## Device testing:
