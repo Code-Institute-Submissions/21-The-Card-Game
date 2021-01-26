@@ -367,6 +367,11 @@ Card border: #3D0D0D
 
 
 ## Lighthouse from Chrome Dev Tools Testing:
+### Desktop report:
+![Lighthouse desktop report](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/lighthouse-report-desktop.png "Lighthouse desktop report")
+
+### Mobile Report:
+![Lighthouse mobile report](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/lighthouse-report-mobile.png "Lighthouse mobile report")
 
 
 ## Buttons Testing:
