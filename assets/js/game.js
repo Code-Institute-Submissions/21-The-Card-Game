@@ -60,8 +60,6 @@ function Deck() {
 // Create a new deck of cards
 let cardDeck = new Deck();
 
-//console.log(cardDeck);    // Check card deck
-
 // Create a shuffle function to randomise the cards 
 // Fisher Yates Shuffle
 function shuffle(array) {
@@ -79,8 +77,6 @@ function shuffle(array) {
     return array;
 }
 
-console.log(shuffle(cardDeck));     //Check shuffle
-
 // Create dealer cards function
 function dealerCards() {
     for(let i=0; i<2; i++) {
@@ -89,10 +85,6 @@ function dealerCards() {
     }
 }
 
-//dealerCards();
-console.log(dealerHand);        // Check dealerHand
-
-
 // Create player cards function
 function playerCards() {
     for(let i=0; i<2; i++) {
@@ -100,9 +92,6 @@ function playerCards() {
         playerHand.push(playerDealtCards); 
     }
 }
-
-//playerCards();
-console.log(playerHand);        // Check playerHand
 
 // Assign & Add card values
 function addCardValues(hand) {
@@ -124,38 +113,23 @@ function addCardValues(hand) {
     return cardTotal;
 }
 
-//addCardValues(dealerHand);
-//addCardValues(playerHand);
-
-console.log(addCardValues(dealerHand));         //Check Card values for dealer Hand
-console.log(addCardValues(playerHand));         //Check Card values for player Hand
-
-
 // Create check Score
 function checkScore() {
     dealerScore = addCardValues(dealerHand);
     playerScore = addCardValues(playerHand);
 
     if (playerScore === 21) {
-        //messageStatus.innerHTML = "You win! Congratulations <br>  You got 21!"; 
         winTwentyOne();
         winGamesTwentyOne++;
-        //debugger
     } else if (playerScore > 21) {
-        //messageStatus.innerHTML = "Bust! Better luck next time";
         bust();
         lostGames++;
-        //debugger
     } else if (dealerScore === 21) {
-        //messageStatus.innerHTML = "Dealer got 21! Better luck next time";
         dealerTwentyOne();
         lostGames++;
-        //debugger
     } else if (dealerScore > 21) {
-        //messageStatus.innerHTML = "You Win! Dealer went bust";
         dealerBust();
         winGames++;    
-        //debugger
     }
 
     dealerCardTotal.className += " score";
@@ -169,8 +143,6 @@ function checkScore() {
     document.getElementById("losses").innerHTML = lostGames;
     document.getElementById("draws").innerHTML = drawGames;
 }
-//checkScore();
-
 
 //Create start game function
 function startGame() {
@@ -213,7 +185,6 @@ function renderPlayerCards() {
 function hit() {
     let hitCard = cardDeck.shift();
     playerHand.push(hitCard);
-        console.log(hitCard);       //Check hitCard
 
     let renderCardDiv = document.createElement("div");
     renderCardDiv.classList.add("card", hitCard.color);
@@ -229,8 +200,6 @@ function hold() {
     if (dealerScore <= 16) {
         let dealerCard = cardDeck.shift();
         dealerHand.push(dealerCard);
-        
-        console.log(dealerCard);                //Check dealerCard 
 
         let renderCardDiv = document.createElement("div");
         renderCardDiv.classList.add("card", dealerCard.color);
@@ -257,31 +226,20 @@ function hold() {
 // Create gameOutcome function, win/lose/draw
 function gameOutcome() {
     if (dealerScore < 21 && dealerScore > 16 && dealerScore > playerScore) {
-        //messageStatus.innerHTML = "Dealer wins! Better luck next time";
         dealerWin();   
-        lostGames++;   
-        //debugger    
+        lostGames++;      
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore < playerScore) {
-        //messageStatus.innerHTML = "You win! Congratulations";
         win();
-         winGames++;    
-         //debugger
+        winGames++;    
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore === playerScore) {
-        //messageStatus.innerHTML = "It's a draw!"; 
         draw();         
         drawGames++;
-        //debugger
     }
 
     document.getElementById("wins-twenty-one").innerHTML = winGamesTwentyOne;
     document.getElementById("wins").innerHTML = winGames;
     document.getElementById("losses").innerHTML = lostGames;
     document.getElementById("draws").innerHTML = drawGames;
-
-    //console.log(winGamesTwentyOne);     //Check wingamesTwentyOne
-    //console.log(winGames);              //Check wingames
-    //console.log(lostGames);             //Check lostgames
-    //console.log(drawGames);             //Check drawgames 
 }
 
 // Create reset alert
@@ -304,7 +262,6 @@ function gameReset() {
 
     dealerCardTotal.innerText = " ";
     playerCardTotal.innerText = " ";
-    //messageStatus.innerText = " ";
     
     while (dealerHandCards.firstChild) { 
         dealerHandCards.removeChild(dealerHandCards.firstChild); 
