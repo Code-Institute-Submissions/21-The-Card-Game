@@ -408,6 +408,17 @@ Each button was tested and passed under the criteria set out below.
 * Closes the game outcome window.
 * Clicking outside the modal window closes the modal window and resets the game.
 
+## Game Outcome Testing:
+
+Each time a game ends a game outcome is communicated to the user via a modal window. These game outcomes were tested numerous times to ensure the correct game outcome is displayed each time. There are a total of 7 possible game out comes:
+
+1.	Player gets 21 and wins.
+2.	Dealer gets 21 and wins.
+3.	Player goes over 21 (bust) and loses.
+4.	Dealer goes bust and player wins.
+5.	Player beats dealer score without going over 21 and wins.
+6.	Dealer beats player score without going over 21 and player loses.
+7.	Player score and dealer score are equal – it’s a draw.
 
 ## Device testing:
 
