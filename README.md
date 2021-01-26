@@ -579,12 +579,13 @@ Each time a game ends a game outcome is communicated to the user via a modal win
 
     * The night theme also provides an interesting and relaxing image of the sky at night, which may suit those who prefer to play in the evenings.
 
-
-
-
-
 ## Implementation 
 
+Once the initial concept for the project was decided upon I first developed the wireframes. From these wireframes I then developed the basic game logic required to run the game. This is documented in the [Game Logic Map](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/21-card-game-logic-map.pdf)
+
+Initially I set up a basic html layout, from which I could start coding the JavaScript required to get the basic game play working before adding any styling. I set up a message-status element on the html page to display the game outcomes so I could see how they were working before creating the game outcome modal windows to ensure the correct game outcomes were being displayed.
+
+Once I was happy that the game was working in its most basic form I began adding some style and rendering the cards in the html. I could then add additional functionality to the game e.g. .game stats and update the styling as needed.
 
 ## Issues/Solutions
 		
