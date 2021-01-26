@@ -440,6 +440,7 @@ Each button was tested and passed under the criteria set out below.
 
 #### Start button
 * Highlights on hover.
+* Creates and shuffles a new deck each time.
 * Deals 2 cards to each player.
 * Enables hit and hold buttons.
 * Disables itself when clicked.
@@ -447,32 +448,45 @@ Each button was tested and passed under the criteria set out below.
 * Checks if either hand is over 21 and if so ends the game and declares a winner.
 * Checks if either hand is 21 and ends game.
 
-![Start button](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/start.png "Start button")
+![Start button](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/start-game-display.png "Start button")
+
+![Start watch functions](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/start-game-watch-functions.png "Start Functions")
 
 #### Hit button
 * Disabled on page load.
 * Highlights on hover.
 * Adds another card to the player hand.
 * Updates card hand total for the player hand.
-* If card hand is 21 ends game declaring the player as the winner.
-* If card hand over 21 ends game declaring the dealer as the winner.
+* Checks score - If card hand is 21 ends game declaring the player as the winner.
+* Checks score - If card hand over 21 ends game declaring the dealer as the winner.
+* If player hand has 4 cards it collapses the cards down.
 
-![Hit button](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/hit-button.png "Hit button")
+![Hit button](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/hit-display.png "Hit button")
+
+![Hit functions](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/hit-watch-functions.png "Hit functions")
+
+![Hit2 button](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/hit2-display.png "Hit2 button")
+
+![Hit2 functions](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/hit2-watch-functions.png "Hit2 functions")
 
 #### Hold button
 * Highlights on hover.
 * Disables hit button so player cannot draw another card once they have decided to hold.
+* Disables hold button so no further action can be taken.
 * If dealer score is 16 or less it adds another card to the dealer hand.
-* Checks Score and updates card hand total for the dealer hand.
-* If card hand over 21 ends game declaring the player as the winner.
-* If card hand is 21 ends game declaring the dealer as the winner.
-* If dealer score still 16 or less it will continue to add another card until the dealer hand is over 16 and will declare a winner:
+* Updates card hand total for the dealer hand.
+* Checks score - If card hand over 21 ends game declaring the player as the winner.
+* Checks score - If card hand is 21 ends game declaring the dealer as the winner.
+* If dealer score still 16 or less it will continue to add another card and check score until the dealer hand is over 16 and will declare a winner:
     - If dealer card total is over 21, the game ends and the player is declared the winner.
     - If dealer card total is 21, the game ends and the dealer is declared the winner.
     - If dealer card total is over 16 and less than 21 and greater than the player card total the game ends and the dealer is declared the winner.
     - If dealer card total is over 16 and less than 21 and less than the player card total the game ends and the player is declared the winner.
+* If dealer hand has 4 cards it collapses the cards down.
 
-![Hold button](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/hold-button.png "Hold button")
+![Hold button](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/hold-display.png "Hold button")
+
+![Hold functions](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/buttons-testing/hold-watch-functions.png "Hold functions")
 
 ### Play Again Button (found in the game outcome modal window)
 * Resets the game.
