@@ -59,7 +59,7 @@ function beach() {
 // Create function for night theme
 function night() {
     background.className = "bg-color-night";
-    logo.className = "night-theme"
+    logo.className = "night-theme";
     dealerHeading.className = "night-theme";
     playerHeading.className = "night-theme";
 
