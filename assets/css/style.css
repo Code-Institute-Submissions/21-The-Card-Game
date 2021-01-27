@@ -324,7 +324,7 @@ p {
 .modal-content {
     background-color: rgba(22, 31, 22, 0.761);
     border-radius: 1rem;
-    margin: 20% auto;
+    margin: 10% auto;
     padding: 2rem;
     width: 95%;
     -webkit-box-shadow: 0rem 1rem 2rem 0rem #060906;
@@ -349,7 +349,8 @@ p {
 /*------------Game Outcome Modals----*/
 
 .game-outcome-modal {
-    margin: 50% auto;
+    margin: auto;
+    margin-top: 90%;
 }
 
 .status {
@@ -433,7 +434,11 @@ but some landscape options are provided for smaller devices*/
     .game-outcome-modal {
     margin: auto;
     }
-  }
+
+     .modal-content {
+        margin-top: 3%;
+    }
+}
 
 /*-- Small Screen--*/
 @media only screen and (min-width: 375px) {
@@ -488,13 +493,13 @@ but some landscape options are provided for smaller devices*/
     }
 
     #player-hand {
-    padding-top: 1rem;
-    }   
-
-    .game-outcome-modal {
-    margin: auto;
+        padding-top: 1rem;
+    } 
+    
+    .modal-content {
+        margin-top: 3%;
     }
-  }
+}
 
 /*-- Medium Screen--*/
 @media only screen and (min-width: 768px)  {
@@ -537,11 +542,11 @@ but some landscape options are provided for smaller devices*/
     .card-id2 {
         top: 2rem;
     }
-
+    
     .game-outcome-modal {
-        margin: 20% auto;
+        margin: auto;
+        margin-top: 20%;
     }
-
 }
 
 /*-- Landscape 736px wide --*/
@@ -588,7 +593,7 @@ but some landscape options are provided for smaller devices*/
         width: 60%;
         margin: 5% auto;
     }
-  }
+}
 
 /*-- Landscape 812px wide --*/
 @media only screen 
@@ -642,7 +647,7 @@ but some landscape options are provided for smaller devices*/
         width: 60%;
         margin: 3% auto;
     }
-  }
+}
 
 /*-- Large Screen--*/
 @media only screen and (min-width: 992px)  {
@@ -713,10 +718,10 @@ but some landscape options are provided for smaller devices*/
     .card-id2 {
         top: 2rem;
     }
-
+    
     .game-outcome-modal {
         margin: 15% auto;
-    }
+    } 
 }
 
 
