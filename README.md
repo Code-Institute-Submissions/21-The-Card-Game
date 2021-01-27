@@ -18,9 +18,9 @@ This website aims to demonstrate my skills of Javascript, HTML & CSS as learned 
   * [User Stories](#user-stories)
   * [Site Owner Stories](#site-owner-stories)
 - [Scope](#scope)
-      - [Functional Specifications:](#functional-specifications-)
-      - [Content Requirements:](#content-requirements-)
-      - [Strategy/Scope Trade Off](#strategy-scope-trade-off)
+      * [Functional Specifications:](#functional-specifications-)
+      * [Content Requirements:](#content-requirements-)
+      * [Strategy/Scope Trade Off](#strategy-scope-trade-off)
 - [Structure](#structure)
     + [Interaction Design:](#interaction-design-)
     + [Information Design:](#information-design-)
@@ -33,13 +33,13 @@ This website aims to demonstrate my skills of Javascript, HTML & CSS as learned 
     + [Game Board Area Border:](#game-board-area-border-)
     + [Game Stats:](#game-stats-)
 - [Surface](#surface)
-      - [Typography:](#typography-)
-      - [Colour scheme:](#colour-scheme-)
-        * [Classic Theme:](#classic-theme-)
-        * [Beach Theme:](#beach-theme-)
-        * [Night Theme:](#night-theme-)
-        * [Accent Colours & Modal Windows](#accent-colours---modal-windows)
-        * [Cards](#cards)
+      * [Typography:](#typography-)
+      * [Colour scheme:](#colour-scheme-)
+        + [Classic Theme:](#classic-theme-)
+        + [Beach Theme:](#beach-theme-)
+        + [Night Theme:](#night-theme-)
+        + [Accent Colours & Modal Windows](#accent-colours---modal-windows)
+        + [Cards](#cards)
 - [Features](#features)
   * [Future Features](#future-features)
 - [Technologies Used](#technologies-used)
@@ -364,10 +364,10 @@ Card border: #3D0D0D
 
 ## Code Validators & Auto Prefixer:
 #### CSS code was passed through Auto Prefixer to add vendor prefixes:
-•	Prefixed by https://autoprefixer.github.io
-•	PostCSS: v7.0.29,
-•	Autoprefixer: v9.7.6
-•	Browsers: last 4 version
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
 
 #### CSS code was passed through the W3C CSS Validator: 
 No errors found and 17 warnings, 16 relating to vendor prefixes and the other 1 warning was: Imported style sheets are not checked in direct input and file upload modes once investigated on Stack Overflow and Slack decided it is ok to leave these. 
@@ -579,14 +579,14 @@ The general feedback was that the site looks well and is easy to navigate. Gamep
     * A variety of different game outcomes are possible. 
 
     * Game outcomes are clearly communicated to the user through a pop up that appears at the end of each game telling the user how they did.
-        The pop ups inform the user :
-            - If they won by getting a score of 21.
-            - If they won by beating the dealer score.
-            - If they went bust ie scored over 21 therefore losing the game.
-            - If the dealer went bust and therefore they win.
-            - If the dealer gets 21 and therefore they lose.
-            - If the dealer wins by beating their score.
-            - If the game is a draw.
+        The pop ups inform the user:
+        - If they won by getting a score of 21.
+        - If they won by beating the dealer score.
+        - If they went bust ie scored over 21 therefore losing the game.
+        - If the dealer went bust and therefore they win.
+        - If the dealer gets 21 and therefore they lose.
+        - If the dealer wins by beating their score.
+        - If the game is a draw.
 
     * Each pop up also gives the user the option to play again so that they can continue playing.
 
@@ -595,10 +595,10 @@ The general feedback was that the site looks well and is easy to navigate. Gamep
     * Each time a game ends the result is logged in the game statistics. These stats can be checked by the user by clicking the Stats button above the gaming area, this will open the stats window.
 
     * The stats window shows the user the number of games they have:
-            - Won by getting 21
-            - Won
-            - Lost
-            - Drawn
+        - Won by getting 21
+        - Won
+        - Lost
+        - Drawn
 
 6.	As a user I want to be able to reset a game so that I can start again.
 
@@ -736,7 +736,7 @@ Open terminal:
 
 Code Snippet 1: [Devdojo](https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript) - Creating a card object. Used with modifications.
 
-Code Snippet 2: [Devdojo](https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript) - creating a deck object. Used with modifications.
+Code Snippet 2: [Devdojo](https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript) - Creating a deck object. Used with modifications.
 
 Code Snippet 3: [Yanze Dai - The optimal solution to shuffle an Array in Javascript](https://dev.to/daiyanze/the-optimal-solution-to-shuffle-an-array-in-javascript-29hh) - Implementation of Fisher Yates Shuffle.
 
