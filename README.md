@@ -675,6 +675,8 @@ Once the initial concept for the project was decided upon I first developed the 
 
 Initially I set up a basic html layout, from which I could start coding the JavaScript required to get the basic game play working before adding any styling. I set up a message-status element on the html page to display the game outcomes so I could see how they were working before creating the game outcome modal windows to ensure the correct game outcomes were being displayed.
 
+Throughout the project I used Chrome Dev Tools to monitor what was happening in the code. I used console.log() to check what functions and variables were doing. I also used the watch window so that I could monitor what was happening as I tested the game play. I used the debugger to set breakpoints to investigate and resolve any issues I was having.
+
 Once I was happy that the game was working in its most basic form I began adding some style and rendering the cards in the html. I could then add additional functionality to the game e.g. .game stats and update the styling as needed.
 
 ## Issues/Solutions
