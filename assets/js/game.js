@@ -4,7 +4,8 @@ let playerHand = [];
 
 let dealerScore;
 let playerScore;
-    // win lose draw counter variables 
+
+// win lose draw counter variables 
 let winGamesTwentyOne = 0;
 let winGames = 0;           
 let lostGames = 0;          
@@ -30,6 +31,7 @@ yesButton.addEventListener("click", gameReset);
 resetButton.addEventListener("click", displayAlert);
 
 // Create a Card object
+// Code snippet 1:  Devdojo - https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript) - Creating a card object. Used with modifications.
 function Card(name, suit) {
     this.name = name;
     this.suit = suit;
@@ -42,6 +44,7 @@ function Card(name, suit) {
 }
 
 // Create a deck of cards
+//Code snippet 2:  Devdojo - https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript) - Creating a deck object. Used with modifications.
 function Deck() {
     this.names = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"];
     this.suits = ["♠", "♣", "♥", "♦"];
@@ -60,8 +63,8 @@ function Deck() {
 // Create a new deck of cards
 let cardDeck = new Deck();
 
-// Create a shuffle function to randomise the cards 
-// Fisher Yates Shuffle
+// Create a shuffle function to randomise the cards - Fisher Yates Shuffle
+// Code Snippet 3: Yanze Dai - The optimal solution to shuffle an Array in Javascript: https://dev.to/daiyanze/the-optimal-solution-to-shuffle-an-array-in-javascript-29hh 
 function shuffle(array) {
     let currentIndex = array.length;
     let tempValue;
@@ -160,7 +163,6 @@ function startGame() {
     hitButton.disabled = false;
     holdButton.disabled = false;
 }
-
 
 //Deal cards and render to html
 function dealCards(dealCardHand) {
@@ -287,7 +289,6 @@ function collapseHand(cardHand) {
         }
     }
 }
-
 
 // Game Outcome Modals
 // Create global DOM selector variables for game outcome modals
