@@ -19,6 +19,7 @@
     </div>
     <div id="content">
         <header>
+             <!--Logo-->
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -27,11 +28,11 @@
                 </div>
             </div>
         </header>
-
+        <!--Game Area-->
         <div id="game-area" class="container">
-
+            <!--Game Options Buttons-->
             <div id="game-options-buttons" class="container">
-
+                <!--Settings Button-->
                 <button id="settings-button" class="btn game-options">Settings</button>
                 <div id="settings-modal" class="modal">
                     <div id="modal-themes" class="modal-content">
@@ -54,7 +55,7 @@
                         <span class="close text-bold" onclick="closeSettings()">&times;</span>
                     </div>
                 </div>
-
+                <!--Rules Button-->
                 <button id="rules-button" class="btn game-options">Rules</button>
                 <div id="rules-modal" class="modal">
                     <div id="modal-how-to-play" class="modal-content">
@@ -92,7 +93,7 @@
                         <span class="close text-bold" onclick="closeRules()">&times;</span>
                     </div>
                 </div>
-
+                <!--Stats Button-->
                 <button id="stats-button" class="btn game-options">Stats</button>
                 <div id="stats-modal" class="modal">
                     <div id="stats" class="modal-content">
@@ -104,7 +105,7 @@
                         <span class="close text-bold" onclick="closeStats()">&times;</span>
                     </div>
                 </div>
-                
+                <!--Reset Button-->
                 <button id="reset-button" class="btn game-options">Reset</button>
                 <div id="reset-modal" class="modal">
                     <div id="reset" class="modal-content">
@@ -117,9 +118,9 @@
                 </div>
 
             </div>
-
+            <!--Game Board Area-->
             <div id="game-board-area" class="container classic-border">
-
+                    <!--Dealer Area-->
                     <div class="container dealer-container">
                         <div id="dealer-row" class="row">
                             <div class="col">
@@ -133,14 +134,14 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <!--Dealer Hand-->
                     <div class="row">
                         <div class="col">
                             <div id="dealer-hand">
                             </div>
                         </div>
                     </div>
-                    
+                    <!--Player Area-->
                     <div class="container player-container">
                         <div id="player-row" class="row">
                             <div class="col">
@@ -153,7 +154,7 @@
                                 </div>
                             </div>
                         </div>
-                    
+                        <!--Player Hand-->
                         <div class="row">
                             <div class="col">
                                 <div id="player-hand">
@@ -163,17 +164,20 @@
                     </div>
 
             </div>
-
+            <!--Game Play Buttons-->
             <div id="game-play-buttons" class="container">
+                <!--Start Button-->
                 <button id="start-game-button" class="btn game-button">Start</button>
+                <!--Hit Button-->
                 <button id="hit-button" class="btn game-button">Hit</button>
+                <!--Hold Button-->
                 <button id="hold-button" class="btn game-button">Hold</button>
             </div>
 
         </div>
     </div>
-
-      <!--Win Modal-->
+    <!--Game Outcome Modals-->
+    <!--Win Modal-->
     <div id="win-modal" class="modal">
         <div id="you-win" class="modal-content game-outcome-modal">
             <div class="status text-bold">Congratulations</div>
@@ -229,7 +233,7 @@
             <button class="play-again" onclick="closeDraw()">Play Again</button>
         </div>
     </div>
-  
+    <!--Scripts-->
     <script src="assets/js/game.js" type="text/javascript"></script>
     <script src="assets/js/rules-modal.js" type="text/javascript"></script>
     <script src="assets/js/settings-modal.js" type="text/javascript"></script>
