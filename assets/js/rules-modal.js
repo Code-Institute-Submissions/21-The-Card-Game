@@ -7,10 +7,10 @@ rulesBtn.addEventListener("click", displayRules);
 
 // Open Rules modal 
 function displayRules() {
-  rulesModal.style.display = "block";
+    rulesModal.style.display = "block";
 }
 
 // Rules modal close
-function closeRules(){
-  rulesModal.style.display = "none";
+function closeRules() {
+    rulesModal.style.display = "none";
 }

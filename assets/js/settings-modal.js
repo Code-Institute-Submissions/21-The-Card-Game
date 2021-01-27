@@ -22,8 +22,8 @@ function displaySettings() {
 }
 
 // Settings modal close
-function closeSettings(){
-  settingsModal.style.display = "none";
+function closeSettings() {
+    settingsModal.style.display = "none";
 }
 
 // Create function for classic theme
@@ -62,7 +62,7 @@ function night() {
     logo.className = "night-theme"
     dealerHeading.className = "night-theme";
     playerHeading.className = "night-theme";
-    
+
     dealerCardTotal.className += " night-theme";
     dealerCardTotal.classList.remove("classic-theme");
     playerCardTotal.className += " night-theme";
