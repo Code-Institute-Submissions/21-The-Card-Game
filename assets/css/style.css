@@ -153,7 +153,6 @@ p {
 #dealer-hand {
     margin-top: 2rem;
     padding-top: 3rem;
-    padding-left: 1.2rem;
 }
 
 #player-hand {
@@ -162,7 +161,7 @@ p {
 
 .player-container {
     position: absolute;
-    top: 30.5rem; 
+    top: 29rem; 
     width: 80%; 
 }
 
@@ -398,7 +397,6 @@ but some landscape options are provided for smaller devices*/
     }
 
     .dealer-container {
-        left: 1rem;
         text-align: left;
         width: 40%;
     }
@@ -442,11 +440,7 @@ but some landscape options are provided for smaller devices*/
 
 /*-- Small Screen--*/
 @media only screen and (min-width: 375px) {
-    .player-container {
-        top: 30rem;
-    }
-
-    #game-board-area {
+     #game-board-area {
         margin-bottom: 1rem;
         margin-top: 1rem;
     }
@@ -653,6 +647,7 @@ but some landscape options are provided for smaller devices*/
 @media only screen and (min-width: 992px)  {
     #game-area {
         padding-top: 11rem;
+        width: 60%;
     }
 
     #game-board-area { 
@@ -685,7 +680,7 @@ but some landscape options are provided for smaller devices*/
     
     #game-area {
         padding-top: 9rem;
-        max-width: 60%;
+        width: 50%;
     }
 
     #game-board-area {
