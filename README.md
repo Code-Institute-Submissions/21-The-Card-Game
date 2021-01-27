@@ -359,12 +359,23 @@ Card border: #3D0D0D
 
 [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/) - Used for creating a table of contents in README.md
 
-
 # Testing
 
 ## Code Validators & Auto Prefixer:
+#### CSS code was passed through Auto Prefixer to add vendor prefixes:
+•	Prefixed by https://autoprefixer.github.io
+•	PostCSS: v7.0.29,
+•	Autoprefixer: v9.7.6
+•	Browsers: last 4 version
 
+#### CSS code was passed through the W3C CSS Validator: 
+No errors found and 17 warnings, 16 relating to vendor prefixes and the other 1 warning was: Imported style sheets are not checked in direct input and file upload modes once investigated on Stack Overflow and Slack decided it is ok to leave these. 
 
+#### HTML code was passed through the W3C Markup Validator. 
+No errors found.
+
+#### Javascript code was passed through jshint. 
+Found 11 unused variables, however these are all triggered from index.html using the onclick attribute.
 
 ## Lighthouse from Chrome Dev Tools Testing:
 ### Desktop report:
