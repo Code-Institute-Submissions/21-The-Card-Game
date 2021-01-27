@@ -187,7 +187,7 @@ function hit() {
 
     let renderCardDiv = document.createElement("div");
     renderCardDiv.classList.add("card", hitCard.color);
-    renderCardDiv.innerHTML = '<div class="card-id">' + '' + hitCard.name + '' + hitCard.suit + '' + '</div>' + '<div class="suit-card">' + hitCard.suit + '</div>' + '<div class="card-id2">' + '' + hitCard.name + '' + hitCard.suit + '';
+    renderCardDiv.innerHTML = `<div class="card-id">${hitCard.name} ${hitCard.suit}</div><div class="suit-card">${hitCard.suit}</div><div class="card-id2">${hitCard.name} ${hitCard.suit}`;
     playerHandCards.appendChild(renderCardDiv);
 
     collapseHand(playerHand);
@@ -202,7 +202,7 @@ function hold() {
 
         let renderCardDiv = document.createElement("div");
         renderCardDiv.classList.add("card", dealerCard.color);
-        renderCardDiv.innerHTML = '<div class="card-id">' + '' + dealerCard.name + '' + dealerCard.suit + '' + '</div>' + '<div class="suit-card">' + dealerCard.suit + '</div>' + '<div class="card-id2">' + '' + dealerCard.name + '' + dealerCard.suit + '';
+        renderCardDiv.innerHTML = `<div class="card-id">${dealerCard.name} ${dealerCard.suit}</div><div class="suit-card">${dealerCard.suit}</div><div class="card-id2">${dealerCard.name} ${dealerCard.suit}`;
         dealerHandCards.appendChild(renderCardDiv);
 
         collapseHand(dealerHand);
