@@ -306,14 +306,6 @@ p {
     color: #393B3B;
 }
 
-/*------------Message Status----*/
-/*
-#message-status {
-    font-size: 2rem;
-    text-align: center;
-    margin: 1rem auto;
-}
-*/
 /*------------Modal----*/
 .modal {
     display: none; 
