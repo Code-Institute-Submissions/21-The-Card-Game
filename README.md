@@ -716,8 +716,11 @@ Open terminal:
 
 ## Code
 
+Code Snippet 1: [Devdojo](https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript) - Creating a card object. Used with modifications.
 
+Code Snippet 2: [Devdojo](https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript) - creating a deck object. Used with modifications.
 
+Code Snippet 3: [Yanze Dai - The optimal solution to shuffle an Array in Javascript](https://dev.to/daiyanze/the-optimal-solution-to-shuffle-an-array-in-javascript-29hh) - Implementation of Fisher Yates Shuffle.
 
 ## Resources
 
@@ -731,8 +734,15 @@ Open terminal:
 
 [CSS Tricks](https://css-tricks.com/) - General resource.
 
-Anna Greaves How to Approach Writing Your README File webinar.
+[Debugging JavaScript](https://www.youtube.com/watch?v=AX7uybwukkk&t=1s) - General Resource
 
+[That Software Dude](https://www.thatsoftwaredude.com/content/6417/how-to-code-blackjack-using-javascript) - How To Code Blackjack Using JavaScript - Inspiration for building the card game.
+
+[Mike Bostock](https://bost.ocks.org/mike/shuffle/) - Fisher Yates shuffle
+
+[Inside code](https://www.youtube.com/watch?v=4zx5bM2OcvA&feature=youtu.be) - Good explanation video of the Fisher Yates Shuffle Algorithm
+
+Anna Greaves How to Approach Writing Your README File webinar.
 
 ## Content
 
@@ -745,8 +755,6 @@ Beach Image credit: Photo by [Fezbot2000](https://unsplash.com/@fezbot2000?utm_s
 
 Night Sky Image credit: Photo by [Wil Stewart](https://unsplash.com/@wilstewart3?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-
-
 ## Acknowledgements
 
 My mentor @spence_mentor for great support and positivity throughout.
@@ -754,7 +762,6 @@ My mentor @spence_mentor for great support and positivity throughout.
 All at Code Institute and Tutor support.
 
 The Slack Community for their ever present knowledge.
-
 
 ##  Disclaimer
 
