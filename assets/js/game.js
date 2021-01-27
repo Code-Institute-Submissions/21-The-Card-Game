@@ -150,8 +150,8 @@ function startGame() {
     shuffle(cardDeck);
     dealerCards();
     playerCards();
-    renderDealerCards();
-    renderPlayerCards();
+    dealCards(dealerHand);
+    dealCards(playerHand);
     addCardValues(dealerHand);
     addCardValues(playerHand);
     checkScore();
@@ -162,22 +162,21 @@ function startGame() {
 }
 
 
-//Render cards to the html
-function renderDealerCards() {
-    for (let i = 0; i < dealerHand.length; i++) {
-        let renderCardDiv = document.createElement("div");
-        renderCardDiv.classList.add("card", dealerHand[i].color);
-        renderCardDiv.innerHTML = '<div class="card-id">' + '' + dealerHand[i].name + '' + dealerHand[i].suit + '' + '</div>' + '<div class="suit-card">' + dealerHand[i].suit + '</div>' + '<div class="card-id2">' + '' + dealerHand[i].name + '' + dealerHand[i].suit;
-        dealerHandCards.appendChild(renderCardDiv);
-    }
-}
+//Deal cards and render to html
+function dealCards(dealCardHand) {
+    for (let i = 0; i < dealCardHand.length; i++) {
+        if (dealCardHand == dealerHand) {
+            let renderCardDiv = document.createElement("div");
+            renderCardDiv.classList.add("card", dealerHand[i].color);
+            renderCardDiv.innerHTML = `<div class="card-id">${dealerHand[i].name} ${dealerHand[i].suit}</div><div class="suit-card">${dealerHand[i].suit}</div><div class="card-id2">${dealerHand[i].name} ${dealerHand[i].suit}`;
+            dealerHandCards.appendChild(renderCardDiv);
 
-function renderPlayerCards() {
-    for (let i = 0; i < playerHand.length; i++) {
-        let renderCardDiv = document.createElement("div");
-        renderCardDiv.classList.add("card", playerHand[i].color);
-        renderCardDiv.innerHTML = '<div class="card-id">' + '' + playerHand[i].name + '' + playerHand[i].suit + '' + '</div>' + '<div class="suit-card">' + playerHand[i].suit + '</div>' + '<div class="card-id2">' + '' + playerHand[i].name + '' + playerHand[i].suit + '';
-        playerHandCards.appendChild(renderCardDiv);
+        } else if (dealCardHand == playerHand) {
+            let renderCardDiv = document.createElement("div");
+            renderCardDiv.classList.add("card", playerHand[i].color);
+            renderCardDiv.innerHTML = `<div class="card-id">${playerHand[i].name} ${playerHand[i].suit}</div><div class="suit-card">${playerHand[i].suit} </div><div class="card-id2">${playerHand[i].name} ${playerHand[i].suit}`;
+            playerHandCards.appendChild(renderCardDiv);
+        }
     }
 }
 
