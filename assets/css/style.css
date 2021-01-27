@@ -384,7 +384,65 @@ p {
 }
 
 /*--------------------Media Queries---------------------*/
-/* Optimised for widths from 320px
+/* Optimised for widths from 320px, best viewed in portrait orientation
+but some landscape options are provided for smaller devices*/
+
+/*--landscape 568px--*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    #game-area {
+        width: 100%;
+        padding-top: 4rem;
+    }
+
+    #game-board-area {
+        height: 15rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .dealer-container {
+        left: 1rem;
+        text-align: left;
+        width: 40%;
+    }
+
+    .player-container {
+        top: 10.5rem;
+        left: 30rem;
+        text-align: left;
+        width: 45%;
+      }
+
+    .card {
+        width: 5rem;
+        height: 8rem;
+    }
+
+    #player-hand {
+        padding-top: 1rem;
+    }
+
+    .game-outcome-modal {
+        margin: 7% auto;
+    }
+
+    .suit-card {
+        top: .2rem;
+        text-align: center;
+    }
+    .card-id2 {
+        top: .4rem;
+    }
+
+    .game-outcome-modal {
+    margin: auto;
+    }
+  }
+
 /*-- Small Screen--*/
 @media only screen and (min-width: 375px) {
     .player-container {
@@ -400,6 +458,51 @@ p {
         width: 80%;
     }
 }
+
+/*--landscape 667px--*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    #game-area {
+        max-width: 100%;
+    }
+
+    #game-board-area {
+        height: 17rem;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    .dealer-container {
+        width: 40%;
+    }
+
+    #dealer-card-total {
+        position: absolute;
+        bottom: .02rem;
+    }
+
+    .player-container {
+        position: absolute;
+        top: 10rem;
+        left: 35rem;
+        width: 45%;
+    }
+
+    #player-card-total {
+        left: 14rem;
+    }
+
+    #player-hand {
+    padding-top: 1rem;
+    }   
+
+    .game-outcome-modal {
+    margin: auto;
+    }
+  }
 
 /*-- Medium Screen--*/
 @media only screen and (min-width: 768px)  {
@@ -448,6 +551,106 @@ p {
     }
 
 }
+
+/*-- Landscape 736px wide --*/
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    #game-area {
+        max-width: 100%;
+        padding-top: 5rem;
+    }
+
+    #game-board-area {
+        height: 20rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    .dealer-container {
+        width: 40%;
+    }
+
+    #dealer-card-total {
+        position: absolute;
+        bottom: .02rem;
+    }
+
+    .player-container {
+        top: 12.5rem;
+        left: 35rem;
+        width: 45%;
+    }
+
+    #player-card-total {
+        left: 14rem;
+    }
+
+    #player-hand {
+        padding-top: 1rem;
+    }   
+
+    .modal-content {
+        width: 60%;
+        margin: 5% auto;
+    }
+  }
+
+/*-- Landscape 812px wide --*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    #logo {
+        font-size: 4rem;
+        left: -3rem;
+    }
+
+    #game-area {
+        padding-top: 5rem;
+    }
+
+    #game-board-area {
+        height: 20rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #game-play-buttons {
+        margin-top: 0rem;
+    }
+
+    .dealer-container {
+        width: 40%;
+    }
+
+    #dealer-card-total {
+        position: absolute;
+        bottom: .02rem;
+    }
+
+    .player-container {
+        top: 11.5rem;
+        left: 40rem;
+        width: 45%;
+    }
+
+    #player-card-total {
+        left: 14rem;
+    }
+
+    #player-hand {
+        padding-top: 1rem;
+    } 
+    
+    .modal-content {
+        width: 60%;
+        margin: 3% auto;
+    }
+  }
 
 /*-- Large Screen--*/
 @media only screen and (min-width: 992px)  {
@@ -524,196 +727,10 @@ p {
     }
 }
 
-/* -- Landscape Options:
-Game is best played in portrait but here are landscape options for some specific device sizes --*/
-/*-- Landscape 568px wide --*/
-@media only screen and (min-device-width: 568px) 
-  and (max-device-width: 568px)
-  and (orientation: landscape) {
-    #game-area {
-        width: 100%;
-        padding-top: 4rem;
-    }
 
-    #game-board-area {
-        height: 15rem;
-    }
 
-    .dealer-container {
-        left: 1rem;
-        width: 45%;
-    }
 
-    .player-container {
-        top: 10.5rem;
-        left: 30rem;
-        width: 45%;
-    }
 
-    .card {
-        width: 5rem;
-        height: 8rem;
-    }
 
-    #player-hand {
-        padding-top: 1rem;
-    }
 
-    .game-outcome-modal {
-        margin: 7% auto;
-    }
-
-    .modal-content {
-        width: 60%;
-        margin: 1% auto;
-    }
-
-    .suit-card {
-        top: .2rem;
-        text-align: center;
-    }
-
-    .card-id2 {
-        top: .4rem;
-    }
-  }
-
-/*-- Landscape 667px wide --*/
-@media only screen  and (min-device-width: 667px) 
-  and (max-device-width: 667px)
-  and (orientation: landscape) {
-    #game-area {
-        max-width: 100%;
-    }
-
-    #game-board-area {
-        height: 17rem;
-        margin-top: 1rem;
-        margin-bottom: .5rem;
-    }
-
-    .dealer-container {
-        width: 45%;
-    }
-
-    #dealer-card-total {
-        bottom: .02rem;
-    }
-
-    .player-container {
-        top: 10rem;
-        left: 35rem;
-        width: 45%;
-    }
-
-    #player-card-total {
-        left: 14rem;
-    }
-
-    #player-hand {
-        padding-top: 1rem;
-    }   
-
-    .modal-content {
-        width: 60%;
-        margin: 5% auto;
-    }
-  }
-
-/*-- Landscape 736px wide --*/
-@media only screen and (min-device-width: 736px) 
-  and (max-device-width: 736px)
-  and (orientation: landscape) {
-    #game-area {
-        max-width: 100%;
-        padding-top: 5rem;
-    }
-
-    #game-board-area {
-        height: 20rem;
-        margin-bottom: 1rem;
-        margin-top: 2rem;
-    }
-
-    .dealer-container {
-        width: 40%;
-    }
-
-    #dealer-card-total {
-        position: absolute;
-        bottom: .02rem;
-    }
-
-    .player-container {
-        top: 12.5rem;
-        left: 35rem;
-        width: 45%;
-    }
-
-    #player-card-total {
-        left: 14rem;
-    }
-
-    #player-hand {
-        padding-top: 1rem;
-    }   
-
-    .modal-content {
-        width: 60%;
-        margin: 5% auto;
-    }
-  }
-
-/*-- Landscape 812px wide --*/
-@media only screen and (min-device-width: 812px) 
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    #logo {
-        font-size: 4rem;
-        left: -3rem;
-    }
-
-    #game-area {
-        padding-top: 5rem;
-    }
-
-    #game-board-area {
-        height: 20rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    #game-play-buttons {
-        margin-top: 0rem;
-    }
-
-    .dealer-container {
-        width: 40%;
-    }
-
-    #dealer-card-total {
-        position: absolute;
-        bottom: .02rem;
-    }
-
-    .player-container {
-        top: 11.5rem;
-        left: 40rem;
-        width: 45%;
-    }
-
-    #player-card-total {
-        left: 14rem;
-    }
-
-    #player-hand {
-        padding-top: 1rem;
-    } 
-    
-    .modal-content {
-        width: 60%;
-        margin: 3% auto;
-    }
-  }
   
