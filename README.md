@@ -1,5 +1,6 @@
 # 21 The Card Game
 
+[Link to Live Project](https://sharon-b.github.io/21-The-Card-Game/)
 
 # Project Summary
 
