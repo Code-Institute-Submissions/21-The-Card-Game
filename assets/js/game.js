@@ -7,7 +7,7 @@ let playerScore;
 
 // win lose draw counter variables 
 let winGamesTwentyOne = 0;
-let winGames = 0;           
+let winGames = 0;          
 let lostGames = 0;          
 let drawGames = 0;
 
@@ -418,4 +418,4 @@ function closeModals() {
 window.onload = function () {
     hitButton.disabled = true;
     holdButton.disabled = true;
-}
+};
