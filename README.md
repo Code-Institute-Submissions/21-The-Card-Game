@@ -681,7 +681,7 @@ Once I was happy that the game was working in its most basic form I began adding
 
 ## Issues/Solutions
 		
-
+While trying to implement the counter variables to track the number of games won/lost/drawn I discovered that certain game outcomes were being counted twice. In order to investigate this further I set up some debuggers in the script and started stepping through the code in Chrome Dev Tools, while having the counter variables in the watch window I was able to figure out under what circumstances game outcomes were being counted twice and narrowed it down to the checkScore and gameOutcome functions being executed twice in the hold function due to the setTimeout which was running the whole function again if the dealer hand total was 16 or less. In order to resolve this I added the setTimeout into its own if statement nested into the original if statement of the function.
 
 ## Known Bugs
 
