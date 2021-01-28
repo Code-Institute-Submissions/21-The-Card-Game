@@ -134,7 +134,7 @@ p {
 /*------------Game Board Area----*/
 #game-board-area {
     padding: 1rem;
-    height: 40rem;
+    height: 34rem;
     margin-top: 2rem;
     margin-bottom: .8rem;
 }
@@ -161,7 +161,7 @@ p {
 
 .player-container {
     position: absolute;
-    top: 29rem; 
+    top: 27rem; 
     width: 80%; 
 }
 
@@ -349,7 +349,7 @@ p {
 
 .game-outcome-modal {
     margin: auto;
-    margin-top: 90%;
+    margin-top: 40%;
 }
 
 .status {
@@ -443,6 +443,11 @@ but some landscape options are provided for smaller devices*/
      #game-board-area {
         margin-bottom: 1rem;
         margin-top: 1rem;
+        height: 40rem;
+    }
+
+    .player-container {
+        top: 29rem;
     }
 
     .modal-content {
@@ -500,7 +505,7 @@ but some landscape options are provided for smaller devices*/
      #content {
         height: 100vh;
     }
-    
+
     #logo {
         font-size: 5rem;
     }
@@ -512,7 +517,7 @@ but some landscape options are provided for smaller devices*/
 
     #game-board-area {
         height: 40rem; 
-        margin-top: 5rem; 
+        margin-top: 3rem; 
     }
 
     .dealer-container {
@@ -520,7 +525,7 @@ but some landscape options are provided for smaller devices*/
     }
 
     .player-container {
-        top: 38rem;
+        top: 36rem;
         width: 60%;
     }
 
@@ -543,7 +548,7 @@ but some landscape options are provided for smaller devices*/
     
     .game-outcome-modal {
         margin: auto;
-        margin-top: 20%;
+        margin-top: 30%;
     }
 }
 
@@ -650,12 +655,7 @@ but some landscape options are provided for smaller devices*/
 /*-- Large Screen--*/
 @media only screen and (min-width: 992px)  {
     #game-area {
-        padding-top: 11rem;
         width: 60%;
-    }
-
-    #game-board-area { 
-        margin-top: 5rem;
     }
 
     .card {
@@ -668,7 +668,7 @@ but some landscape options are provided for smaller devices*/
     }
 
     .player-container {
-        top: 40rem;
+        top: 35rem;
     }
 
      #game-play-buttons {
@@ -698,7 +698,7 @@ but some landscape options are provided for smaller devices*/
 
     .player-container {
         width: 45%;
-        top: 40rem;
+        top: 37rem;
     }
 
     .game-options,
@@ -719,7 +719,8 @@ but some landscape options are provided for smaller devices*/
     }
     
     .game-outcome-modal {
-        margin: 15% auto;
+        margin: auto;
+        margin-top: 30%;
     } 
 }
 
