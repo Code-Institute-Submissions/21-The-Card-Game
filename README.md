@@ -1,5 +1,9 @@
 # 21 The Card Game
 
+
+![Responsive Image](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/am-i-responsive.png "Am I Responsive")
+
+
 [Link to Live Project](https://sharon-b.github.io/21-The-Card-Game/)
 
 # Project Summary
