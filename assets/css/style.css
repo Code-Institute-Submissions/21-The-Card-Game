@@ -406,7 +406,7 @@ but some landscape options are provided for smaller devices*/
         left: 30rem;
         text-align: left;
         width: 45%;
-      }
+    }
 
     .card {
         width: 5rem;
@@ -430,7 +430,7 @@ but some landscape options are provided for smaller devices*/
     }
 
     .game-outcome-modal {
-    margin: auto;
+        margin: auto;
     }
 
      .modal-content {
@@ -530,7 +530,7 @@ but some landscape options are provided for smaller devices*/
     }
 
     #game-play-buttons {
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
     .modal-content {
@@ -548,7 +548,7 @@ but some landscape options are provided for smaller devices*/
     
     .game-outcome-modal {
         margin: auto;
-        margin-top: 30%;
+        margin-top: 20%;
     }
 }
 
@@ -670,10 +670,6 @@ but some landscape options are provided for smaller devices*/
     .player-container {
         top: 35rem;
     }
-
-     #game-play-buttons {
-        margin-top: 3rem;
-    }
 }
 
 /*-- Extra Large Screen--*/
@@ -717,11 +713,6 @@ but some landscape options are provided for smaller devices*/
     .card-id2 {
         top: 2rem;
     }
-    
-    .game-outcome-modal {
-        margin: auto;
-        margin-top: 30%;
-    } 
 }
 
 
