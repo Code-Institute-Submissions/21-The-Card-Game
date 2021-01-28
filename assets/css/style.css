@@ -16,6 +16,11 @@
     font-size: 10px;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 /*------------Background----*/
 .bg-color-classic {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#c9de96) , to(#398235));
