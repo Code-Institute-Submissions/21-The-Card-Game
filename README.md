@@ -714,7 +714,9 @@ While trying to implement the counter variables to track the number of games won
 
 Bugs found and not fixed:
 
+* When first switching themes to either beach-theme or night-theme, the whole page reloads and can see the background colour while the image loads. A suitable background colour has been used for this reason and as a failsafe in case the image doesn’t load.
 
+* Difference between Chrome Dev Tools device display and actual display for iPhone 8 and some desktop views.
 
 # Deployment
 
