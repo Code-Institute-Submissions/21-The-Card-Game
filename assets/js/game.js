@@ -123,15 +123,19 @@ function checkScore() {
 
     if (playerScore === 21) {
         setTimeout(winTwentyOne, 1000);
+        disableHitHold();
         winGamesTwentyOne++;
     } else if (playerScore > 21) {
         setTimeout(bust, 1000);
+        disableHitHold();
         lostGames++;
     } else if (dealerScore === 21) {
         setTimeout(dealerTwentyOne, 1000);
+        disableHitHold();
         lostGames++;
     } else if (dealerScore > 21) {
         setTimeout(dealerBust, 1000);
+        disableHitHold();
         winGames++;
     }
 
@@ -228,12 +232,15 @@ function hold() {
 function gameOutcome() {
     if (dealerScore < 21 && dealerScore > 16 && dealerScore > playerScore) {
         setTimeout(dealerWin, 1000);
+        disableHitHold();
         lostGames++;
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore < playerScore) {
         setTimeout(win, 1000);
+        disableHitHold();
         winGames++;
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore === playerScore) {
         setTimeout(draw, 1000);
+        disableHitHold();
         drawGames++;
     }
 
@@ -288,6 +295,11 @@ function collapseHand(cardHand) {
             playerHandCards.classList.add("collapse-hand");
         }
     }
+}
+
+function disableHitHold() {
+    hitButton.disabled = true;
+    holdButton.disabled = true;
 }
 
 // Game Outcome Modals
@@ -414,8 +426,5 @@ function closeModals() {
     }
 }
 
-// Add onload function to disable hit and hold buttons
-window.onload = function () {
-    hitButton.disabled = true;
-    holdButton.disabled = true;
-};
+// Add window.onload to disable hit and hold buttons
+window.onload = disableHitHold();
