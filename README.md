@@ -71,7 +71,7 @@ This website aims to demonstrate my skills of Javascript, HTML & CSS as learned 
   * [Friends & Family User Testing:](#friends---family-user-testing-)
   * [Testing User Stories](#testing-user-stories)
   * [Testing Site Owner Stories](#testing-site-owner-stories)
-  * [Implementation](#implementation)
+- [Implementation](#implementation)
   * [Issues/Solutions](#issues-solutions)
   * [Known Bugs](#known-bugs)
 - [Deployment](#deployment)
@@ -696,7 +696,7 @@ Devices used: iPad Pro, iPhone 8 Plus, Laptop (windows running the Chrome browse
 
     * The night theme also provides an interesting and relaxing image of the sky at night, which may suit those who prefer to play in the evenings.
 
-## Implementation 
+# Implementation 
 
 Once the initial concept for the project was decided upon I first developed the wireframes. From these wireframes I then developed the basic game logic required to run the game. This is documented in the [Game Logic Map](https://github.com/Sharon-B/21-The-Card-Game/blob/master/documentation/21-card-game-logic-map.pdf)
 
