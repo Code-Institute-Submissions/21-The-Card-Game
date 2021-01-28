@@ -134,9 +134,9 @@ p {
 /*------------Game Board Area----*/
 #game-board-area {
     padding: 1rem;
-    height: 34rem;
-    margin-top: 2rem;
-    margin-bottom: .8rem;
+    height: 33rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
 }
 
 .dealer-container {
@@ -161,7 +161,7 @@ p {
 
 .player-container {
     position: absolute;
-    top: 27rem; 
+    top: 25rem; 
     width: 80%; 
 }
 
