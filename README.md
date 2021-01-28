@@ -168,7 +168,8 @@ Providing background music and sound effects for the game was not deemed to be o
 ### Interaction Design: 
 
 User interactions will be intuitive and allow for easy game play. 
-The game play centres around 3 clearly labelled buttons at the bottom of the screen for easy access when playing. One button to start the game, one button to request another card i.e. hit and one button when the player is happy with their hand and wants to hold.
+
+The game play centres around 3 clearly labelled buttons at the bottom of the screen for easy access when playing. One button to start the game, one button to request another card i.e. hit and one button when the player is happy with their hand and wants to hold. These buttons have been given a box-shadow effect and a bold font has also been applied to elevate them in the visual hierarchy.
 
 ### Information Design: 
 
