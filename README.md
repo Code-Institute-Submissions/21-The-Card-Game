@@ -743,6 +743,10 @@ Code Snippet 2: [Devdojo](https://devdojo.com/devdojo/create-a-deck-of-cards-in-
 
 Code Snippet 3: [Yanze Dai - The optimal solution to shuffle an Array in Javascript](https://dev.to/daiyanze/the-optimal-solution-to-shuffle-an-array-in-javascript-29hh) - Implementation of Fisher Yates Shuffle.
 
+Code Snippet 4: [echohatch1 - BlackJack Project](https://github.com/echohatch1/Blackjack-Project/blob/master/blackJackV2.0.js) - code originally based on ecohatch1's getCardsValue() but then modified to suit this project.
+
+Code Snippet 5: [echohatch1 - BlackJack Project](https://github.com/echohatch1/Blackjack-Project/blob/master/blackJackV2.0.js) - code originally based on ecohatch1's endGame() but then modified to suit this project.
+
 ## Resources
 
 [Code Institute](https://codeinstitute.net/) course material and mini projects form the main resource for this project.
@@ -759,9 +763,11 @@ Code Snippet 3: [Yanze Dai - The optimal solution to shuffle an Array in Javascr
 
 [That Software Dude](https://www.thatsoftwaredude.com/content/6417/how-to-code-blackjack-using-javascript) - How To Code Blackjack Using JavaScript - Inspiration for building the card game.
 
+[echohatch1 - BlackJack Project](https://github.com/echohatch1/Blackjack-Project/blob/master/blackJackV2.0.js) - Further inspiration for building the card game.
+
 [Mike Bostock](https://bost.ocks.org/mike/shuffle/) - Fisher Yates shuffle
 
-[Inside code](https://www.youtube.com/watch?v=4zx5bM2OcvA&feature=youtu.be) - Good explanation video of the Fisher Yates Shuffle Algorithm
+[Inside code](https://www.youtube.com/watch?v=4zx5bM2OcvA&feature=youtu.be) - Good explanation video and visulisation of the Fisher Yates Shuffle Algorithm
 
 Anna Greaves How to Approach Writing Your README File webinar.
 
