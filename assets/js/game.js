@@ -122,16 +122,16 @@ function checkScore() {
     playerScore = addCardValues(playerHand);
 
     if (playerScore === 21) {
-        winTwentyOne();
+        setTimeout(winTwentyOne, 1000);
         winGamesTwentyOne++;
     } else if (playerScore > 21) {
-        bust();
+        setTimeout(bust, 1000);
         lostGames++;
     } else if (dealerScore === 21) {
-        dealerTwentyOne();
+        setTimeout(dealerTwentyOne, 1000);
         lostGames++;
     } else if (dealerScore > 21) {
-        dealerBust();
+        setTimeout(dealerBust, 1000);
         winGames++;
     }
 
@@ -227,13 +227,13 @@ function hold() {
 // Create gameOutcome function, win/lose/draw
 function gameOutcome() {
     if (dealerScore < 21 && dealerScore > 16 && dealerScore > playerScore) {
-        dealerWin();
+        setTimeout(dealerWin, 1000);
         lostGames++;
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore < playerScore) {
-        win();
+        setTimeout(win, 1000);
         winGames++;
     } else if (dealerScore < 21 && dealerScore > 16 && dealerScore === playerScore) {
-        draw();
+        setTimeout(draw, 1000);
         drawGames++;
     }
 
