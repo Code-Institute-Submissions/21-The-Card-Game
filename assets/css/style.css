@@ -12,7 +12,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "Lora", sans-serif;
+    font-family: 'Lora', sans-serif;
     font-size: 10px;
 }
 
@@ -376,8 +376,7 @@ p {
 }
 
 /*--------------------Media Queries---------------------*/
-/* Optimised for widths from 320px, best viewed in portrait orientation
-but some landscape options are provided for smaller devices*/
+/* Optimised for widths from 320px, best viewed in portrait orientation on small devices but some landscape options are provided for*/
 
 /*--landscape 568px--*/
 @media only screen 
