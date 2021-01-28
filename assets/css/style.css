@@ -497,6 +497,10 @@ but some landscape options are provided for smaller devices*/
 
 /*-- Medium Screen--*/
 @media only screen and (min-width: 768px)  {
+     #content {
+        height: 100vh;
+    }
+    
     #logo {
         font-size: 5rem;
     }
