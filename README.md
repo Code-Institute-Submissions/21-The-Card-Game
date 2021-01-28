@@ -539,7 +539,11 @@ All aspects of the website mentioned above were manually tested on the following
 
 ## Friends & Family User Testing:
 
-The general feedback was that the site looks well and is easy to navigate. Gameplay is fun and intuitive without much of a learning curve. Devices used: iPad Pro, iPhone 8 Plus, Laptop (windows running the Chrome browser).
+The general feedback was that the site looks well and is easy to navigate. Gameplay is fun and intuitive without much of a learning curve. 
+
+The only slight negative feedback was that the pop up window at the end of the game covered the last cards being dealt. To rectify this I delayed the gameOutcome pop up using a setTimeout so now you can see the final card hands before the pop up opens telling you the result.
+
+Devices used: iPad Pro, iPhone 8 Plus, Laptop (windows running the Chrome browser).
 
 ## Testing User Stories
 
