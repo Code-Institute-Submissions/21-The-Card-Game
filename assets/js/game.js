@@ -31,7 +31,7 @@ yesButton.addEventListener("click", gameReset);
 resetButton.addEventListener("click", displayAlert);
 
 // Create a Card object
-// Code snippet 1:  Devdojo - https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript) - Creating a card object. Used with modifications.
+// Code snippet 1:  Devdojo - https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript) - Creating a card object, modified to suit this project.
 function Card(name, suit) {
     this.name = name;
     this.suit = suit;
@@ -44,7 +44,7 @@ function Card(name, suit) {
 }
 
 // Create a deck of cards
-//Code snippet 2:  Devdojo - https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript) - Creating a deck object. Used with modifications.
+//Code snippet 2:  Devdojo - https://devdojo.com/devdojo/create-a-deck-of-cards-in-javascript) - Creating a deck object, modified to suit this project.
 function Deck() {
     this.names = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"];
     this.suits = ["♠", "♣", "♥", "♦"];
@@ -96,6 +96,7 @@ function playerCards() {
     }
 }
 
+// Code Snippet 4: https://github.com/echohatch1/Blackjack-Project/blob/master/blackJackV2.0.js - originally based on ecohatch1's getCardsValue() but then modified to suit this project.
 // Assign & Add card values
 function addCardValues(hand) {
     let cardTotal = 0;
@@ -116,6 +117,7 @@ function addCardValues(hand) {
     return cardTotal;
 }
 
+//// Code Snippet 5: https://github.com/echohatch1/Blackjack-Project/blob/master/blackJackV2.0.js - originally based on ecohatch1's endGame() but then modified to suit this project.
 // Create check Score
 function checkScore() {
     dealerScore = addCardValues(dealerHand);
@@ -287,6 +289,7 @@ function gameReset() {
     holdButton.disabled = true;
 }
 
+// Create function to collapse cards
 function collapseHand(cardHand) {
     if (cardHand.length > 3) {
         if (cardHand == dealerHand) {
@@ -297,6 +300,7 @@ function collapseHand(cardHand) {
     }
 }
 
+// Create disable hit & hold buttons function
 function disableHitHold() {
     hitButton.disabled = true;
     holdButton.disabled = true;
