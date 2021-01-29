@@ -8,7 +8,7 @@
 
 # Project Summary
 
-This website aims to demonstrate my skills of Javascript, HTML & CSS as learned from the Code Institute Full Stack Software Development course. In order to do so I will create my version of the card game Twenty-One. The project will be created using a mobile first design strategy and will ensure the site is fully responsive across all devices. The project will further the developers knowledge of Javascript and it's implementation.
+This website aims to demonstrate my skills of Javascript, HTML & CSS as learned from the Code Institute Full Stack Software Development course. In order to do so I will create my version of the card game Twenty-One. The project will be created using a mobile first design strategy. The project will further the developers knowledge of Javascript and it's implementation.
 
 # Contents
 - [21 The Card Game](#21-the-card-game)
@@ -117,7 +117,7 @@ To grow my skills as a developer and create a  simple easy to use and enjoyable 
 5.	As a user I want to know how many games I win/lose/draw so that I can track how well I’m doing.
 6.	As a user I want to be able to reset a game so that I can start again.
 7.	As a user I want to have a visually appealing interface so that I will enjoy playing the game for longer.
-8.	As a user I want a game I can play on all my devices so that I can play while on the go.
+8.	As a user I want a game I can play on my mobile so that I can play while on the go.
 
 ## Site Owner Stories
 
@@ -139,10 +139,8 @@ This will be a Minimal Viable Product containing the most important core content
 *	Reset
 *	Start game
 *	Settings
-
 *	Win/Lose/Draw game outcomes
 *	Background music and sound effects
-
 
 #### Content Requirements:
 
@@ -778,7 +776,7 @@ Code Snippet 5: [echohatch1 - BlackJack Project](https://github.com/echohatch1/B
 
 [Mike Bostock](https://bost.ocks.org/mike/shuffle/) - Fisher Yates shuffle
 
-[Inside code](https://www.youtube.com/watch?v=4zx5bM2OcvA&feature=youtu.be) - Good explanation video and visulisation of the Fisher Yates Shuffle Algorithm
+[Inside code](https://www.youtube.com/watch?v=4zx5bM2OcvA&feature=youtu.be) - Good explanation video and visualisation of the Fisher Yates Shuffle Algorithm
 
 Anna Greaves How to Approach Writing Your README File webinar.
 
