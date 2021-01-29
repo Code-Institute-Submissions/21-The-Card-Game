@@ -717,7 +717,7 @@ Bugs found and not fixed:
 
 * When first switching themes to either beach-theme or night-theme, the whole page reloads and can see the background colour while the image loads. A suitable background colour has been used for this reason and as a failsafe in case the image doesn’t load.
 
-* Difference between Chrome Dev Tools device display and actual display for iPhone 8 and some desktop views.
+* Difference between Chrome Dev Tools device display and actual display for iPhone 8. Also happens for some desktop views after posting the project on peer code review a couple of people came back to say the bottom buttons were cut off on their laptops - when checked their screen resolutions on Chrome dev tools it looked fine, I have set overflow-y to scroll in media queries from medium screen sizes to avoid losing content completely. This should be investigated further.
 
 # Deployment
 
