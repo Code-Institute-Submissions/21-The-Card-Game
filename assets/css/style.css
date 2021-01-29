@@ -56,6 +56,7 @@ body {
     left: 0;
     right: 0;
     z-index: 10;
+    height: 100%;
 }
 
 /*------------Logo----*/
@@ -508,6 +509,7 @@ p {
 @media only screen and (min-width: 768px)  {
      #content {
         height: 100vh;
+        overflow-y: scroll;
     }
 
     #logo {
